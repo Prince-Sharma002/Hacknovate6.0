@@ -26,9 +26,29 @@
 
 ---
 
+
+
 ## 🚀 Getting Started  
 
 ### 1️⃣ Clone the Repository  
 ```sh
 git clone https://github.com/your-username/hacknovate6.0.git
 cd hacknovate6.0
+```
+
+### 2️⃣ Install Dependencies
+```
+npm install
+
+```
+
+### 3️⃣ Run the Development Server
+```
+npm run dev
+
+```
+
+### 🌐 Live Website
+🔗 https://hacknovate6.tech/
+
+
