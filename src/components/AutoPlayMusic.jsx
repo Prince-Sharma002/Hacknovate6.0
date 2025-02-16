@@ -45,8 +45,9 @@ const AutoPlayMusic = () => {
         className="bg-sky-100 bg-gray-400 text-black rounded-full p-2"
       >
         {isPlaying ?
-         <GiSpeakerOff className='cursor-pointer text-2xl ' /> : 
-         <GiSpeaker className='cursor-pointer text-2xl ' />}
+         <GiSpeaker className='cursor-pointer text-2xl ' /> :
+         <GiSpeakerOff className='cursor-pointer text-2xl ' /> 
+        } 
       </ShinyButton>
 
     </div>
