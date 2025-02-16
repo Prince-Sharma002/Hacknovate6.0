@@ -31,7 +31,7 @@ const AutoPlayMusic = () => {
   };
 
   return (
-    <div className='absolute bottom-4 left-4 z-10'>
+    <div className='absolute bottom-8 left-8 z-10'>
       <audio ref={audioRef} loop>
         <source src="/hp.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
