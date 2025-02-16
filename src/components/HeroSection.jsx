@@ -8,6 +8,7 @@ import { FaDiscord } from "react-icons/fa6";
 import { TbBrandLinktree } from "react-icons/tb";
 import { GiSpeaker } from "react-icons/gi";
 import { ShinyButton } from "./magicui/shiny-button";
+import AutoPlayMusic from './AutoPlayMusic';
 
 
 const HeroSection = () => {
@@ -21,12 +22,21 @@ const HeroSection = () => {
       </a>
       <div className="hero-content">
 
-        <TextAnimate animation="blurInUp" by="character" once
-          className="font-extrabold text-5xl md:text-5xl lg:text-9xl "
-            style={{ fontFamily: 'HarryP, sans-serif'  , letterSpacing:"8px"}}
+         <TextAnimate
+            animation="blurInUp"
+            by="character"
+            once
+            className="font-extrabold text-5xl md:text-5xl lg:text-9xl relative"
+            style={{
+              fontFamily: "HarryP, sans-serif",
+              letterSpacing: "8px",
+              textShadow: "0 4px 10px rgba(0, 0, 0, 0.8)", // 3D shadow effect
+            }}
           >
-            Hacknovate 6.0  
-        </TextAnimate>
+            {String("Hacknovate 6.0")}
+          </TextAnimate>
+
+
         <p className=" p-1">  
 
         <TypingAnimation 
@@ -40,7 +50,7 @@ const HeroSection = () => {
         {/* <p className="hero-text">
           Join us for the most magical hackathon of the year! Unleash your creativity, cast your code, and build something extraordinary.
         </p> */}
-        <div className='flex flex-col lg:flex-row justify-center gap-2 mt-10 px-20'>
+        <div className='flex flex-col lg:flex-row justify-center gap-4 mt-10 px-24 text-xs md:text-4xl'>
 
         <a
           href="https://discord.gg/your-discord-link"
@@ -49,7 +59,7 @@ const HeroSection = () => {
           className="discord-button"
         >
           
-          <p className='font-mono font-extrabold  flex flex-row justify-items-center items-center justify-center gap-2'>
+          <p className='font-mono font-extrabold flex flex-row justify-items-center items-center justify-center gap-2'>
             <FaDiscord /> 
             <span > Discord</span>
           </p>
@@ -59,19 +69,20 @@ const HeroSection = () => {
           href="https://discord.gg/your-discord-link"
           target="_blank"
           rel="noopener noreferrer"
-          className="discord-button "
+          className="discord-button"
         >
-          <p className='font-mono font-extrabold  flex flex-row justify-items-center items-center justify-center gap-2'>
+          <p className='font-mono font-extrabold flex flex-row justify-items-center items-center justify-center gap-2'>
             <TbBrandLinktree /> 
-            <span > LinkTree</span>
+            <span > LinkTree </span>
           </p>
         </a>
 
         </div>
 
-      </div>
 
-        <HeroSection />
+      </div>
+        <AutoPlayMusic className=""  />
+
 
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { GiSpeaker, GiSpeakerOff } from "react-icons/gi";
 import { ShinyButton } from "./magicui/shiny-button";
 
+
 const AutoPlayMusic = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -30,18 +31,18 @@ const AutoPlayMusic = () => {
   };
 
   return (
-    <div>
+    <div className='absolute bottom-4 left-4 z-10'>
       <audio ref={audioRef} loop>
         <source src="/hp.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
-    <div className='z-100 cursor-pointer bottom-10 left-20'>
+    <div className=''>
 
     
       <ShinyButton 
         onClick={handlePlayPause} 
-        className="cursor-pointer hover:bg-sky-700 bg-white text-black rounded-full p-2"
+        className="bg-sky-100 bg-gray-400 text-black rounded-full p-2"
       >
         {isPlaying ?
          <GiSpeakerOff className='cursor-pointer text-2xl ' /> : 
