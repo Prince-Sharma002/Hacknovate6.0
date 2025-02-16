@@ -32,7 +32,7 @@
 
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/your-username/hacknovate6.0.git](https://github.com/Prince-Sharma002/Hacknovate6.0.git
+git clone https://github.com/Prince-Sharma002/Hacknovate6.0.git
 cd hacknovate6.0
 ```
 
