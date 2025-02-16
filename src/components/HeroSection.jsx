@@ -19,7 +19,7 @@ const HeroSection = () => {
       <a href="https://www.abesit.in/" className='z-20'>
         <div className='absolute right-8 top-8 text-white '>
           <h2 className='font-bold text-3xl text-white text-gray-400'>ABESIT</h2>
-          <p className='text-xs text-white text-gray-300'>-Group of Institute-</p>
+          <p className='text-xs text-white text-gray-300'>-Group of Institutions-</p>
         </div>
       </a>
       <div className="hero-content">
