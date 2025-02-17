@@ -9,6 +9,7 @@ import { GiSpeaker } from "react-icons/gi";
 import { ShinyButton } from "./magicui/shiny-button";
 import AutoPlayMusic from './AutoPlayMusic';
 import hacknovate from "../assets/hacknovate.png";
+import devfolio from "../assets/devfolio.png";
 
 const HeroSection = () => {
   return (
@@ -63,7 +64,7 @@ const HeroSection = () => {
               style={{ textShadow: "0 4px 10px rgba(0, 0, 0, 0.8)" }}
               className='font-mono font-extrabold flex flex-row justify-items-center items-center justify-center gap-2'
             >
-              <span> Devfolio</span>
+              <span className='flex justify-center items-center'> <img className='w-8 h-8' src={devfolio} alt='devfolio logo' />  Devfolio </span>
             </p>
           </a>
 
@@ -77,7 +78,7 @@ const HeroSection = () => {
               style={{ textShadow: "0 4px 10px rgba(0, 0, 0, 0.8)" }}
               className='font-mono font-extrabold flex flex-row justify-items-center items-center justify-center gap-2'
             >
-              <span> LinkTree </span>
+              <span className='flex justify-center items-center gap-1'> <TbBrandLinktree />  LinkTree </span>
             </p>
           </a>
         </div>
