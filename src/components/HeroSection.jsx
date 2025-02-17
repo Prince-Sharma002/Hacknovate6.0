@@ -12,6 +12,7 @@ import hacknovate from "../assets/hacknovate.png";
 
 const HeroSection = () => {
   return (
+    
     <div className="hero-section">
       <div className='absolute left-8 top-4 w-20 h-20'>
         <img src={hacknovate}/>
