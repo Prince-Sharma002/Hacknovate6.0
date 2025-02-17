@@ -17,7 +17,7 @@ const AutoPlayMusic = () => {
         // Autoplay is blocked, user needs to manually play
       }
     };
-
+ 
     playAudio();
   }, []);
 
