@@ -12,6 +12,7 @@ import { Dock, DockIcon } from "./components/magicui/dock.jsx";
 import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import AutoPlayMusic from "./components/AutoPlayMusic.jsx";
+import HeroSectionMain  from "./components/HeroSectionMain.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
     {/* <Navbar /> */}
+    <HeroSectionMain />
     <HeroSection />
     {/* <AutoPlayMusic /> */}
     
