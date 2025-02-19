@@ -33,7 +33,7 @@ const Registration = () => {
 
         </div>
         <div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been aset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </p>
+            <p className='text-justify justify-last'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been aset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </p>
         </div>
         <div>
             <p className='p-2 px-2 text-4xl bg-black text-white w-full h-full text-center flex justify-center align-center items-center'> Timer </p>

@@ -23,7 +23,7 @@ const NewspaperHeader = () => {
             <span>
               <img src={hacknovate} width={20} height={20} alt="logo" />
             </span>
-            <span className="font-crimson text-xl font-serif">
+            <span className="font-crimson text-s md:text-xl font-serif">
               FLAGSHIP EVENT
             </span>
 
@@ -33,7 +33,7 @@ const NewspaperHeader = () => {
             </span> */}
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-playfair font-black tracking-wider">
+          <h1 className="text-2xl md:text-8xl font-playfair font-black tracking-wider">
             <span className="text-prophet-black tracking-tight">HACKNO</span>
             <span className="text-prophet-gold text-amber-400 tracking-tight ">
               V
