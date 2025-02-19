@@ -2,5 +2,11 @@
   body{
     background-image: url("./assets/bgi.svg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  body {
+    padding: 0;
   }
