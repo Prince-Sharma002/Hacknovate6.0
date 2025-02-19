@@ -34,11 +34,11 @@ const NewspaperHeader = () => {
           </div>
 
           <h1 className="text-2xl md:text-8xl font-playfair font-black tracking-wider">
-            <span className="text-prophet-black tracking-tight">HACKNO</span>
+            <span className="text-prophet-black tracking-tight">ABESIT </span>
             <span className="text-prophet-gold text-amber-400 tracking-tight ">
-              V
+              T
             </span>
-            <span className="text-prophet-black tracking-tight">ATE 6.0</span>
+            <span className="text-prophet-black tracking-tight">IMES</span>
           </h1>
 
           <div className="flex items-center justify-center space-x-4">
