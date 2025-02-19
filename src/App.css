@@ -1,2 +1,6 @@
 
-  
+  body{
+    background-image: url("./assets/bgi.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
