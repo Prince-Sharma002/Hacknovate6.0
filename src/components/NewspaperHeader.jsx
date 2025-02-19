@@ -1,5 +1,10 @@
 import hacknovate from "../assets/hacknovate.png";
+
+import { useState } from "react";
+import Navbar from "./Navbar";
 const NewspaperHeader = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20">
       <div className="w-full mx-auto border-b-4 border-slate-800">
@@ -34,9 +39,10 @@ const NewspaperHeader = () => {
               Sponsor US{" "}
             </button>
           </div>
-          <div className=" h-16 w-full border-2 border-red-500 hidden max-lg:block">
-            dasdad
+          <div className="m-0 max-lg:flex max-lg:justify-end hidden">
+            <Navbar />
           </div>
+
           <div className="flex justify-between max-lg:justify-center items-center mb-0">
             <img
               src={hacknovate}
