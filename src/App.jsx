@@ -1,23 +1,21 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 import React from "react";
 
-import Registration from "./components/Registration.jsx"
+import Registration from "./components/Registration.jsx";
 import NewspaperHeader from "./components/NewspaperHeader";
+import About from "./components/About.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <NewspaperHeader />
 
       <Registration />
 
-
-
+      <About />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

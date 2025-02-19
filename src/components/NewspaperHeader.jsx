@@ -4,10 +4,12 @@ const NewspaperHeader = () => {
   return (
     <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20">
       <div className="w-full mx-auto border-b-4 border-slate-800">
-        <div className="flex items-center justify-between mb-4 animate-fadeIn">
+        <div className="flex items-center justify-start mb-4 animate-fadeIn">
           <div className="flex items-center space-x-2">
-            <div className="w-16 h-16 bg-prophet-black text-prophet-gold flex items-center justify-center font-playfair font-bold">
-              <div className="text-center leading-tight"></div>
+            <div className="w-20 h-20">
+              <div className="text-center leading-tight">
+                <img src={hacknovate} className="w-[160px] h-[110px]" alt="logo" />
+              </div>
             </div>
           </div>
         </div>
@@ -17,7 +19,6 @@ const NewspaperHeader = () => {
           style={{ animationDelay: "0.2s" }}
         >
           <div className="flex items-center justify-center space-x-4">
-            <img src={hacknovate} width={120} height={120} alt="logo" />
             <div className="flex-1 h-px bg-prophet-black border-y-2 border-slate-800"></div>
             <span>
               <img src={hacknovate} width={20} height={20} alt="logo" />
