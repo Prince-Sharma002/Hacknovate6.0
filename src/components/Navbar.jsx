@@ -1,41 +1,33 @@
 import { useState } from "react";
-import { Twirl as Hamburger } from "hamburger-react"; // Importing Hamburger React component
+import { Twirl as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false); // State to track menu open/close
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white p-4">
-      {/* Hamburger Icon */}
-      <div className="max-lg:flex hidden justify-end">
+    <nav className="bg-gray-900 text-white p-4 relative">
+      {/* Hamburger Icon (Visible only on smaller screens) */}
+      <div className="lg:hidden flex justify-end">
         <Hamburger toggled={isOpen} toggle={setOpen} />
       </div>
 
-      {/* Navigation Links (shown when isOpen is true) */}
+      {/* Navigation Links */}
       <ul
-        className={`max-lg:flex flex-col items-center gap-4 mt-4 ${
-          isOpen ? "flex" : "hidden"
-        } lg:flex lg:flex-row`}
+        className={`absolute top-16 left-0 w-full bg-gray-900 flex flex-col items-center gap-4 transition-all duration-300 ease-in-out ${
+          isOpen ? "block" : "hidden"
+        } lg:flex lg:relative lg:w-auto lg:bg-transparent`}
       >
-        <li>
-          <a href="#" className="hover:text-gray-400">
-            Home
-          </a>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">Home</a>
         </li>
-        <li>
-          <a href="#" className="hover:text-gray-400">
-            About
-          </a>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">About</a>
         </li>
-        <li>
-          <a href="#" className="hover:text-gray-400">
-            Services
-          </a>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">Services</a>
         </li>
-        <li>
-          <a href="#" className="hover:text-gray-400">
-            Contact
-          </a>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">Contact</a>
         </li>
       </ul>
     </nav>
