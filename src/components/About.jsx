@@ -12,9 +12,9 @@ const About = () => {
         <div className="w-full md:w-56 h-32 border-4 border-gray-950"></div>
       </div> */}
 
-      <div className="w-full ">
+      <div className="w-full flex flex-col">
         <h1 className="text-4xl md:text-6xl font-extrabold uppercase text-center mb-4">the college that Thrives </h1>
-        <div className="grid  grid-cols-2">
+        <div className="grid grid-cols-2">
           <div className=" col-span-2 md:col-span-1">
             <img src={abesit} alt="abesit" /> 
           </div>
@@ -39,19 +39,18 @@ const About = () => {
       <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
         <div>
           <h1 className="text-2xl md:text-4xl font-extrabold uppercase text-center mb-4">Hacknovate 6.0</h1>
-          <p className="text-wrap md:text-justify "> Hacknovate 5.0 will gather brightest programmers, engineers, architects, designers, and business visionaries. Our goal is to create a space where the brightest minds may collaborate to develop the most creative solutions .</p>
+          <p className="break-all md:text-justify"> Hacknovate 5.0 will gather brightest programmers, engineers, architects, designers, and business visionaries. Our goal is to create a space where the brightest minds may collaborate to develop the most creative solutions .</p>
         </div>
         <div className="w-full flex">
               <div className="flex">
-                <p className="text-justify "> The Hybrid Mode of Hacknovate 5.0 will pave the way for passionate youngsters who can't join us in the offline mode. Hacknovate 5.0 aims to bring together the most brilliant programmers, engineers, architects, designers, and business visionaries for another extraordinary event. </p>
+                <p className=" break-all md:text-justify"> The Hybrid Mode of Hacknovate 5.0 will pave the way for passionate youngsters who can't join us in the offline mode. Hacknovate 5.0 aims to bring together the most brilliant programmers, engineers, architects, designers, and business visionaries for another extraordinary event. </p>
               </div>
-          
         </div>
         
         <div className="md:text-justify">
             <div className="">
               <div>
-                <p>
+                <p className=" break-all md:text-justify ">
                 Our primary objective is to foster an environment where the sharpest minds collaborate to conceive the most innovative solutions.
                  </p>
                 <hr className="h-1 bg-black border-none my-4" />
