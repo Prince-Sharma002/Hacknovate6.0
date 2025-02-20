@@ -21,22 +21,27 @@ const Registration = () => {
           this 24-hour hybrid hackathon at ABESIT
         </p>
       </div>
-      <div>
-        <p className="text-justify justify-last w-full h-full  flex justify-center align-center items-center">
-          {" "}
-          Discord and other button{" "}
-        </p>
+      <div className="flex flex-row gap-8 items-center justify-center">
+        <div className="flex flex-col justify-center items-center text-gray-800">
+            <FaDiscord className="text-6xl" />
+            DISCORD
+        </div>
+
+        <div className="flex flex-col justify-center items-center text-gray-800">
+            <SiLinktree className="text-6xl" />
+            LINKTREE
+        </div>
       </div>
       <div className="flex flex-between justify-center align-center items-center">
         <div className="grow">
           <h1 className="text-4xl"> DATE </h1>
           <div className="flex gap-2 text-xs">
-            <h2>mother</h2>
-            <span>lily</span>
+            <h2 className="">5th April</h2>
+            {/* <span>lily</span> */}
           </div>
           <div className="flex gap-2 text-xs">
-            <h2>mother</h2>
-            <span>lily</span>
+            {/* <h2>9:00</h2> */}
+            {/* <span>lily</span> */}
           </div>
         </div>
 
@@ -45,12 +50,12 @@ const Registration = () => {
         <div className="grow">
           <h1 className="text-4xl"> Time </h1>
           <div className="flex gap-2 text-xs">
-            <h2>mother</h2>
-            <span>lily</span>
+            <h2>9:00 PM</h2>
+            {/* <span>lily</span> */}
           </div>
           <div className="flex gap-2 text-xs">
-            <h2>mother</h2>
-            <span>lily</span>
+            {/* <h2>mother</h2>
+            <span>lily</span> */}
           </div>
         </div>
       </div>
