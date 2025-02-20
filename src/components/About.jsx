@@ -55,7 +55,7 @@ const About = () => {
                 Our primary objective is to foster an environment where the sharpest minds collaborate to conceive the most innovative solutions.
                  </p>
                 <hr className="h-1 bg-black border-none my-4" />
-                <h3 className="text-4xl font-extrabold"> ABESIT PRESENTS HACKNOVATE 6.0!! </h3>
+                <h3 className="text-4xl font-extrabold"> ABESIT PRESENTS HACKNOVATE 6.0!!!! </h3>
               </div>
             </div>
         

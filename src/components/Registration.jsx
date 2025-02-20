@@ -1,19 +1,22 @@
 import React from 'react'
+import discord from "../assets/discord.png"
+import { FaDiscord } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 
 const Registration = () => {
   return (
     <div className='grid sm:grid-cols-1 md:grid-cols-4 gap-2'>
 
-        <div>
-            <p className='p-2 px-2 text-4xl bg-black text-white w-full h-full text-center flex justify-center align-center items-center'> Register Now </p>
+        <div >
+            <p className='p-2 px-2 text-4xl bg-black text-amber-400 w-full h-full text-center flex justify-center align-center items-center uppercase rounded-xl '> Register </p>
         </div>
         <div>
-            <p className='text-justify justify-last w-full h-full text-center flex justify-center align-center items-center'> Discord and other button </p>
+            <p className='text-justify justify-last w-full h-full  flex justify-center align-center items-center'> Discord and other button </p>
         </div>
         <div>
-            <p className='text-justify justify-last w-full h-full text-center flex justify-center align-center items-center'> Discord and other button </p>
+            <p className='text-justify justify-last w-full h-full  flex justify-center align-center items-center'> Discord and other button </p>
         </div>
-        <div className='flex flex-between'>
+        <div className='flex flex-between justify-center align-center items-center'>
 
                 <div className='grow'>
                     <h1 className='text-4xl'> DATE </h1>

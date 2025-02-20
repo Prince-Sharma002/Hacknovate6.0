@@ -5,6 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+<<<<<<< HEAD
     <nav className="relative p-4">
       {/* Hamburger Menu Button (Hides When Navbar Opens) */}
       {!isOpen && (
@@ -46,6 +47,46 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+=======
+    <nav className="bg-gray-900 text-white p-4 relative">
+      {/* Hamburger Icon (Visible only on smaller screens) */}
+      <div className="lg:hidden flex justify-end ">
+        <Hamburger toggled={isOpen} toggle={setOpen}  />
+      </div>
+
+      {/* Navigation Links */}
+      <ul
+        className={`absolute top-16 left-0 w-full bg-gray-900 flex flex-col items-center gap-4 transition-all duration-300 ease-in-out p-3 ${
+          isOpen ? "block" : "hidden"
+        } lg:flex lg:relative lg:w-auto lg:bg-transparent`}
+      >
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">
+            About
+          </a>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">
+            Events
+          </a>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">
+            Team
+          </a>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">
+            Mentor
+          </a>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <a href="#" className="hover:text-gray-400">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+>>>>>>> f551e9a6c4ccfbc70f6a7794c4d9e8d21cf5e2d8
     </nav>
   );
 };
