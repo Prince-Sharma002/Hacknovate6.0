@@ -1,11 +1,12 @@
 
   body{
-    background-image: url("./assets/bgi.svg");
+    background-image: url("./assets/darkbg.svg");
     background-size: cover;
     /* background-repeat: no-repeat; */
     padding: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    font-family: serif;
   }
   body {
     padding: 0;
