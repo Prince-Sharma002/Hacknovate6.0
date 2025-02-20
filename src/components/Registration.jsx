@@ -1,4 +1,7 @@
 import React from 'react'
+import discord from "../assets/discord.png"
+import { FaDiscord } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 
 const Registration = () => {
   return (
@@ -13,7 +16,7 @@ const Registration = () => {
         <div>
             <p className='text-justify justify-last w-full h-full  flex justify-center align-center items-center'> Discord and other button </p>
         </div>
-        <div className='flex flex-between'>
+        <div className='flex flex-between justify-center align-center items-center'>
 
                 <div className='grow'>
                     <h1 className='text-4xl'> DATE </h1>
