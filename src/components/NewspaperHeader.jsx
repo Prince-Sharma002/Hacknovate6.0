@@ -1,4 +1,5 @@
 import hacknovate from "../assets/hacknovate.png";
+import logobg from "../assets/logobg.png";
 
 import { useState } from "react";
 import Navbar from "./Navbar";
@@ -17,6 +18,7 @@ const NewspaperHeader = () => {
             className="flex items-center justify-center space-x-6 max-lg:hidden "
           >
             <div className="flex-1  border-y-2 border-slate-800"></div>
+
             <span className="font-serif font-bold hover:text-amber-500 text-xl">
               <a href="">About</a>
             </span>
@@ -45,11 +47,9 @@ const NewspaperHeader = () => {
 
           <div className="flex justify-between max-lg:justify-center items-center mb-0">
             <img
-              src={hacknovate}
+              src={logobg}
               alt=""
-              height={100}
-              width={120}
-              className="relative left-28  max-lg:hidden"
+              className="relative left-28  max-lg:hidden w-[150px] h-[150px]"
             />
             <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide  ">
               <span className="text-prophet-black tracking-wide max-lg:text-4xl">
@@ -63,11 +63,9 @@ const NewspaperHeader = () => {
               </span>
             </h1>
             <img
-              src={hacknovate}
+              src={logobg}
               alt=""
-              height={100}
-              width={120}
-              className="relative right-28 max-lg:hidden"
+              className="relative right-28  max-lg:hidden w-[150px] h-[150px]"
             />
           </div>
 
