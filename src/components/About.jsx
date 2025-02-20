@@ -1,6 +1,7 @@
 
 import abesit from "../assets/newAbes.webp";
 import image from "../assets/image.png";
+import abesitgif from "../assets/abesit hp.gif";
 import "../styles/about.css"
 
 
@@ -17,8 +18,8 @@ const About = () => {
       <div className="w-full flex flex-col">
         <h1 className="text-4xl md:text-6xl font-extrabold uppercase text-center mb-4">IS ABESIT THE HOGWARTS OF CODING?</h1>
         <div className="grid grid-cols-2">
-          <div className=" col-span-2 md:col-span-1">
-            <img src={abesit} alt="abesit" /> 
+          <div className=" col-span-2 md:col-span-1 flex pr-8 w-full">
+            <img  className="flex w-full m-4" src={abesitgif} alt="abesit" /> 
           </div>
           <div className="col-span-2 md:col-span-1 w-full m-0 text-justify justify-last">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">

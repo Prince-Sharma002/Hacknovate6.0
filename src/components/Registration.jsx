@@ -2,6 +2,8 @@ import React from "react";
 import discord from "../assets/discord.png";
 import { FaDiscord } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 const Registration = () => {
   return (
@@ -31,32 +33,24 @@ const Registration = () => {
             <SiLinktree className="text-6xl" />
             LINKTREE
         </div>
-      </div>
-      <div className="flex flex-between justify-center align-center items-center">
-        <div className="grow">
-          <h1 className="text-4xl"> DATE </h1>
-          <div className="flex gap-2 text-xs">
-            <h2 className="">5th April</h2>
-            {/* <span>lily</span> */}
-          </div>
-          <div className="flex gap-2 text-xs">
-            {/* <h2>9:00</h2> */}
-            {/* <span>lily</span> */}
-          </div>
+        <div className="flex flex-col justify-center items-center text-gray-800">
+            <FaLinkedin className="text-6xl" />
+            LINKEDIN
         </div>
-
-        <span className="text-8xl grow">&</span>
-
-        <div className="grow">
+        <div className="flex flex-col justify-center items-center text-gray-800">
+            <FaSquareInstagram className="text-6xl" />
+            INSTGRAM
+        </div>
+      </div>
+      <div className="flex align-center items-center px-8">
+        <div className="grow text-center">
+          <h1 className="text-4xl"> DATE </h1>
+          <h2 className="">5th April</h2>
+        </div>
+        <span className="text-8xl grow text-center">&</span>
+        <div className="grow text-center">
           <h1 className="text-4xl"> Time </h1>
-          <div className="flex gap-2 text-xs">
-            <h2>9:00 PM</h2>
-            {/* <span>lily</span> */}
-          </div>
-          <div className="flex gap-2 text-xs">
-            {/* <h2>mother</h2>
-            <span>lily</span> */}
-          </div>
+          <h2>9:00 PM</h2>
         </div>
       </div>
     </div>
