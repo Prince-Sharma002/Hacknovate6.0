@@ -1,8 +1,10 @@
 import hacknovate from "../assets/hacknovate.png";
 import logobg from "../assets/logobg.png";
+import redCircle from "../assets/redCircle.png"; 
 
 import { useState } from "react";
 import Navbar from "./Navbar";
+
 const NewspaperHeader = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -15,47 +17,57 @@ const NewspaperHeader = () => {
         >
           <div
             id="navbar"
-            className="flex items-center justify-center space-x-6 max-lg:hidden "
+            className="flex items-center justify-between space-x-6 max-lg:hidden"
           >
-            <div className="flex-1  border-y-2 border-slate-800"></div>
+            {/* Left Line */}
+            <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
 
-            <span className="font-serif font-bold hover:text-amber-500 text-xl">
+            {/* Menu Items */}
+            <span className="font-bold font-inter hover:text-amber-500 text-[18px]">
               <a href="">About</a>
             </span>
-            <span className="font-serif font-bold hover:text-amber-500 text-xl">
+            <span className="font-bold font-inter hover:text-amber-500 text-[18px]">
               <a href="">Events</a>
             </span>
-            <span className="font-serif font-bold hover:text-amber-500 text-xl">
+            <span className="font-bold font-inter hover:text-amber-500 text-[18px]">
               <a href="">Team</a>
             </span>
-            <span className="font-serif font-bold hover:text-amber-500 text-xl">
+            <span className="font-bold font-inter hover:text-amber-500 text-[18px]">
               <a href="">Mentor</a>
             </span>
-            <span className="font-serif font-bold hover:text-amber-500 text-xl">
-              <a href="">Contact Us</a>
+            <span className="relative font-bold font-inter hover:text-amber-500 text-[18px]">
+              <div className="relative w-[127px] h-auto">
+                <img
+                  src={redCircle}
+                  alt="Red Circle"
+                  className="absolute -top-4 w-full h-auto pointer-events-none"
+                />
+              </div>
+              <a href="">Sponsor Us</a>
             </span>
 
-            <div className="flex-1 h-px bg-prophet-black border-y-2 border-slate-800"></div>
-            <button className="border-2 text-center rounded-full font-bold font-serif p-1 ">
-              {" "}
-              Sponsor US{" "}
-            </button>
+
+            
+            <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
           </div>
+
+          
           <div className="m-0 max-lg:flex max-lg:justify-end hidden">
             <Navbar />
           </div>
 
+         
           <div className="flex justify-between max-lg:justify-center items-center mb-0">
             <img
               src={logobg}
               alt=""
-              className="relative left-28  max-lg:hidden w-[150px] h-[150px]"
+              className="relative left-28 max-lg:hidden w-[150px] h-[150px]"
             />
-            <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide  ">
+            <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide">
               <span className="text-prophet-black tracking-wide max-lg:text-4xl">
                 ABESIT{" "}
               </span>
-              <span className="text-prophet-gold text-amber-400 tracking-wide max-lg:text-4xl ">
+              <span className="text-prophet-gold text-amber-400 tracking-wide max-lg:text-4xl">
                 T
               </span>
               <span className="text-prophet-black tracking-wide max-lg:text-4xl">
@@ -65,20 +77,22 @@ const NewspaperHeader = () => {
             <img
               src={logobg}
               alt=""
-              className="relative right-28  max-lg:hidden w-[150px] h-[150px]"
+              className="relative right-28 max-lg:hidden w-[150px] h-[150px]"
             />
           </div>
 
-          <div className="flex items-center justify-center space-x-4 mt-0">
-            <span className=" text-2xl mb-1 pb-6 max-lg:text-xs">★</span>
-            <p className="font-crimson text-xl font-serif uppercase tracking-widest pb-6 md:text-base text-center mb-1 max-lg:text-xs ">
+          <div className="flex items-center justify-center gap-x-4">
+            <span className="font-inter text-2xl max-lg:text-xs">★</span>
+            <p className="font-inter text-xl font-bold uppercase tracking-widest md:text-base text-center max-lg:text-xs">
               Presents their FLAGSHIP EVENT
             </p>
-            <span className=" text-2xl mb-1 pb-6 max-lg:text-xs">★</span>
+            <span className="font-inter text-2xl max-lg:text-xs">★</span>
           </div>
+
         </div>
       </div>
     </header>
   );
 };
+
 export default NewspaperHeader;
