@@ -101,10 +101,10 @@ const Prizes = () => {
               <div className="float-left mt-3 mr-2 mb-1">
                 <div className="text-[146px] text-center font-extrabold font-serif relative">
                   <span className="relative top-8 left-16 z-10 text-black">
-                    N
+                    G
                   </span>
                   <span className="absolute top-7 left-[58px] text-yellow-500 z-0">
-                    N
+                    G
                   </span>
                 </div>
               </div>
@@ -153,39 +153,32 @@ const Prizes = () => {
             <span> TOTAL ONLINE PRIZE: 15,000</span>
           </div>
 
-          <div className="flex items-start">
-            {/* "C" Graphic */}
-            <div className="text-[120px] font-bold mr-4 relative float-left">
-              <span className="text-black z-10 relative">C</span>
+          <div className="relative">
+            {/* "C" Graphic with Float */}
+            <div className="text-[120px] font-bold leading-[90px] float-left mr-3 relative">
+              <span className="text-black relative z-10">C</span>
               <span className="text-yellow-500 absolute top-1 left-1 z-0">
                 C
               </span>
             </div>
 
-            {/* Text Content */}
-            <div className="text-gray-800 overflow-hidden">
-              {" "}
-              {/* Added overflow-hidden */}
-              <p className="mb-2 text-justify">
-                {" "}
-                {/* Added text-justify */}
-                Valiant wizards-in-the-making shall not go unnoticed! Hacknovate
-                6.0 recognizes and celebrates emerging talent with two special
-                honors. The Best Beginner, proving their potential in the
-                wizarding world of tech, and the Best Girls' Team, showcasing
-                brilliance and resilience, shall each be rewarded with 5,000
-                Galleons for their exceptional skill and perseverance. This is
-                more than just a prize—it's a mark of true potential and future
-                greatness. Magic favors the bold, and those who dare to step
-                into the arena shall leave with more than just Galleons—they
-                shall earn glory, recognition, and the spark to ignite even
-                greater feats.
-              </p>
-             
-            </div>
+            {/* Wrapping Text */}
+            <p className="text-gray-800 text-justify font-serif overflow-hidden">
+              elebrating talent, recognizing potential, and rewarding
+              excellence. Valiant wizards-in-the-making shall not go unnoticed!
+              Hacknovate 6.0 recognizes and celebrates emerging talent with two
+              special honors. The Best Beginner, proving their potential in the
+              wizarding world of tech, and the Best Girls' Team, showcasing
+              brilliance and resilience, shall each be rewarded with 5,000
+              Galleons for their exceptional skill and perseverance. This is
+              more than just a prize—it's a mark of true potential and future
+              greatness. Magic favors the bold, and those who dare to step into
+              the arena shall leave with more than just Galleons— they shall
+              earn glory, recognition, and the spark to ignite even greater
+              feats.
+            </p>
           </div>
         </div>
-        <div></div>
       </div>
     </div>
   );
