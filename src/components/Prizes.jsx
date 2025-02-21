@@ -2,10 +2,11 @@ import offline_prize_Bg1 from "../assets/offline_prize_Bg1.png";
 import offline_prize_Bg2 from "../assets/offline_prize_Bg2.png";
 import offline_prize_Bgcover1 from "../assets/offline_prize_Bgcover1.png";
 import offline_prize_Bgcover2 from "../assets/offline_prize_Bgcover2.png";
+import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
-    <div className="border-4 border-slate-800 w-full mb-8 p-4 pt-0">
+    <div className="border-4 border-slate-800 w-full mb-8  p-4 pt-0">
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center">
         <h1 className="text-5xl text-center font-bold font-serif">
@@ -45,6 +46,51 @@ const Prizes = () => {
               />
             </div>
           </div>
+          <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-4  text-center">
+            <FaAsterisk className="w-4 h-4" />
+            <span> TOTAL OFFLINE PRIZE: 40,000</span>
+          </div>
+          <div className="flex  items-start mt-6">
+            {/* Vertical Text "capabilities" */}
+            <div className="flex flex-col justify-center items-center mr-4 mt-6 text-sm">
+              <span className="text-white text-lg font-serif tracking-widest rotate-180 [writing-mode:vertical-rl]">
+                capabilities
+              </span>
+            </div>
+
+            {/* Large Styled "I" */}
+            <div className="relative text-[146px] font-extrabold font-serif leading-none">
+              <span className="relative left-1 z-10 text-black">I</span>
+              <span className="absolute top-1 left-2 text-yellow-500 z-0">
+                I
+              </span>
+            </div>
+
+            {/* Text Content */}
+            <p className="ml-6 text-gray-800 text-lg">
+              ver the shadows of the Forbidden Forest, only the most brilliant
+              digital sorcerers shall emerge victorious! The champion of the
+              online realm shall claim a treasure of <strong>10,000</strong>{" "}
+              Galleons, while the runner-up, proving their magical prowess,
+              shall be rewarded with <strong>7,000</strong> Galleons. The
+              virtual battleground is set—will you rise as a legend?
+            </p>
+          </div>
+          <div>
+            <div className="border-b-4 border-black mt-4">
+              <h1 className="text-center text-6xl font-bold">
+                Consolation Prizes
+              </h1>
+            </div>
+            <div className="flex gap-2">
+              <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+              <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+            </div>
+            <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
+              <FaAsterisk className="w-4 h-4" />
+              <span> TOTAL CONSOLATION PRIZE: 17,000</span>
+            </div>
+          </div>
         </div>
 
         <div className="  rounded-lg">
@@ -62,7 +108,7 @@ const Prizes = () => {
                   </span>
                 </div>
               </div>
-              <p className="text-justify tracking-[-0.07em ] mt-6">
+              <p className="text-justify tracking-[-0.07em ] mt-6 break-all">
                 <br /> <br /> <br /> <br /> oble and most brilliant tech-wizards
                 who dare to compete in the enchanted halls of Hacknovate 6.0
                 shall lay their hands on the ultimate treasures!
@@ -71,7 +117,7 @@ const Prizes = () => {
 
             {/* Second Column */}
             <div>
-              <p className="text-justify tracking-[-0.07em ] ">
+              <p className="text-justify tracking-[-0.07em ]  break-all">
                 The Forbidden Forest to the Great Hall (Offline), the champions
                 claim their legendary grand prize of{" "}
                 <span className="font-bold">31,000</span> Galleons. The valiant
@@ -85,7 +131,7 @@ const Prizes = () => {
 
             {/* Third Column */}
             <div>
-              <p className="text-justify tracking-[-0.07em ]">
+              <p className="text-justify tracking-[-0.07em ] break-all">
                 But beware, for this journey is not for the faint-hearted!
                 Participants must wield their coding wands with precision,
                 conjure spells of logic, and battle through a maze of challenges
@@ -95,7 +141,51 @@ const Prizes = () => {
               </p>
             </div>
           </div>
+          <div className="border-b-8 border-black ">
+            <h1 className="text-6xl font-bold text-center">Online Prizes</h1>
+          </div>
+          <div className="flex gap-2">
+            <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+            <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+          </div>
+          <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
+            <FaAsterisk className="w-4 h-4" />
+            <span> TOTAL ONLINE PRIZE: 15,000</span>
+          </div>
+
+          <div className="flex items-start">
+            {/* "C" Graphic */}
+            <div className="text-[120px] font-bold mr-4 relative float-left">
+              <span className="text-black z-10 relative">C</span>
+              <span className="text-yellow-500 absolute top-1 left-1 z-0">
+                C
+              </span>
+            </div>
+
+            {/* Text Content */}
+            <div className="text-gray-800 overflow-hidden">
+              {" "}
+              {/* Added overflow-hidden */}
+              <p className="mb-2 text-justify">
+                {" "}
+                {/* Added text-justify */}
+                Valiant wizards-in-the-making shall not go unnoticed! Hacknovate
+                6.0 recognizes and celebrates emerging talent with two special
+                honors. The Best Beginner, proving their potential in the
+                wizarding world of tech, and the Best Girls' Team, showcasing
+                brilliance and resilience, shall each be rewarded with 5,000
+                Galleons for their exceptional skill and perseverance. This is
+                more than just a prize—it's a mark of true potential and future
+                greatness. Magic favors the bold, and those who dare to step
+                into the arena shall leave with more than just Galleons—they
+                shall earn glory, recognition, and the spark to ignite even
+                greater feats.
+              </p>
+             
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
