@@ -14,6 +14,7 @@ const Timer = ({ targetDate }) => {
     }
     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
   };
+  
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
