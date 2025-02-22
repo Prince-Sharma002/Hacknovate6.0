@@ -52,8 +52,9 @@ export default {
 		  },
 		},
 		fontFamily: {
-		  inter: ["Inter", "sans-serif"], // Keep Inter, but don't apply it globally
-		  sans: ["ui-sans-serif", "system-ui"], // Set a default sans-serif font
+		  inter: ["Inter", "sans-serif"], 
+		  montserrat: ["Montserrat", "sans-serif"],
+		  sans: ["ui-sans-serif", "system-ui"], 
 		},
 	  },
 	},

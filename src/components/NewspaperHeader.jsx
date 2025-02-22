@@ -56,12 +56,12 @@ const NewspaperHeader = () => {
             <Navbar />
           </div>
 
-         
+
           <div className="flex justify-between max-lg:justify-center items-center mb-0">
             <img
               src={logobg}
               alt=""
-              className="relative left-28 max-lg:hidden w-[150px] h-[150px]"
+              className="relative left-1 max-lg:hidden w-[150px] h-[150px]"
             />
             <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide">
               <span className="text-prophet-black tracking-wide max-lg:text-4xl">
@@ -74,21 +74,34 @@ const NewspaperHeader = () => {
                 IMES
               </span>
             </h1>
-            <img
+            {/* <img
               src={logobg}
               alt=""
               className="relative right-28 max-lg:hidden w-[150px] h-[150px]"
-            />
+            /> */}
+         <div className="flex flex-col items-center text-center">
+          <span className="font-montserrat text-[#D1D5DB] font-extrabold text-[60px] [text-shadow:3px_3px_6px_rgba(0,0,0,0.9)]">
+            ABESIT
+          </span>
+          <div className="relative flex items-center justify-center mt-[-10px]">
+            <div className="w-5 h-[2px] bg-[#D1D5DB] [text-shadow:2px_2px_4px_rgba(0,0,0,0.9)]"></div>
+            <span className="mx-2 font-montserrat text-[#D1D5DB] font-bold text-[13px] uppercase [text-shadow:2px_2px_4px_rgba(0,0,0,0.9)]">
+              Group of Institutions
+            </span>
+            <div className="w-5 h-[2px] bg-[#D1D5DB] [text-shadow:2px_2px_4px_rgba(0,0,0,0.9)]"></div>
           </div>
+        </div>
 
+
+              
+          </div>
           <div className="flex items-center justify-center gap-x-4">
-            <span className="font-inter text-2xl max-lg:text-xs">★</span>
-            <p className="font-inter text-xl font-bold uppercase tracking-widest md:text-base text-center max-lg:text-xs">
-              Presents their FLAGSHIP EVENT
-            </p>
-            <span className="font-inter text-2xl max-lg:text-xs">★</span>
-          </div>
-
+          <span className="font-inter text-2xl max-lg:text-xs">★</span>
+          <p className="font-inter text-xl font-bold uppercase tracking-widest md:text-base text-center max-lg:text-xs">
+            Presents their FLAGSHIP EVENT
+          </p>
+          <span className="font-inter text-2xl max-lg:text-xs">★</span>
+        </div>
         </div>
       </div>
     </header>
@@ -96,3 +109,6 @@ const NewspaperHeader = () => {
 };
 
 export default NewspaperHeader;
+
+
+
