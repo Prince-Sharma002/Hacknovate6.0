@@ -16,7 +16,7 @@ function App() {
       <Spnosor />
       <Registration />
       <About />
-      <Prizes />
+      <Prizes/>
       <Theme />
     </>
   );
