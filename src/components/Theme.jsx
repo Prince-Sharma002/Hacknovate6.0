@@ -58,7 +58,7 @@ const Theme = () => {
         {/* Hero Section */}
         <div className="w-full px-4 py-12">
           <div className="max-w-6xl mx-auto flex justify-center text-center">
-            <h1 className="themetitle text-2xl md:text-5xl font-bold mb-6 text-center border-b-8 border-black inline-block">
+            <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center border-b-8 border-black inline-block">
               Hacknovate 6.0: Unveils Its Magical Theme!
             </h1>
           </div>
@@ -99,7 +99,7 @@ const Theme = () => {
                 
                 <div className={`theme-text-dev flex-1 ${section.isRight ? 'text-left' : 'text-right'}`}>
                   <h2 className="text-[3rem] tracking-wide p-0 font-bold mb-4 text-yellow-500 font-sans inline-block border-b-4 border-gray-300">
-                    {section.title}
+                    <div className='text-yel'> {section.title} </div>
                   </h2>
                   <p className="text-gray-300 leading-relaxed tracking-wide">
                     {section.description}
@@ -131,21 +131,33 @@ const Theme = () => {
               </div>
             </div>
             
+            
             <div className="md:hidden relative h-48">
+              {/* Wrapper div for grayscale background */}
               <div 
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ 
                   backgroundImage: `url(${section.image})`,
-                  filter: "grayscale(100%)"
+                  filter: "grayscale(100%)" // Apply grayscale ONLY to background
                 }}
+              ></div>
+
+              {/* Overlay and text container */}
+              <div className="absolute inset-0 flex items-center justify-center" 
+                style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
               >
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <h2 className="text-2xl font-bold text-yellow-500 text-center px-4">
-                    {section.title}
-                  </h2>
-                </div>
+                <h2 className="text-2xl font-bold text-center px-4">
+                  <div className="text-yellow-500"
+                   style={{ textShadow: "2px 2px 4px rgb(0, 0, 0)" }}
+                  > 
+                    {section.title} 
+                  </div>
+                </h2>
               </div>
             </div>
+
+
+
           </section>
         ))}
       </div>

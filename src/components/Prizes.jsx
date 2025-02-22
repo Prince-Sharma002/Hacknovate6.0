@@ -6,10 +6,10 @@ import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
-    <div className="border-4 border-slate-800 w-full   p-4 pt-0">
+    <div className="border-4 border-slate-800 w-full p-4 pt-0">
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center">
-        <h1 className="text-5xl text-center font-bold font-serif">
+        <h1 className="text-xl md:text-5xl text-center font-bold font-serif">
           Goblet of Rewards: HACKNOVATE 6.0 PRIZES
         </h1>
       </div>
