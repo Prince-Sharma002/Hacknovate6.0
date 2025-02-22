@@ -97,6 +97,7 @@ const Theme = () => {
         </div>
         </section>
 
+      {/* CYBERSECURITY */}
         <section style={{borderRight:"30px"}} className="pr-16 w-full bg-black mb-4 border border-black rounded-l-full  rounded-t-full flex justify-between">
         <div className="mx-auto flex flex-col md:flex-row">
           {/* Pentagon Logo */}
@@ -121,25 +122,26 @@ const Theme = () => {
             {/* Text Content */}
             <div className="theme-text-dev flex-1 text-right">
             <h2 className="text-[3rem] tracking-wide p-0 font-bold mb-4 text-yellow-500 font-sans inline-block border-b-4 border-gray-300">
-                WEB3 AND BLOCKCHAIN
+                CYBERSECURITY
             </h2>
             <p className=" text-gray-300 leading-relaxed tracking-wide">
-                Step into a world where Blockchain is the Elder Wand, empowering users to own their data and reshape digital realms. At Hacknovate 6.0, visionary wizards and tech sorcerers will unite to craft decentralized spells—disrupting industries, revolutionizing systems, and forging the future with groundbreaking innovations.
-            </p>
+            Just like Hogwarts’ Room of Requirement, Open Innovation is a space where limitless possibilities come to life! Whether it’s health, sustainability, education, or automation, this track invites wizards of all fields to conjure up game-changing solutions, breaking conventional barriers and bringing innovation to the forefront of magic and technology.            </p>
             </div>
         </div>
         </section>
 
+      {/* AI/ Machine Learning */}
         <section style={{borderRight:"30px"}} className=" pl-8 w-full bg-black mb-4 border border-black rounded-r-full  rounded-t-full flex justify-between">
         <div className="mx-auto flex flex-col md:flex-row ">
           
                       {/* Text Content */}
           <div className="theme-text-dev flex-1 text-left">
             <h2 className="text-[3rem] tracking-wide p-0 font-bold mb-4 text-yellow-500 font-sans inline-block border-b-4 border-gray-300">
-            OPEN INNOVATION
+            AI/ Machine Learning
             </h2>
             <p className="text-gray-300 leading-relaxed tracking-wide">
-            Just like Hogwarts’ Room of Requirement, Open Innovation is a space where limitless possibilities come to life! Whether it’s health, sustainability, education, or automation, this track invites wizards of all fields to conjure up game-changing solutions, breaking conventional barriers and bringing innovation to the forefront of magic and technology.            </p>
+            Enter the Forbidden Section of knowledge, where Artificial Intelligence and Machine Learning wield the power to transform industries. From predictive magic to self-learning enchantments, this track is for those who dare to create intelligent, self-evolving spells—reshaping the future of automation, analytics, and decision-making!
+            </p>
             </div>
           
           {/* Pentagon Logo */}
@@ -163,6 +165,7 @@ const Theme = () => {
         </div>
         </section>
 
+      {/* HEALTHCARE AND WELLNESS */}
         <section style={{borderRight:"30px"}} className="pr-16 w-full bg-black mb-4 border border-black rounded-l-full  rounded-t-full flex justify-between">
         <div className="mx-auto flex flex-col md:flex-row">
           {/* Pentagon Logo */}
@@ -187,25 +190,25 @@ const Theme = () => {
             {/* Text Content */}
             <div className="theme-text-dev flex-1 text-right">
             <h2 className="text-[3rem] tracking-wide p-0 font-bold mb-4 text-yellow-500 font-sans inline-block border-b-4 border-gray-300">
-                WEB3 AND BLOCKCHAIN
+            HEALTHCARE AND WELLNESS
             </h2>
             <p className=" text-gray-300 leading-relaxed tracking-wide">
-                Step into a world where Blockchain is the Elder Wand, empowering users to own their data and reshape digital realms. At Hacknovate 6.0, visionary wizards and tech sorcerers will unite to craft decentralized spells—disrupting industries, revolutionizing systems, and forging the future with groundbreaking innovations.
-            </p>
+            Join us in promoting healthcare innovation and wellness! Gain brand visibility, network with industry leaders, and showcase cutting-edge solutions. Sponsorship benefits include speaking opportunities, exhibition space, branding, and community engagement. Partner with us to make a lasting impact on healthcare.            </p>
             </div>
         </div>
         </section>
 
+        {/* AR / VR */}
         <section style={{borderRight:"30px"}} className=" pl-8 w-full bg-black mb-4 border border-black rounded-r-full  rounded-t-full flex justify-between">
         <div className="mx-auto flex flex-col md:flex-row ">
           
                       {/* Text Content */}
           <div className="theme-text-dev flex-1 text-left">
             <h2 className="text-[3rem] tracking-wide p-0 font-bold mb-4 text-yellow-500 font-sans inline-block border-b-4 border-gray-300">
-            OPEN INNOVATION
+            AR / VR
             </h2>
             <p className="text-gray-300 leading-relaxed tracking-wide">
-            Just like Hogwarts’ Room of Requirement, Open Innovation is a space where limitless possibilities come to life! Whether it’s health, sustainability, education, or automation, this track invites wizards of all fields to conjure up game-changing solutions, breaking conventional barriers and bringing innovation to the forefront of magic and technology.            </p>
+            Why just read about the Wizarding World when you can step right into it? With Augmented and Virtual Reality, create immersive experiences that blur the lines between fantasy and reality. From holographic spellcasting to interactive magical realms, let your imagination soar beyond the limits of the ordinary world!            </p>
             </div>
           
           {/* Pentagon Logo */}
