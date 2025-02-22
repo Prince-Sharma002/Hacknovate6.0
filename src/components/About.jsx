@@ -1,3 +1,6 @@
+
+import abesit from "../assets/newAbes.webp";
+import image from "../assets/image.png";
 import abesitgif from "../assets/abesit hp.gif";
 import A from "../assets/A.svg";
 import M from "../assets/M.svg";
@@ -53,7 +56,9 @@ const About = () => {
             </div>
           </div>
         </div>
+
       </div>
+     
 
       <div className="w-full grid grid-cols-2 md:grid-cols-2 gap-4 mt-4">
         <div className="grid grid-cols-3">
@@ -87,57 +92,12 @@ const About = () => {
 
           </div>
 
-          {/* Column 2: Description */}
-          <div className="flex flex-col w-full">
-            <p className="text-gray-900 text-justify font-serif text-lg leading-5">
-              Within these grand halls, <br />
-              students transform into <br />
-              digital wizards. Here, <br />
-              logic is the ultimate <br />
-              spell, creativity the <br />
-              strongest potion, <br />
-              and knowledge the true <br />
-              source of power. So grab <br />
-              your wand (keyboard) <br />
-              and step into this realm of <br />
-              endless possibilities, <br />
-              where the magic <br />
-              of technology thrives, <br />
-            </p>
-          </div>
-
-          {/* Column 3: Innovation & Teamwork */}
-          <div className="flex flex-col w-full">
-            <p className="text-gray-900 text-justify font-serif text-lg leading-5">
-              Through sheer <br />
-              determination, teamwork, <br />
-              and an unbreakable spirit, <br />
-              these coding wizards will <br />
-              turn impossible problems <br />
-              into extraordinary solutions.
-            </p>
-
-            <h2 className="text-4xl mt-2  border-t-4 border-black font-bold font-serif  leading-tight">
-              Magic, <br />
-              Code and <br />
-              Achieve!!!!
-            </h2>
-          </div>
-        </div>
-
-        {/* Fourth Column Alone (50% width) */}
-        <div className="w-full flex flex-col">
-          <div className="text-red-700 font-bold text-lg text-center">
-            Echoes of Hacknovate 5.0 – Reliving the Magic!
-          </div>
-          <div className="w-full h-48 bg-gray-100 border border-gray-300"></div>
-          <div className="bg-black text-yellow-500 text-center font-bold p-2 mt-3 text-">
-            HACKNOVATE: THE FLAGSHIP EVENT OF ABESIT GHAZIABAD
-          </div>
-        </div>
       </div>
-  
+
+      
+    </div>
   );
 };
 
 export default About;
+
