@@ -23,7 +23,7 @@ const About = () => {
         <div className="grid grid-cols-2">
           <div className=" col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full">
             <img  className="flex w-full h-full m-4" src={abesitgif} alt="abesit" /> 
-            <p className="text-yellow-500 bg-black text-xl px-1"> ABESIT Campus Road, NE 3, near Crossing Republik, Ghaziabad, Uttar Pradesh 201009 </p>
+            <p className="text-yellow-500 bg-black text w-full px-1"> ABESIT Campus Road, NE 3, near Crossing Republik, Ghaziabad, Uttar Pradesh 201009 </p>
           </div>
           <div className="col-span-2 md:col-span-1 w-full h-full m-0 text-justify justify-last md:pl-12  ">
             <div className="grid grid-row-2 h-full">
@@ -41,7 +41,7 @@ const About = () => {
                 <hr className="h-2 bg-black border-none my-4" />
                 
                 <div>
-                  <h1 className="text-center text-7xl tracking-wide font-bold ">Potter’s Sequel</h1>
+                  <h1 className="text-center text-7xl tracking-wide font-bold mb-2">Potter’s Sequel</h1>
                   <div className="grid grid-cols-2 gap-8">
                       <div>
                         <p className="text-lg text-gray-800">The wizarding world had its legendary battles, but the magic of Hacknovate 6.0 is just beginning! As Harry once stepped into Hogwarts to master spells, now coders step into ABESIT to master the art of innovation.</p>
@@ -84,9 +84,9 @@ const About = () => {
         </div>
         
         
-          <div className="col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full gap-2">
+          <div className="pl-4 col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full gap-2">
             <img className="w-full" src={image} alt="abesit" /> 
-            <p className="text-yellow-500 bg-black text-xl px-1"> 
+            <p className="text-yellow-500 bg-black text w-full px-1"> 
             HACKNOVATE: THE FLAGSHIP EVENT OF ABESIT GHAZIABAD
             </p>
 
