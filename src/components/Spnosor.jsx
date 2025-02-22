@@ -7,11 +7,9 @@ const Sponsor = () => {
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-2">
       <div className="bg-gray-300 w-full"></div>
-      <div className="flex justify-center items-center text-center">
+      <div className="flex justify-center items-center text-left">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius, atque tenetur
-          tempore iste numquam error, nemo eveniet, eos quis eligendi illum molestiae consequatur
-          fuga dignissimos architecto ducimus nostrum assumenda?
+        Hacknovate, the flagship 24-hour hybrid hackathon of ABESIT, returns in 2025 with its 6th edition, themed around Harry Potter. Get ready to hack the world.
         </p>
       </div>
       <div className="flex justify-center items-center">

@@ -6,6 +6,7 @@ import Registration from "./components/Registration.jsx";
 import NewspaperHeader from "./components/NewspaperHeader";
 import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
+import Theme from "./components/Theme.jsx";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Spnosor />
       <Registration />
       <About />
-   
+      <Theme />
     </>
   );
 }

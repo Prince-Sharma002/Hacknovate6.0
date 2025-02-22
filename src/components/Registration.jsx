@@ -10,7 +10,7 @@ const Registration = () => {
     <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-2 p-4">
       <div className="relative bg-black p-2 rounded-xl shadow-lg">
         <div className="border-2 border-amber-500 rounded-xl p-4 flex justify-center items-center">
-          <p className="text-5xl text-amber-500 font-bold tracking-wide uppercase">
+          <p className="text-5xl text-yellow-500 font-bold tracking-wide uppercase">
             REGISTER
           </p>
         </div>

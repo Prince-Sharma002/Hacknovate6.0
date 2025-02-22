@@ -67,7 +67,7 @@ const NewspaperHeader = () => {
               <span className="text-prophet-black tracking-wide max-lg:text-4xl">
                 ABESIT{" "}
               </span>
-              <span className="text-prophet-gold text-amber-400 tracking-wide max-lg:text-4xl">
+              <span className="text-prophet-gold text-yellow-500  tracking-wide max-lg:text-4xl">
                 T
               </span>
               <span className="text-prophet-black tracking-wide max-lg:text-4xl">
