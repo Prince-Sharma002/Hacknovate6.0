@@ -6,6 +6,7 @@ import Registration from "./components/Registration.jsx";
 import NewspaperHeader from "./components/NewspaperHeader";
 import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
+import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
 // import CursorEffect from "./components/magicui/cursorEffect.jsx"
 

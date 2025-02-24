@@ -2,6 +2,7 @@
 import { cn } from "../../lib/utils.js";
 import { AnimatePresence, motion } from "motion/react";
 
+
 const staggerTimings = {
   text: 0.06,
   word: 0.05,

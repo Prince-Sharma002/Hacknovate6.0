@@ -1,0 +1,27 @@
+.themetitle{
+    color: #1F1F1F;
+    font-family: "Times New Roman";
+    font-size: 3.438rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.theme-text-dev{
+    width: 1020px;
+    height: 10rem;
+    aspect-ratio: 510/107;
+    border-right: 30px;
+}
+
+.theme-text{
+    font-family: "Times New Roman";
+    font-size: 22px;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+    .themetitle {
+        font-size: 1.5rem;
+    }
+}
