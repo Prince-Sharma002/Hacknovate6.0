@@ -8,6 +8,7 @@ import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
+import Chatbot from "./components/Chatbot.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Prizes/>
       <Theme />
+      <Chatbot />
     </>
   );
 }

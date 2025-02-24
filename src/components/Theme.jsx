@@ -5,11 +5,14 @@ import bio from "../assets/person/bio.png";
 import mac from "../assets/person/mac.gif";
 import hag from "../assets/person/hag.gif";
 import dum from "../assets/person/dum.gif";
+
 import sybill from "../assets/person/sybill.gif";
 import McGonagall from "../assets/person/McGonagall.gif";
 import dumbelldor from "../assets/person/dumbelldor.gif";
 import Snape from "../assets/person/Snape.gif";
 import Hagrid from "../assets/person/Hagrid.gif";
+import nurse from "../assets/person/nurse.gif";
+
 import "../styles/theme.css";
 
 const Theme = () => {
@@ -29,7 +32,7 @@ const Theme = () => {
     {
       title: "CYBERSECURITY",
       description: "Just like Hogwarts' Room of Requirement, Open Innovation is a space where limitless possibilities come to life! Whether it's health, sustainability, education, or automation, this track invites wizards of all fields to conjure up game-changing solutions, breaking conventional barriers and bringing innovation to the forefront of magic and technology.",
-      image: sybill,
+      image: Hagrid,
       isRight: false
     },
     {
@@ -41,13 +44,13 @@ const Theme = () => {
     {
       title: "HEALTHCARE AND WELLNESS",
       description: "Join us in promoting healthcare innovation and wellness! Gain brand visibility, network with industry leaders, and showcase cutting-edge solutions. Sponsorship benefits include speaking opportunities, exhibition space, branding, and community engagement. Partner with us to make a lasting impact on healthcare.",
-      image: mac,
+      image: nurse,
       isRight: false
     },
     {
       title: "AR / VR",
       description: "Why just read about the Wizarding World when you can step right into it? With Augmented and Virtual Reality, create immersive experiences that blur the lines between fantasy and reality. From holographic spellcasting to interactive magical realms, let your imagination soar beyond the limits of the ordinary world!",
-      image: dum,
+      image: sybill,
       isRight: true
     }
   ];

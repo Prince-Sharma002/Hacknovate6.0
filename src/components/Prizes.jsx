@@ -9,16 +9,16 @@ const Prizes = () => {
     <div className="border-4 border-slate-800 w-full p-4 pt-0">
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center">
-        <h1 className="text-xl md:text-5xl text-center font-bold font-serif">
+        <h1 className="text-3xl pt-12 md:pt-2 md:text-5xl text-center font-bold font-serif">
           Goblet of Rewards: HACKNOVATE 6.0 PRIZES
         </h1>
       </div>
 
       {/* Prize Sections Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid  md:grid-cols-2 gap-6">
         {/* Offline Prizes */}
         <div>
-          <h1 className="font-extrabold font-serif text-4xl border-b-2 text-center pb-2">
+          <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-xl text-left md:text-4xl border-b-2 md:text-center pb-2">
             Offline Prizes
           </h1>
           <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4">
@@ -52,14 +52,14 @@ const Prizes = () => {
           </div>
           <div className="flex  items-start mt-6">
             {/* Vertical Text "capabilities" */}
-            <div className="flex flex-col justify-center items-center mr-4 mt-6 text-sm">
+            {/* <div className="flex flex-col justify-center items-center mr-4 mt-6 text-sm">
               <span className="text-white text-lg font-serif tracking-widest rotate-180 [writing-mode:vertical-rl]">
                 capabilities
               </span>
-            </div>
+            </div> */}
 
             {/* Large Styled "I" */}
-            <div className="relative text-[146px] font-extrabold font-serif leading-none">
+            <div className="relative text-[146px] font-extrabold font-serif leading-none hidden md:inline">
               <span className="relative left-1 z-10 text-black">I</span>
               <span className="absolute top-1 left-2 text-yellow-500 z-0">
                 I
@@ -67,7 +67,7 @@ const Prizes = () => {
             </div>
 
             {/* Text Content */}
-            <p className="ml-6 text-gray-800 text-lg">
+            <p className="ml-6 text-gray-800 text-lg hidden md:inline">
               ver the shadows of the Forbidden Forest, only the most brilliant
               digital sorcerers shall emerge victorious! The champion of the
               online realm shall claim a treasure of <strong>10,000</strong>{" "}
@@ -95,10 +95,10 @@ const Prizes = () => {
 
         <div className="  rounded-lg">
           {/* Three column newspaper layout */}
-          <div className="grid grid-cols-3 gap-6 text-gray-800 text-lg font-serif">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800 text-lg font-serif">
             {/* First Column with Drop Cap */}
             <div>
-              <div className="float-left mt-3 mr-2 mb-1">
+              <div className="float-left mt-3 mr-2 mb-1 hidden md:inline">
                 <div className="text-[146px] text-center font-extrabold font-serif relative">
                   <span className="relative top-8 left-16 z-10 text-black">
                     G
@@ -108,8 +108,8 @@ const Prizes = () => {
                   </span>
                 </div>
               </div>
-              <p className="text-justify tracking-[-0.07em ] mt-6 break-all">
-                <br /> <br /> <br /> <br /> oble and most brilliant tech-wizards
+              <p className="text-justify tracking-[-0.07em ] mt-6 break-all hidden md:inline">
+                <br /> <br /> <br /> <br /> loble and most brilliant tech-wizards
                 who dare to compete in the enchanted halls of Hacknovate 6.0
                 shall lay their hands on the ultimate treasures!
               </p>
@@ -117,7 +117,7 @@ const Prizes = () => {
 
             {/* Second Column */}
             <div>
-              <p className="text-justify tracking-[-0.07em ]  break-all">
+              <p className="text-justify tracking-[-0.07em ]  break-all hidden md:inline">
                 The Forbidden Forest to the Great Hall (Offline), the champions
                 claim their legendary grand prize of{" "}
                 <span className="font-bold">31,000</span> Galleons. The valiant
@@ -131,7 +131,7 @@ const Prizes = () => {
 
             {/* Third Column */}
             <div>
-              <p className="text-justify tracking-[-0.07em ] break-all">
+              <p className="text-justify tracking-[-0.07em ] break-all hidden md:inline">
                 But beware, for this journey is not for the faint-hearted!
                 Participants must wield their coding wands with precision,
                 conjure spells of logic, and battle through a maze of challenges
@@ -155,7 +155,7 @@ const Prizes = () => {
 
           <div className="relative">
             {/* "C" Graphic with Float */}
-            <div className="text-[120px] font-bold leading-[90px] float-left mr-3 relative">
+            <div className="text-[120px] font-bold leading-[90px] float-left mr-3 relative hidden md:inline">
               <span className="text-black relative z-10">C</span>
               <span className="text-yellow-500 absolute top-1 left-1 z-0">
                 C
@@ -163,7 +163,7 @@ const Prizes = () => {
             </div>
 
             {/* Wrapping Text */}
-            <p className="text-gray-800 text-justify font-serif overflow-hidden">
+            <p className="text-gray-800 text-justify font-serif hidden md:inline">
               elebrating talent, recognizing potential, and rewarding
               excellence. Valiant wizards-in-the-making shall not go unnoticed!
               Hacknovate 6.0 recognizes and celebrates emerging talent with two
