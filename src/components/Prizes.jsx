@@ -2,6 +2,7 @@ import offline_prize_Bg1 from "../assets/offline_prize_Bg1.png";
 import offline_prize_Bg2 from "../assets/offline_prize_Bg2.png";
 import offline_prize_Bgcover1 from "../assets/offline_prize_Bgcover1.png";
 import offline_prize_Bgcover2 from "../assets/offline_prize_Bgcover2.png";
+import online_prize_Bgcover2 from "../assets/online_prizes.jpg";
 import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
@@ -18,7 +19,7 @@ const Prizes = () => {
       <div className="grid  md:grid-cols-2 gap-6">
         {/* Offline Prizes */}
         <div>
-          <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-xl text-left md:text-4xl border-b-2 md:text-center pb-2">
+          <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
             Offline Prizes
           </h1>
           <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4">
@@ -78,13 +79,13 @@ const Prizes = () => {
           </div>
           <div>
             <div className="border-b-4 border-black mt-4">
-              <h1 className="text-center text-6xl font-bold">
+              <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
                 Consolation Prizes
               </h1>
             </div>
-            <div className="flex gap-2">
-              <div className="bg-black w-[50%] h-[128px] mt-2"></div>
-              <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+            <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
+              <div className="bg-black w-[50%] h-[128px] mt-2 mx-auto"></div>
+              <div className="bg-black w-[50%] h-[128px] mt-2 mx-auto"></div>
             </div>
             <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
               <FaAsterisk className="w-4 h-4" />
@@ -120,10 +121,10 @@ const Prizes = () => {
               <p className="text-justify tracking-[-0.07em ]  break-all hidden md:inline">
                 The Forbidden Forest to the Great Hall (Offline), the champions
                 claim their legendary grand prize of{" "}
-                <span className="font-bold">31,000</span> Galleons. The valiant
+                <span className="font-bold">30,000</span> Galleons. The valiant
                 runners-up shall be rewarded with{" "}
-                <span className="font-bold">21,000</span> Galleons and{" "}
-                <span className="font-bold">11,000</span> Galleons,
+                <span className="font-bold">20,000</span> Galleons and{" "}
+                <span className="font-bold">10,000</span> Galleons,
                 respectively. The Goblet of Hacknovate has been lit - do you
                 have what it takes to seize the magic?
               </p>
@@ -142,11 +143,11 @@ const Prizes = () => {
             </div>
           </div>
           <div className="border-b-8 border-black ">
-            <h1 className="text-6xl font-bold text-center">Online Prizes</h1>
+            <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">Online Prizes</h1>
           </div>
-          <div className="flex gap-2">
-            <div className="bg-black w-[50%] h-[128px] mt-2"></div>
-            <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
+            <div className="bg-black w-[50%] h-[128px] mt-2 mx-auto"></div>
+            <div className="bg-black w-[50%] h-[128px] mt-2 mx-auto"></div>
           </div>
           <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
             <FaAsterisk className="w-4 h-4" />
