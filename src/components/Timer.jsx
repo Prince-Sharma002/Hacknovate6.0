@@ -26,7 +26,7 @@ const Timer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[375px] h-[90px]">
+    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[375px] h-[90px] mr-[-30px]">
       <div
         className="text-white text-sm font-bold px-2"
         style={{

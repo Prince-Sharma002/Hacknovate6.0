@@ -55,6 +55,7 @@ export default {
 		  inter: ["Inter", "sans-serif"], 
 		  montserrat: ["Montserrat", "sans-serif"],
 		  sans: ["ui-sans-serif", "system-ui"], 
+		  titan: ["Titan One", "cursive"],
 		},
 	  },
 	},

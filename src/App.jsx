@@ -7,6 +7,7 @@ import NewspaperHeader from "./components/NewspaperHeader";
 import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Prizes from "./components/Prizes.jsx";
+// import CursorEffect from "./components/magicui/cursorEffect.jsx"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Registration />
       <About />
       <Prizes/>
+      {/* <CursorEffect /> */}
    
     </>
   );
