@@ -1,21 +1,23 @@
+body {
+  background-image: url("./assets/darkbg.svg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: serif;
+}
+body {
+  padding: 0;
+}
 
-  body{
-    background-image: url("./assets/darkbg.svg");
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    padding: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-family: serif;
-  }
+@media (max-width: 600px) {
   body {
-    padding: 0;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-
-  @media (max-width: 600px) {
-    body {
-        padding: 0.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+}
+.footer {
+  margin: 0 !important;
+  
 }

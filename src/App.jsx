@@ -9,6 +9,7 @@ import Spnosor from "./components/Spnosor.jsx";
 import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
 // import CursorEffect from "./components/magicui/cursorEffect.jsx"
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <About />
       <Prizes/>
       {/* <CursorEffect /> */}
+
+      <Footer />
    
     </>
   );
