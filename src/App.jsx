@@ -25,7 +25,7 @@ function App() {
       <Theme />
       <Schedule />
       {/* <CursorEffect /> */}
-
+      <Chatbot />
       <Footer />
    
     </>

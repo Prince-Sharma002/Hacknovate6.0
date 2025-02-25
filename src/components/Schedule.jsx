@@ -4,7 +4,7 @@ import map2 from "../assets/schedule/MVT2.png";
 
 const Schedule = () => {
   return (
-    <div className='border-4 border-slate-800 w-full border-t-0 p-4 pb-4 mb-0 text-center'>
+    <div className='border-4 border-slate-800 w-full border-t-0 p-4 pb-4 mb-0 text-center border-b-0'>
       <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center border-b-8 mx-auto border-black inline-block mb-24 mt-8">
         The Hackwarts TimeTable
       </h1>
