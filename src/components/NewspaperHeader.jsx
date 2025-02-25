@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import hacknovate from "../assets/hacknovate.png";
 // import logobg from "../assets/logobg.png";
 // import redCircle from "../assets/redCircle.png"; 
@@ -85,18 +84,12 @@ import hacknovate from "../assets/hacknovate.png";
 import logobg from "../assets/logobg.png";
 import redCircle from "../assets/redCircle.png"; 
 import { useState } from "react";
-=======
-import logobg from "../assets/logobg.png";
-import redCircle from "../assets/redCircle.png";
-
->>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
 import Navbar from "./Navbar";
 
 const NewspaperHeader = () => {
   return (
     <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20  max-lg:m-0 ">
       <div className="w-full mx-auto border-b-4 border-slate-800">
-<<<<<<< HEAD
         <div className="text-center space-y-3 animate-fadeIn" style={{ animationDelay: "0.2s" }}>
           {/* Desktop Navbar */}
           <div id="navbar" className="flex items-center justify-center space-x-6 max-md:hidden">
@@ -107,18 +100,6 @@ const NewspaperHeader = () => {
                 <a href="">{item}</a>
               </span>
             ))}
-=======
-        <div
-          className="text-center space-y-3 animate-fadeIn"
-          style={{ animationDelay: "0.2s" }}
-        >
-          <div
-            id="navbar"
-            className="flex items-center justify-center space-x-6 max-lg:hidden"
-          >
-            {/* Left Separator Line - Adjusted to start after the logo */}
-            <div className="flex-1 h-[3px] w-[80px] bg-black clip-path-[polygon(0% 0%, 100% 0%, 100% 100%, 40% 100%)] ml-[150px]"></div>
->>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
 
             <div className="relative font-bold font-inter hover:text-amber-500 text-[18px]">
               <div className="relative w-[127px] h-auto">
@@ -140,14 +121,8 @@ const NewspaperHeader = () => {
           </div>
 
           {/* Header Section */}
-<<<<<<< HEAD
           <div className="flex justify-between max-md:justify-center items-center mb-0 px-10">
             {/* Logo - Adjusted Size for Mobile */}
-=======
-
-          <div className="flex justify-between max-lg:justify-center items-center mb-0 px-10">
-            {/* Increased Hacknovate Logo Size */}
->>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
             <img
               src={logobg}
               alt="Hacknovate Logo"
@@ -162,22 +137,34 @@ const NewspaperHeader = () => {
 
             {/* Group of Institutions (Hidden on Mobile) */}
             <div className="relative flex-col items-center text-center hidden md:inline mr-[-30px] max-md:hidden">
-              <span className="font-montserrat text-[#D1D5DB] font-extrabold text-[60px] [text-shadow:3px_3px_6px_rgba(0,0,0,0.9)]">ABESIT</span>
+              <a 
+                href="https://www.abesit.in" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-montserrat text-[#D1D5DB] font-extrabold text-[60px] [text-shadow:3px_3px_6px_rgba(0,0,0,0.9)] hover:text-white transition-colors duration-300"
+              >
+                ABESIT
+              </a>
+              
               <div className="relative flex items-center justify-center mt-[-20px]">
                 <div className="w-5 h-[2px] bg-[#D1D5DB]"></div>
-                <span className="mx-2 font-montserrat text-[#D1D5DB] font-bold text-[13px] uppercase">Group of Institutions</span>
+                
+                <a 
+                  href="https://www.abesit.in" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="mx-2 font-montserrat text-[#D1D5DB] font-bold text-[13px] uppercase hover:text-white transition-colors duration-300"
+                >
+                  Group of Institutions
+                </a>
+                
                 <div className="w-5 h-[2px] bg-[#D1D5DB]"></div>
               </div>
             </div>
+
           </div>
 
-<<<<<<< HEAD
           {/* FLAGSHIP EVENT - Adjusted for Mobile */}
-=======
-          {/* Navbar */}
-
-          {/* FLAGSHIP EVENT - Thicker Line */}
->>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
           <div className="flex items-center justify-center gap-x-4">
             <span className="font-inter text-2xl max-md:text-xs">★</span>
             <p className="font-inter text-xl font-bold uppercase tracking-widest md:text-base text-center max-md:text-xs text-[#3A3A3A]">

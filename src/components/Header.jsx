@@ -101,8 +101,9 @@ import { FaDiscord } from "react-icons/fa";
 import andSymbol from "../assets/and.png";
 
 const Header = () => {
-  const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
 
+
+  const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 pb-2 items-center">
       {/* Left Column - Grey Box */}

@@ -37,38 +37,41 @@ const Footer = () => {
           <h2 className=" relative text-2xl font-bold mb-4 font-serif lg:text-4xl ">
             Find us at: 
           </h2>
-          <div className="grid grid-cols-3 gap-4">
-            <img
-              src={whatsapplogo}
-              alt="WhatsApp"
-              className=" relative  lg:w-16 lg:h-16  w-10 h-10"
-            />
-            <img
-              src={instalogo}
-              alt="Instagram"
-              className="relative  lg:w-16 lg:h-16 w-10 h-10"
-            />
-            <img
-              src={discordlogo}
-              alt="Discord"
-              className="relative  lg:w-16 lg:h-16 w-10 h-10"
-            />
-            <img
-              src={linktreelogo}
-              alt="Linktree"
-              className=" relative  lg:w-16 lg:h-16 w-10 h-10"
-            />
-            <img
-              src={linkedinlogo}
-              alt="LinkedIn"
-              className=" relative  lg:w-16 lg:h-16 w-10 h-10"
-            />
-            <img
-              src={xxxlogo}
-              alt="Other"
-              className="relative  lg:w-16 lg:h-16 w-10 h-10"
-            />
-          </div>
+
+ <div className="grid grid-cols-3 gap-4">
+  <img
+    src={whatsapplogo}
+    alt="WhatsApp"
+    className="relative lg:w-16 lg:h-16 w-10 h-10 hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+  />
+  <img
+    src={instalogo}
+    alt="Instagram"
+    className="relative lg:w-16 lg:h-16 w-10 h-10 hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+  />
+  <img
+    src={discordlogo}
+    alt="Discord"
+    className="relative lg:w-16 lg:h-16 w-10 h-10 hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+  />
+  <img
+    src={linktreelogo}
+    alt="Linktree"
+    className="relative lg:w-16 lg:h-16 w-10 h-10 hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+  />
+  <img
+    src={linkedinlogo}
+    alt="LinkedIn"
+    className="relative lg:w-16 lg:h-16 w-10 h-10 hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+  />
+  <img
+    src={xxxlogo}
+    alt="Other"
+    className="relative lg:w-16 lg:h-16 w-10 h-10 hover:scale-110 hover:shadow-lg transition duration-300 ease-in-out"
+  />
+</div>
+
+
         </div>
 
         {/* Center Section - Map */}
@@ -83,7 +86,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Right Section - Contact Us */}
+       
         <div className="w-full md:w-1/3 flex flex-col items-center">
           <h2 className=" relative lg:text-4xl text-2xl font-bold mb-4">
             Contact Us!

@@ -11,6 +11,10 @@ import Prizes from "./components/Prizes.jsx";
 import CursorEffect from "./components/magicui/cursorEffect.jsx"
 // import Theme from "./components/Theme.jsx"
 import Header from "./components/Header.jsx"
+import Schedule from "./components/Schedule.jsx"
+import Chatbot from "./components/Chatbot.jsx"
+import Footer from "./components/Footer.jsx"
+import BackgroundMusic from "./components/BackgroundMusic.jsx"
 
 function App() {
   return (
@@ -26,6 +30,7 @@ function App() {
       {/* <CursorEffect /> */}
       <Chatbot />
       <Footer />
+      <BackgroundMusic />
    
     </>
   );

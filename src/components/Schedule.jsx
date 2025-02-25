@@ -1,6 +1,6 @@
 import React from 'react';
 import map from "../assets/schedule/bg.svg";
-import map2 from "../assets/schedule/MVT2.png";
+import map2 from "../assets/schedule/map2.svg";
 
 const Schedule = () => {
   return (
@@ -9,7 +9,7 @@ const Schedule = () => {
         The Hackwarts TimeTable
       </h1>
       <img 
-        src={map} 
+        src={map2} 
         alt='schedule map' 
         className='mx-auto border-4'
         style={{

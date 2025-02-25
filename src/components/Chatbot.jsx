@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { TextAnimate } from "../components/magicui/text-animate.jsx";
 
 // Function to calculate Levenshtein distance (fuzzy matching)
 const levenshteinDistance = (a, b) => {
@@ -59,6 +58,8 @@ const Chatbot = () => {
   const messagesEndRef = useRef(null); // Ref for auto-scrolling to the latest message
 
   const handleQuestion = (question) => {
+    if (!question.trim()) return;
+    
     // Find the closest matching question using Levenshtein distance
     let closestMatch = questionsAndAnswers.reduce(
       (prev, curr) => {
@@ -73,62 +74,149 @@ const Chatbot = () => {
 
     // If the closest match is within a reasonable threshold, use it
     const answer =
-      closestMatch.distance <= 10 // Adjust threshold as needed
+      closestMatch.distance <= 80 // Adjust threshold as needed
         ? closestMatch.answer
         : "I'm sorry, I don't have an answer to that question.";
 
-    // Only keep the latest question and answer
-    setMessages([{ type: "user", text: question }, { type: "bot", text: answer, id: Date.now() }]);
+    // Add new messages instead of replacing all messages
+    setMessages([
+      ...messages,
+      { type: "user", text: question, id: Date.now() },
+      { type: "bot", text: answer, id: Date.now() + 1, isNew: true }
+    ]);
     setInput("");
   };
 
+  // Scroll to bottom when messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  // Remove the isNew flag after animation completes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMessages(messages.map(msg => ({ ...msg, isNew: false })));
+    }, 3000); // Match animation duration
+    
+    return () => clearTimeout(timer);
+  }, [messages]);
 
   return (
     <>
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-4 right-4 p-4 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-all"
+        className="z-20 fixed w-16 bottom-4  text-2xl  right-4 p-4 bg-black text-white rounded-full  hover:bg-black transition-all"
       >
-        {isOpen ? "✕" : "💬"}
+              <span
+                style={{
+                  color: "#FFD700", // Gold color
+                  textShadow: "0 0 5px #FFD700, 0 0 15px #FFA500, 0 0 20px #FF8C00", // Initial glow
+                  fontWeight: "bold",
+                  animation: "glow 1.5s infinite alternate", // Apply animation
+                }}
+              >
+                {isOpen ? "✕" : "📜"}
+
+                {/* Adding animation inside a <style> tag */}
+                <style>
+                  {`
+                    @keyframes glow {
+                      0% {
+                        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFA500, 0 0 15px #FF8C00;
+                      }
+                      50% {
+                        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF8C00;
+                      }
+                      100% {
+                        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFA500, 0 0 15px #FF8C00;
+                      }
+                    }
+                  `}
+                </style>
+              </span>
+
+
       </button>
 
       {/* Chatbot Interface */}
       {isOpen && (
         <div
-          className="fixed bottom-20 right-4 w-96 h-[500px] bg-cover bg-center rounded-lg shadow-lg flex flex-col"
-          style={{ backgroundImage: "url('https://i.pinimg.com/736x/99/23/55/992355694735dfc24bbf15f8dc6c94ec.jpg')" }}
+          className="z-20 fixed bottom-24 right-4 w-[18rem] h-[30rem] bg-cover bg-center rounded-lg shadow-2xl flex flex-col"
+          style={{ backgroundImage: "url('https://youve-reached-the-apex.weebly.com/uploads/7/1/8/8/71880077/2620393_orig.jpg')" }}
         >
-          <div className="flex-1 mt-24 ml-2 p-4 overflow-y-auto text-left">
+
+          <style>
+            {`
+              @keyframes blurInUp {
+                0% {
+                  opacity: 0;
+                  filter: blur(10px);
+                  transform: translateX(0px);
+                }
+                100% {
+                  opacity: 1;
+                  filter: blur(0);
+                  transform: translateX(0);
+                }
+              }
+              
+              .message-animation {
+                animation: blurInUp 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+              }
+              
+              /* Custom Scrollbar Styles */
+              .custom-scrollbar::-webkit-scrollbar {
+                width: 6px;
+              }
+              
+              .custom-scrollbar::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+              }
+              
+              .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                transition: all 0.3s ease;
+              }
+              
+              .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                background: rgba(0, 0, 0, 0.5);
+              }
+              
+              /* For Firefox */
+              .custom-scrollbar {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(0, 0, 0, 0.3) rgba(255, 255, 255, 0.1);
+              }
+            `}
+          </style>
+          
+          <div className="flex-1 italic mt-4 ml-2 p-4 overflow-y-auto text-left custom-scrollbar">
             {messages.map((msg) => (
               <div
-                key={msg.id} // Use a unique ID for each message
+                key={msg.id}
                 className={`text-left p-2 rounded-lg w-full ${
                   msg.type === "user" ? "bg-transparent text-black ml-auto" : "bg-transparent text-gray-800"
-                }`}
+                } ${msg.type === "bot" && msg.isNew ? "message-animation" : ""}`}
               >
-                {msg.type === "user" ? (
-                  // Display user's question without TextAnimate
-                  <div>{msg.text}</div>
-                ) : (
-                  // Display bot's answer with TextAnimate
-                  <TextAnimate animation="blurInUp" by="word" once>
-                    {msg.text}
-                  </TextAnimate>
-                )}
+                {msg.text}
               </div>
             ))}
             <div ref={messagesEndRef} /> {/* Auto-scroll anchor */}
           </div>
-          <div className="p-4">
+          <div className="p-4 text-black">
+
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === "Enter" && handleQuestion(input)}
               placeholder="Type your question..."
-              className="w-[90%] mx-4 p-4 bg-transparent outline-none border-t-4 border-gray-500"
+              className="w-[90%] italic placeholder-black  mx-4 p-4 bg-transparent text-black outline-none border-t-4 border-gray-500"
             />
+            
           </div>
         </div>
       )}
