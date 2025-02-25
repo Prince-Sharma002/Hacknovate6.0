@@ -1,5 +1,6 @@
 import React from 'react';
 import map from "../assets/schedule/bg.svg";
+import map2 from "../assets/schedule/MVT2.png";
 
 const Schedule = () => {
   return (

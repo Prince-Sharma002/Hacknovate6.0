@@ -23,6 +23,7 @@ function App() {
       <About />
       <Prizes/>
       <Theme />
+      <Schedule />
       {/* <CursorEffect /> */}
 
       <Footer />
