@@ -8,17 +8,21 @@ import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
-// import CursorEffect from "./components/magicui/cursorEffect.jsx"
+import CursorEffect from "./components/magicui/cursorEffect.jsx"
+// import Theme from "./components/Theme.jsx"
+import Header from "./components/Header.jsx"
 
 function App() {
   return (
     <>
       <NewspaperHeader />
-      <Spnosor />
-      <Registration />
+      {/* <Spnosor /> */}
+      {/* <Registration /> */}
+      <Header />
       <About />
       <Prizes/>
-      {/* <CursorEffect /> */}
+      <Theme/>
+      <CursorEffect />
    
     </>
   );

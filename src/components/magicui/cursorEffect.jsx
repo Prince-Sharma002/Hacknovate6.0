@@ -178,11 +178,11 @@ const CursorEffect = () => {
                     position: "fixed",
                     width: "45px", 
                     pointerEvents: "none",
-                    transform: "rotate(10deg)",
+                    transform: "rotate(25deg)",
                     zIndex: 10000,
                     left: `${cursorPosition.x - 20}px`,
                     top: `${cursorPosition.y - 20}px`,
-                    filter: "drop-shadow(0px 0px 10px rgb(242, 237, 223))",
+                    filter: "drop-shadow(0px 0px 10px rgb(0, 0, 0))",
                 }}
             />
             <style>
