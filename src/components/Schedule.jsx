@@ -9,7 +9,7 @@ const Schedule = () => {
         The Hackwarts TimeTable
       </h1>
       <img 
-        src={map2} 
+        src={map} 
         alt='schedule map' 
         className='mx-auto border-4'
         style={{
