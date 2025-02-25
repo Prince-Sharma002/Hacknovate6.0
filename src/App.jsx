@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import "./App.css";
 import React from "react";
 
@@ -8,6 +8,8 @@ import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
+// import CursorEffect from "./components/magicui/cursorEffect.jsx"
+import Footer from "./components/Footer.jsx";
 import CursorEffect from "./components/magicui/cursorEffect.jsx"
 import Chatbot from "./components/Chatbot.jsx"
 import Schedule from "./components/Schedule.jsx"
@@ -22,8 +24,9 @@ function App() {
       <Prizes/>
       <Theme />
       {/* <CursorEffect /> */}
-      <Chatbot />
-      <Schedule />
+
+      <Footer />
+   
     </>
   );
 }
