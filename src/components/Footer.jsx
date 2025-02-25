@@ -1,4 +1,4 @@
-import footerbg from "../assets/footerbg.svg";
+import footerbg from "../assets/footerBg.png";
 
 import abesitlogo from "../assets/abesitlogo.png";
 import whatsapplogo from "../assets/whatsapplogo.png";
@@ -12,10 +12,11 @@ import Map from "./Map";
 const Footer = () => {
   return (
     <div
-      className="footer w-full bg-cover bg-center relative px-8 py-10 text-white"
+      className="footer w-full bg-cover bg-center relative px-8 py-10 text-white h-[560px] max-lg:p-0 max-lg:m-0 max-lg:w-full "
       style={{ backgroundImage: `url(${footerbg})` }}
+
     >
-      <div className="absolute top-[340px] left-0 w-full   h-20 ">
+      <div className="absolute top-[140px] left-0 w-full   h-20 ">
         <div className="flex justify-center items-center">
           <div>
             <img
@@ -25,7 +26,7 @@ const Footer = () => {
             />
           </div>
           <div>
-            <h1 className="text-4xl text-amber-400  font-serif font-bold top-14 right-20 relative">
+            <h1 className="text-4xl text-amber-400  font-serif font-bold  right-20 relative">
               HACKNOVATE 6.0
             </h1>
           </div>
@@ -33,7 +34,7 @@ const Footer = () => {
       </div>
 
       {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-center  items-center text-center md:text-left">
+      <div className="relative -top-56 z-10 flex flex-col md:flex-row justify-center  items-center text-center md:text-left">
         {/* Left Section - Useful Links (Just Text) */}
         <div className="w-1/3 mt-[450px] mr-20">
           <h2 className="text-2xl font-bold mb-4 font-serif pl-3">
