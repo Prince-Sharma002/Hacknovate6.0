@@ -8,18 +8,17 @@ import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
-// import CursorEffect from "./components/magicui/cursorEffect.jsx"
-import Footer from "./components/Footer.jsx";
 import CursorEffect from "./components/magicui/cursorEffect.jsx"
-import Chatbot from "./components/Chatbot.jsx"
-import Schedule from "./components/Schedule.jsx"
+// import Theme from "./components/Theme.jsx"
+import Header from "./components/Header.jsx"
 
 function App() {
   return (
     <>
       <NewspaperHeader />
-      <Spnosor />
-      <Registration />
+      {/* <Spnosor /> */}
+      {/* <Registration /> */}
+      <Header />
       <About />
       <Prizes/>
       <Theme />
