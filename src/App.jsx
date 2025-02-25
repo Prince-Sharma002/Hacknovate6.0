@@ -13,6 +13,7 @@ import Footer from "./components/Footer.jsx";
 import CursorEffect from "./components/magicui/cursorEffect.jsx"
 import Chatbot from "./components/Chatbot.jsx"
 import Schedule from "./components/Schedule.jsx"
+import CommunityPartner from "./components/CommunityPartner.jsx"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Theme />
       <Schedule />
       {/* <CursorEffect /> */}
+        
 
       <Footer />
    
