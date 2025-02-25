@@ -29,17 +29,8 @@ function App() {
       <Header />
       <About />
       <Prizes/>
-<<<<<<< HEAD
       <Theme/>
       <CursorEffect />
-=======
-      <Theme />
-      <Schedule />
-      {/* <CursorEffect /> */}
-        
-
-      <Footer />
->>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
    
     </>
   );
