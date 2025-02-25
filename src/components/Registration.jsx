@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -70,6 +71,24 @@ const Registration = () => {
 
       {/* Register Button (Now Dynamically Resizable) */}
       <div className="relative bg-black p-2 rounded-xl shadow-lg justify-center items-center">
+=======
+
+      import discord from "../assets/discord.png";
+      import { FaDiscord } from "react-icons/fa";
+      import { SiLinktree } from "react-icons/si";
+      import { FaLinkedin } from "react-icons/fa";
+      import { FaSquareInstagram } from "react-icons/fa6";
+      import andSymbol from "../assets/and.png";
+      
+      const Registration = () => {
+        return (
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-2 pb-2 pt-1">
+            {/* Grey Box (Aligned with Registration Section) */}
+            <div className="bg-gray-300 w-full"></div>
+      
+            {/* Register Button */}
+            <div className="relative bg-black p-2 rounded-xl shadow-lg">
+>>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
               <div className="border-2 border-amber-500 rounded-xl p-4 flex justify-center items-center">
                 <p className="text-3xl md:text-5xl text-amber-500 font-bold tracking-wide uppercase">
                   REGISTER

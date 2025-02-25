@@ -2,13 +2,14 @@ import offline_prize_Bg1 from "../assets/offline_prize_Bg1.png";
 import offline_prize_Bg2 from "../assets/offline_prize_Bg2.png";
 import offline_prize_Bgcover1 from "../assets/offline_prize_Bgcover1.png";
 import offline_prize_Bgcover2 from "../assets/offline_prize_Bgcover2.png";
+import online_prize_Bgcover2 from "../assets/online_prizes.jpg";
 import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
     <div className="border-4 border-slate-800 w-full p-4 pt-0">
       {/* Title Section */}
-      <div className="w-full m-2 h-16 flex justify-center items-center">
+      <div className="w-full m-2 h-16 flex justify-center items-center ">
         <h1 className="text-3xl pt-12 md:pt-2 md:text-5xl text-center font-bold font-serif">
           Goblet of Rewards: HACKNOVATE 6.0 PRIZES
         </h1>
@@ -18,9 +19,11 @@ const Prizes = () => {
       <div className="grid  md:grid-cols-2 gap-6">
         {/* Offline Prizes */}
         <div>
-          <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-xl text-left md:text-4xl border-b-2 md:text-center pb-2">
-            Offline Prizes
-          </h1>
+          <div className="border-b-4 border-black mt-4">
+            <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
+                  Offline Prizes
+            </h1>
+          </div>
           <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4">
             {/* Prize Box 1 with Background and Overlay */}
             <div
@@ -72,19 +75,23 @@ const Prizes = () => {
               digital sorcerers shall emerge victorious! The champion of the
               online realm shall claim a treasure of <strong>10,000</strong>{" "}
               Galleons, while the runner-up, proving their magical prowess,
-              shall be rewarded with <strong>7,000</strong> Galleons. The
+              shall be rewarded with <strong>5,000</strong> Galleons. The
               virtual battleground is set—will you rise as a legend?
             </p>
           </div>
           <div>
             <div className="border-b-4 border-black mt-4">
-              <h1 className="text-center text-6xl font-bold">
+              <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
                 Consolation Prizes
               </h1>
             </div>
-            <div className="flex gap-2">
-              <div className="bg-black w-[50%] h-[128px] mt-2"></div>
-              <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+            <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
+              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto">
+                <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
+              </div>
+              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto">
+                <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
+              </div>
             </div>
             <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
               <FaAsterisk className="w-4 h-4" />
@@ -120,10 +127,10 @@ const Prizes = () => {
               <p className="text-justify tracking-[-0.07em ]  break-all hidden md:inline">
                 The Forbidden Forest to the Great Hall (Offline), the champions
                 claim their legendary grand prize of{" "}
-                <span className="font-bold">31,000</span> Galleons. The valiant
+                <span className="font-bold">30,000</span> Galleons. The valiant
                 runners-up shall be rewarded with{" "}
-                <span className="font-bold">21,000</span> Galleons and{" "}
-                <span className="font-bold">11,000</span> Galleons,
+                <span className="font-bold">20,000</span> Galleons and{" "}
+                <span className="font-bold">10,000</span> Galleons,
                 respectively. The Goblet of Hacknovate has been lit - do you
                 have what it takes to seize the magic?
               </p>
@@ -142,11 +149,15 @@ const Prizes = () => {
             </div>
           </div>
           <div className="border-b-8 border-black ">
-            <h1 className="text-6xl font-bold text-center">Online Prizes</h1>
+            <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">Online Prizes</h1>
           </div>
-          <div className="flex gap-2">
-            <div className="bg-black w-[50%] h-[128px] mt-2"></div>
-            <div className="bg-black w-[50%] h-[128px] mt-2"></div>
+          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
+            <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto">
+                <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
+            </div>
+            <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto">
+                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
+            </div>
           </div>
           <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
             <FaAsterisk className="w-4 h-4" />
@@ -169,7 +180,7 @@ const Prizes = () => {
               Hacknovate 6.0 recognizes and celebrates emerging talent with two
               special honors. The Best Beginner, proving their potential in the
               wizarding world of tech, and the Best Girls' Team, showcasing
-              brilliance and resilience, shall each be rewarded with 5,000
+              brilliance and resilience, shall each be rewarded with 3,000
               Galleons for their exceptional skill and perseverance. This is
               more than just a prize—it's a mark of true potential and future
               greatness. Magic favors the bold, and those who dare to step into

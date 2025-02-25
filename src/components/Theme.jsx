@@ -56,7 +56,7 @@ const Theme = () => {
   ];
 
   return (
-    <div className='border-4 border-slate-800 border-t-0'>
+    <div className='border-4 border-slate-800 border-t-0 pb-14'>
       <div className="min-h-screen text-white font-serif px-4 md:px-12">
         {/* Hero Section */}
         <div className="w-full px-4 py-12">

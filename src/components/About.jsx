@@ -1,5 +1,4 @@
 
-import abesit from "../assets/newAbes.webp";
 import image from "../assets/image.png";
 import abesitgif from "../assets/abesit hp.gif";
 import A from "../assets/A.svg";
@@ -9,13 +8,7 @@ import "../styles/about.css"
 
 const About = () => {
   return (
-    <div className="border-4 border-slate-800  w-full border-b-0 p-4 pb-4 mb-0">
-      {/* <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 p-2 h-auto md:h-36 border-4 border-red-600">
-        <div className="w-full md:w-56 h-32 border-4 border-gray-950"></div>
-        <div className="w-full md:w-56 h-32 border-4 border-gray-950"></div>
-        <div className="w-full md:w-96 h-32 border-4 border-gray-950"></div>
-        <div className="w-full md:w-56 h-32 border-4 border-gray-950"></div>
-      </div> */}
+    <div className="border-4 border-slate-800  w-full border-b-0 p-4 pb-4 mb-0 max-lg:m-0   max-lg:w-full">
 
       <div className="w-full flex flex-col">
         <h1 className="text-xl md:text-6xl font-extrabold uppercase text-center mb-2 border-b-4 md:border-none">IS ABESIT THE HOGWARTS OF CODING?</h1>

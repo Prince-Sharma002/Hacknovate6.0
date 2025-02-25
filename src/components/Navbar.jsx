@@ -22,7 +22,7 @@ const Navbar = () => {
 
       {/* Navigation Menu */}
       <div
-        className={`fixed top-10 right-4 w-48 bg-[#918F8F] bg-opacity-80 bg-[url('/path-to-texture.jpg')] bg-cover bg-center shadow-lg p-4 rounded-2xl backdrop-blur-sm transform transition-all duration-500 ${
+        className={`fixed top-10 right-4 w-48 bg-[#918F8F] bg-opacity-80 bg-[url('/path-to-texture.jpg')] bg-cover bg-center shadow-lg p-4  rounded-2xl backdrop-blur-sm transform transition-all duration-500 ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
         }`}
         style={{ zIndex: 1000 }}
