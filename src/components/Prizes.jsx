@@ -108,14 +108,14 @@ const Prizes = () => {
             <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
               <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
                 <div className="flex flex-col absolute text-center">
-                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl text-yellow-500 drop-shadow-4xl"> WINNER </h1>
+                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
                   <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
                 </div>
                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
               </div>
               <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
                 <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl text-yellow-500 drop-shadow-4xl"> WINNER </h1>
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
                     <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
                   </div>
                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
@@ -182,14 +182,14 @@ const Prizes = () => {
           <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
             <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
                   <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl text-yellow-500 drop-shadow-4xl"> WINNER </h1>
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
                     <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 10,000</h1>
                   </div>
                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
             </div>
             <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
                   <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl text-yellow-500 drop-shadow-4xl"> WINNER </h1>
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
                     <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
                   </div>
                  <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />

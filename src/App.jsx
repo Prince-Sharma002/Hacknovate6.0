@@ -27,6 +27,9 @@ function App() {
       <Prizes/>
       <Theme/>
       <CursorEffect />
+      <CommunityPartner/>
+
+      <Footer/>
    
     </>
   );
