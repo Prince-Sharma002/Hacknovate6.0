@@ -1,5 +1,4 @@
 
-      import React from "react";
       import discord from "../assets/discord.png";
       import { FaDiscord } from "react-icons/fa";
       import { SiLinktree } from "react-icons/si";
