@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -5,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative p-4">
+    <nav className="relative p-4 lg:hidden">
       {/* Hamburger Menu Button (Hides When Navbar Opens) */}
       {!isOpen && (
         <div className="lg:hidden fixed top-4 right-4 z-[1100] transition-opacity duration-300">
@@ -18,7 +20,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Navigation Menu (Slides in from Right but Slightly Higher) */}
+      {/* Navigation Menu */}
       <div
         className={`fixed top-10 right-4 w-48 bg-[#918F8F] bg-opacity-80 bg-[url('/path-to-texture.jpg')] bg-cover bg-center shadow-lg p-4  rounded-2xl backdrop-blur-sm transform transition-all duration-500 ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
