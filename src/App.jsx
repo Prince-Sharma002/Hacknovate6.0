@@ -8,17 +8,13 @@ import About from "./components/About.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Theme from "./components/Theme.jsx";
 import Prizes from "./components/Prizes.jsx";
-<<<<<<< HEAD
-import CursorEffect from "./components/magicui/cursorEffect.jsx"
-// import Theme from "./components/Theme.jsx"
-import Header from "./components/Header.jsx"
-=======
 // import CursorEffect from "./components/magicui/cursorEffect.jsx"
 import Footer from "./components/Footer.jsx";
 import CursorEffect from "./components/magicui/cursorEffect.jsx"
 import Chatbot from "./components/Chatbot.jsx"
 import Schedule from "./components/Schedule.jsx"
->>>>>>> 1688ed9af122db441c8d8932dd5c66de380fedb2
+import Header from "./components/Header.jsx"
+import CommunityPartner from "./components/CommunityPartner.jsx"
 
 function App() {
   return (
@@ -31,6 +27,8 @@ function App() {
       <Prizes/>
       <Theme/>
       <CursorEffect />
+      {/* <CommunityPartner/> */}
+      <Footer/>
    
     </>
   );
