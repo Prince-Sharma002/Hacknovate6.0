@@ -14,12 +14,15 @@ import Header from "./components/Header.jsx"
 import Schedule from "./components/Schedule.jsx"
 import Chatbot from "./components/Chatbot.jsx"
 import Footer from "./components/Footer.jsx"
+import Owl from "./components/Owl.jsx"
 import BackgroundMusic from "./components/BackgroundMusic.jsx"
 
 function App() {
   return (
     <>
+
       <NewspaperHeader />
+      <Owl />
       {/* <Spnosor /> */}
       {/* <Registration /> */}
       <Header />

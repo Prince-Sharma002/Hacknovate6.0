@@ -1,20 +1,49 @@
-const CommunityPartner = () => {
-  return (
-    <div className="border-4 border-slate-800 w-full border-t-0 border-b-0 p-4 pb-4 mb-0 ">
-      <div className="flex flex-col ">
-        <div className=" w-full h-52">
-          <div className="flex w-1/2 h-52 ">
-            <div>
-              <h1 className="text-[128px] font-bold ">Community</h1>
-            </div>
-            <div>
+import ImageTicker from "./Ticker";
 
-            <h2 className="text-[120px] font-semibold "> Partners</h2>
-            </div>
+const CommunityPartner = () => {
+  const images = [
+    "https://assets1.ignimgs.com/2015/10/02/dobbyjpg-996614.jpg?fit=bounds&width=1280&height=720&dpr=2",
+    "https://assets-prd.ignimgs.com/2022/03/23/gellert-grindelwald-1648059763467.jpg?fit=bounds&width=1280&height=720&dpr=2",
+    "https://assets-prd.ignimgs.com/2022/03/23/ginny-weasley-1648059867656.jpg?fit=bounds&width=1280&height=720&dpr=2",
+    "https://assets-prd.ignimgs.com/2022/03/23/mad-eye-moody-1648061180432.jpg?fit=bounds&width=1280&height=720&dpr=2",
+  ];
+
+  return (
+    <div className="border-4 border-slate-800 w-full border-t-0 border-b-0 p-4 pb-4 mb-0">
+      <div className="flex flex-col lg:flex-row items-center w-full lg:ml-6">
+        {/* Left Section - Title */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center p-4 ">
+          <div className="text-center lg:text-left">
+            <h1 className="text-[clamp(3rem,8vw,5rem)] lg:text-[128px] font-bold flex items-center justify-center lg:justify-start">
+              <span className="relative inline-block text-black">
+                C<span className="absolute left-1 text-yellow-500 z-0">C</span>
+              </span>
+              <span>ommunity</span>
+            </h1>
+            <h2 className="text-[clamp(2.5rem,7vw,4rem)] lg:relative lg:text-[120px] font-semibold lg:-top-16   ">
+              Partners
+            </h2>
           </div>
-          <div></div>
         </div>
-        <div className="bg-yellow-500 w-full h-52"></div>
+
+        {/* Right Section - Description */}
+        <div className="w-full lg:w-1/2 text-[#393939] font-semibold px-6 lg:pr-16 lg:p-10 text-lg lg:text-xl font-serif text-center lg:text-left">
+          <p>
+            In the spirit of Harry Potter, where teamwork, knowledge, and
+            strategy shape the greatest wizards, our Community Partner for
+            Hacknovate 6.0 plays the role of Hogwarts itself—a place where
+            bright minds gather, collaborate, and create spells of innovation.
+            Just like Dumbledore’s unwavering support for young wizards, our
+            Community Partner empowers participants by fostering connections,
+            providing resources, and ensuring every innovator finds their
+            platform to shine.
+          </p>
+        </div>
+      </div>
+
+      {/* Image Scrolling Ticker */}
+      <div className=" rounded-xl w-full h-54 max-lg:mt-8 max-lg:h-36  overflow-hidden">
+        <ImageTicker images={images} speed={20} />
       </div>
     </div>
   );
