@@ -14,7 +14,6 @@ const Timer = ({ targetDate }) => {
     }
     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
   };
-  
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -26,44 +25,36 @@ const Timer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[23.438rem] h-[5.625rem] mr-[-5px] lg:w-[30.438rem]">
-      <div
-        className="text-white text-sm font-bold px-1 lg:px-3 max-lg:text-sm"
-        style={{
-          writingMode: "vertical-rl",
-          transform: "rotate(180deg)",
-          fontSize: "18px",
-          letterSpacing: "1px",
-        }}
-      >
+    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[24.438rem] h-[5.5rem] mr-[-5px] lg:w-[30.438rem] lg:h-[6.5rem]">
+      <div className="text-white max-lg:relative max-lg:-left-3 text-sm font-bold px-1 lg:px-3 text-[25px] tracking-wide -rotate-90 writing-vertical-rl font-inter text-center lg:text-[17px] ">
         Starts in
       </div>
-      <div className="pr-1 ">
+      <div className="pr-1 lg:pr-2 max-lg:relative max-lg:-left-5">
         <TimeBox
           value={timeLeft.days}
           label="DAYS"
-          width="85px"
-          height="69px"
+          width="w-[85px]"
+          height="h-[69px] lg:w-[90px] lg:h-[80px] "
         />
       </div>
-      <div className="flex bg-black text-black font-bold divide-x-4 divide-black">
+      <div className="flex bg-black text-black font-bold divide-x-4 divide-black max-lg:relative max-lg:-left-5">
         <TimeBox
           value={timeLeft.hours}
           label="hrs"
-          width="75px"
-          height="69px"
+          width="w-[75px]"
+          height="h-[69px] lg:w-[90px] lg:h-[80px]"
         />
         <TimeBox
           value={timeLeft.minutes}
           label="mins"
-          width="75px"
-          height="69px"
+          width="w-[75px]"
+          height="h-[69px] lg:w-[90px] lg:h-[80px]"
         />
         <TimeBox
           value={timeLeft.seconds}
           label="sec"
-          width="75px"
-          height="69px"
+          width="w-[75px]"
+          height="h-[69px] lg:w-[90px] lg:h-[80px] "
         />
       </div>
     </div>
@@ -72,25 +63,18 @@ const Timer = ({ targetDate }) => {
 
 const TimeBox = ({ value, label, width, height }) => {
   return (
-    <div
-      className=" pl-1 flex flex-col justify-center bg-gray-300 border  border-black rounded-lg"
-      style={{ width, height }}
-    >
+    <div className={`pl-1 flex flex-col justify-center  bg-gray-300 border border-black rounded-lg ${width} ${height}`}>
       <motion.div
         key={value}
         initial={{ rotateX: 90, opacity: 0 }}
         animate={{ rotateX: 0, opacity: 1 }}
         exit={{ rotateX: -90, opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-black text-[32px] font-extrabold leading-none"
-        style={{ fontFamily: "Inter" }}
+        className="text-black text-[32px] font-extrabold leading-none font-inter"
       >
         {String(value).padStart(2, "0")}
       </motion.div>
-      <span
-        className="text-black text-[28px] font-bold leading-none"
-        style={{ fontFamily: "Inter" }}
-      >
+      <span className="text-black text-[28px] font-bold leading-none font-inter">
         {label}
       </span>
     </div>

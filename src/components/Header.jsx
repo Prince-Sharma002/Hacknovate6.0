@@ -13,7 +13,7 @@ const Header = () => {
 
       {/* Center Column - Event Description, APPLY NOW, Discord Button */}
       <div className="flex flex-col max-lg:relative max-lg:-top-10 text-center md:text-left space-y-8 max-lg:space-y-4 ">
-        <p className="text-justify text-[#393939] font-bold leading-relaxed text-[15.1px] font-inter">
+        <p className="text-justify text-[#393939]  font-bold leading-relaxed text-[15.1px] font-inter">
           Hacknovate, the flagship 24-hour hybrid hackathon of ABESIT, returns
           in 2025 with its 6th edition, themed around Harry Potter. Get ready to
           hack the world.
@@ -53,7 +53,7 @@ const Header = () => {
             <h1 className="text-[40px] md:text-[42.8px] font-titan text-black">
               DATE
             </h1>
-            <h2 className="text-[24px] md:text-[18px] max-lg:text-center font-extrabold text-[#3A3A3A] lg:text-[25px]">
+            <h2 className="text-[20px] md:text-[18px] max-lg:text-center font-extrabold text-[#3A3A3A] lg:text-[25px]">
               4th and 5th <br /> April, 2024
             </h2>
           </div>
@@ -68,15 +68,15 @@ const Header = () => {
             <h1 className="text-[70px] md:text-[42.8px] font-titan text-black max-lg:text-[40px] ">
               TIME
             </h1>
-            <h2 className="text-[24px] max-lg:[36px] max-lg:text-center  md:text-[18px] font-extrabold text-[#3A3A3A] lg:text-[25px]">
+            <h2 className="text-[20px] max-lg:[36px] max-lg:text-center  md:text-[18px] font-extrabold text-[#3A3A3A] lg:text-[25px]">
               9:00 AM to <br /> 12:30 PM IST
             </h2>
           </div>
         </div>
 
         {/* Structure of the Competition */}
-        <div className="w-full md:w-[550px] lg:relative lg:right-10 lg:-top-3 lg:text-[15px] text-[#393939] font-['Times New Roman'] text-[15px]  font-bold leading-[17.39px] text-justify space-y-2  max-lg:relative max-lg:top-5 max-lg:mb-0 ">
-          <h2 className="text-lg lg:text-[25px] font-bold max-lg:text-center max-lg:text-[24px] max-lg:mb-3 ">
+        <div className="w-full md:w-[550px] font-inter lg:relative lg:right-10 lg:-top-3 lg:text-[15px] text-[#393939] font-['Times New Roman'] text-[15px]  font-bold leading-[17.39px] text-justify space-y-2  max-lg:relative max-lg:top-5 max-lg:mb-0 ">
+          <h2 className="text-lg lg:text-[25px] font-bold max-lg:text-center max-lg:text-[24px] max-lg:mb-3 font-inter">
             Structure of the Competition:
           </h2>
           <p>

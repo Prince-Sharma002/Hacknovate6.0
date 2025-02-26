@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Mentor = () => {
+const Events = () => {
   return (
     <div className='text-center text-4xl'> Comming Soon.... </div>
   )
 }
 
-export default Mentor
+export default Events
