@@ -1,22 +1,28 @@
-
-
-import hacknovate from "../assets/hacknovate.png";
 import logobg from "../assets/logobg.png";
-import redCircle from "../assets/redCircle.png"; 
-import { useState } from "react";
+import redCircle from "../assets/redCircle.png";
+
 import Navbar from "./Navbar";
 
 const NewspaperHeader = () => {
   return (
     <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20  max-lg:m-0 ">
       <div className="w-full mx-auto border-b-4 border-slate-800">
-        <div className="text-center space-y-3 animate-fadeIn" style={{ animationDelay: "0.2s" }}>
+        <div
+          className="text-center space-y-3 animate-fadeIn"
+          style={{ animationDelay: "0.2s" }}
+        >
           {/* Desktop Navbar */}
-          <div id="navbar" className="flex items-center justify-center space-x-6 max-md:hidden">
+          <div
+            id="navbar"
+            className="flex items-center justify-center space-x-6 max-md:hidden"
+          >
             <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
 
             {["About", "Events", "Team", "Mentor"].map((item) => (
-              <span key={item} className="font-bold font-inter hover:text-amber-500 text-[18px]">
+              <span
+                key={item}
+                className="font-bold font-inter hover:text-amber-500 text-[18px]"
+              >
                 <a href="">{item}</a>
               </span>
             ))}
@@ -50,38 +56,43 @@ const NewspaperHeader = () => {
             />
 
             <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide">
-              <span className="text-prophet-black tracking-wide max-md:text-4xl">ABESIT{" "}</span>
-              <span className="text-prophet-gold text-yellow-400 tracking-wide max-md:text-4xl font-black">T</span>
-              <span className="text-prophet-black tracking-wide max-md:text-4xl">IMES</span>
+              <span className="text-prophet-black tracking-wide max-md:text-4xl">
+                ABESIT{" "}
+              </span>
+              <span className="text-prophet-gold text-yellow-400 tracking-wide max-md:text-4xl font-black">
+                T
+              </span>
+              <span className="text-prophet-black tracking-wide max-md:text-4xl">
+                IMES
+              </span>
             </h1>
 
             {/* Group of Institutions (Hidden on Mobile) */}
             <div className="relative flex-col items-center text-center hidden md:inline mr-[-30px] max-md:hidden">
-              <a 
-                href="https://www.abesit.in" 
-                target="_blank" 
+              <a
+                href="https://www.abesit.in"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="font-montserrat text-[#D1D5DB] font-extrabold text-[60px] [text-shadow:3px_3px_6px_rgba(0,0,0,0.9)] hover:text-white transition-colors duration-300"
               >
                 ABESIT
               </a>
-              
+
               <div className="relative flex items-center justify-center mt-[-20px]">
                 <div className="w-5 h-[2px] bg-[#D1D5DB]"></div>
-                
-                <a 
-                  href="https://www.abesit.in" 
-                  target="_blank" 
+
+                <a
+                  href="https://www.abesit.in"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="mx-2 font-montserrat text-[#D1D5DB] font-bold text-[13px] uppercase hover:text-white transition-colors duration-300"
                 >
                   Group of Institutions
                 </a>
-                
+
                 <div className="w-5 h-[2px] bg-[#D1D5DB]"></div>
               </div>
             </div>
-
           </div>
 
           {/* FLAGSHIP EVENT - Adjusted for Mobile */}
