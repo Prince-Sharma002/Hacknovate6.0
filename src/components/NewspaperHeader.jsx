@@ -1,4 +1,4 @@
-import logobg from "../assets/logobg.png";
+import logobg from "../assets/logoBg.png";
 import redCircle from "../assets/redCircle.png";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
