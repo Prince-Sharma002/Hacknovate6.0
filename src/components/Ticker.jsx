@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ImageTicker = ({ images, speed = 30 }) => {
   return (
-    <div className="overflow-hidden rounded-xl w-full bg-slate-600 py-4">
+    <div className="overflow-hidden rounded-xl w-full  py-4">
       <motion.div
         className="flex space-x-6"
         animate={{ x: ["0%", "-100%"] }}

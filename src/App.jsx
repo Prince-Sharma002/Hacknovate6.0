@@ -16,6 +16,7 @@ import Chatbot from "./components/Chatbot.jsx"
 import Footer from "./components/Footer.jsx"
 import Owl from "./components/Owl.jsx"
 import BackgroundMusic from "./components/BackgroundMusic.jsx"
+import CommunityPartner from "./components/CommunityPartner.jsx"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Theme />
       <Schedule />
       {/* <CursorEffect /> */}
+      <CommunityPartner />
       <Chatbot />
       <Footer />
       <BackgroundMusic />
