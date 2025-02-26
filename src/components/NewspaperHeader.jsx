@@ -19,19 +19,31 @@ const NewspaperHeader = () => {
             <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
 
             {/* Navigation Links */}
-            <Link to="/" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+            <Link
+              to="/"
+              className="font-bold font-inter hover:text-amber-500 text-[18px]"
+            >
               About
             </Link>
-            
-            <Link to="/events" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+
+            <Link
+              to="/events"
+              className="font-bold font-inter hover:text-amber-500 text-[18px]"
+            >
               Events
             </Link>
-            
-            <Link to="/team" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+
+            <Link
+              to="/team"
+              className="font-bold font-inter hover:text-amber-500 text-[18px]"
+            >
               Team
             </Link>
-            
-            <Link to="/mentor" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+
+            <Link
+              to="/mentor"
+              className="font-bold font-inter hover:text-amber-500 text-[18px]"
+            >
               Mentor
             </Link>
 
@@ -55,13 +67,13 @@ const NewspaperHeader = () => {
           </div>
 
           {/* Header Section */}
-          <div className="flex justify-between max-md:justify-center items-center mb-0 px-10">
+          <div className="flex justify-between max-md:justify-center items-center mb-0 px-10 ">
             {/* Logo - Adjusted Size for Mobile */}
             <Link to="/">
               <img
                 src={logobg}
                 alt="Hacknovate Logo"
-                className="relative m-[-15px] left-[10px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10"
+                className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 max-lg:-left-4"
               />
             </Link>
 
