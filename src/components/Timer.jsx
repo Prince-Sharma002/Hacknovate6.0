@@ -26,9 +26,9 @@ const Timer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[23.438rem] h-[5.625rem] mr-[-30px]">
+    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[23.438rem] h-[5.625rem] mr-[-5px] lg:w-[30.438rem]">
       <div
-        className="text-white text-sm font-bold px-2"
+        className="text-white text-sm font-bold px-1 lg:px-3 max-lg:text-sm"
         style={{
           writingMode: "vertical-rl",
           transform: "rotate(180deg)",
@@ -38,7 +38,7 @@ const Timer = ({ targetDate }) => {
       >
         Starts in
       </div>
-      <div className="pr-2">
+      <div className="pr-1 ">
         <TimeBox
           value={timeLeft.days}
           label="DAYS"
@@ -73,7 +73,7 @@ const Timer = ({ targetDate }) => {
 const TimeBox = ({ value, label, width, height }) => {
   return (
     <div
-      className=" pl-1 flex flex-col justify-center bg-gray-300 border border-black rounded-lg"
+      className=" pl-1 flex flex-col justify-center bg-gray-300 border  border-black rounded-lg"
       style={{ width, height }}
     >
       <motion.div
