@@ -11,7 +11,7 @@ import CommunityPartner from './CommunityPartner';
 const AboutSectionMain = () => {
   return (
     <div>
-      <NewspaperHeader />
+      {/* <NewspaperHeader /> */}
       <Header />
       <About />
       <Prizes/>

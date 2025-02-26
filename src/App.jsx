@@ -8,12 +8,14 @@ import BackgroundMusic from "./components/BackgroundMusic.jsx";
 import AboutSectionMain from "./components/AboutSectionMain.jsx";
 import Mentor from "./components/Mentor.jsx";
 import Team from "./components/Team.jsx";
+import NewspaperHeader from "./components/NewspaperHeader.jsx";
 
 function App() {
   return (
     <Router>
       <>
         <Owl />
+        <NewspaperHeader />
         <Routes>
           <Route path="/" element={<AboutSectionMain />} />
           <Route path="/mentor" element={<Mentor />} />
