@@ -69,13 +69,11 @@ const NewspaperHeader = () => {
           {/* Header Section */}
           <div className="flex justify-between max-md:justify-center items-center mb-0 px-10 ">
             {/* Logo - Adjusted Size for Mobile */}
-            <Link to="/">
-              <img
-                src={logobg}
-                alt="Hacknovate Logo"
-                className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 max-lg:-left-4"
-              />
-            </Link>
+            <img
+              src={logobg}
+              alt="Hacknovate Logo"
+              className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 "
+            />
 
             <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide">
               <span className="text-prophet-black tracking-wide max-md:text-4xl">
