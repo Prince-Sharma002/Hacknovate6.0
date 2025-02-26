@@ -148,40 +148,7 @@ const Sponsor = () => {
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
 
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-2 pb-2 pt-1 text-center md:text-left">
-      {/* Grey Box (Aligned with Registration Section) */}
-      <div className="bg-gray-300 w-full h-[100px]"></div>
-
-      {/* Text + Icons */}
-      <div className="flex flex-col md:flex-row items-center w-full">
-        {/* Paragraph */}
-        <p className="text-center md:text-left  text-[#393939] font-bold leading-relaxed text-[15.1px] font-inter md:w-full">
-          Hacknovate, the flagship 24-hour hybrid hackathon of ABESIT, returns in 2025 with its 6th edition, themed around Harry Potter. Get ready to hack the world.
-        </p>
-
-        {/* Discord & Linktree Icons */}
-        <div className="flex flex-row gap-7 justify-center md:ml-auto md:pr-5">
-          {/* Discord */}
-          <div className="flex flex-col justify-center items-center text-gray-800">
-            <FaDiscord className="text-5xl md:text-7xl" />
-            <span className="text-xs md:text-sm font-semibold">DISCORD</span>
-          </div>
-
-          {/* Linktree */}
-          <div className="flex flex-col justify-center items-center text-gray-800">
-            <SiLinktree className="text-5xl md:text-7xl" />
-            <span className="text-xs md:text-sm font-semibold">LINKTREE</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Timer (Aligned with Register Button) */}
-      <div className="flex justify-center md:justify-center items-center w-full">
-        <div className=" flex justify-center items-center">
-          <Timer targetDate={targetDate} />
-        </div>
-      </div>
-    </div>
+    <div className='text-center text-4xl'> Comming Soon.... </div>
   );
 };
 

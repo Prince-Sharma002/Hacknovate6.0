@@ -106,13 +106,15 @@ const Chatbot = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="z-20 fixed w-16 bottom-4  text-2xl  right-4 p-4 bg-black text-white rounded-full  hover:bg-black transition-all"
+        className="z-20 fixed w-20 h-20 bottom-4 flex justify-center align-center items-center  text-2xl  right-4 p-4 bg-black text-white rounded-full  hover:bg-black transition-all"
       >
               <span
                 style={{
                   color: "#FFD700", // Gold color
                   textShadow: "0 0 5px #FFD700, 0 0 15px #FFA500, 0 0 20px #FF8C00", // Initial glow
                   fontWeight: "bold",
+                  fontSize : "2rem",
+                  
                   animation: "glow 1.5s infinite alternate", // Apply animation
                 }}
               >

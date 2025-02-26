@@ -135,15 +135,16 @@ const Footer = () => {
             <div className="flex items-start border-l-2 border-amber-800/50 pl-3">
               <div>
                 <h3 className="font-serif font-bold text-amber-300">By Owl:</h3>
-                <p className="text-sm md:text-base">hacknovate6.0@abesit.in</p>
+                <p className="text-sm md:text-base">hacknovate@abesit.edu.in</p>
               </div>
             </div>
             
             <div className="flex items-start border-l-2 border-amber-800/50 pl-3">
               <div>
                 <h3 className="font-serif font-bold text-amber-300">By Enchanted Telephone:</h3>
-                <p className="text-sm md:text-base">+91 87654 32109</p>
-                <p className="text-sm md:text-base">+91 98765 43210</p>
+                <p className="text-sm md:text-base">+91 91032 26627 - Sushant Sharma</p>
+                <p className="text-sm md:text-base">+91 73023 30762 - Abhinav Gupta</p>
+                <p className="text-sm md:text-base">+91 82737 38353 - Keshav Bajaj</p>
               </div>
             </div>
             

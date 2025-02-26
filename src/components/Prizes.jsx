@@ -69,7 +69,7 @@ const Prizes = () => {
           </div>
           <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-4  text-center">
             <FaAsterisk className="w-4 h-4" />
-            <span> TOTAL OFFLINE PRIZE: 40,000</span>
+            <span> TOTAL OFFLINE PRIZE: 50,000</span>
           </div>
           <div className="flex  items-start mt-6">
             {/* Vertical Text "capabilities" */}
@@ -106,14 +106,8 @@ const Prizes = () => {
             <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2 max-lg:relative max-lg:-top-14 ">
               <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96">
                 <div className="flex flex-col absolute text-center">
-                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
-                    {" "}
-                    WINNER{" "}
-                  </h1>
-                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
-                    {" "}
-                    5,000
-                  </h1>
+                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
+                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
                 </div>
                 <img
                   src={online_prize_Bgcover2}
@@ -121,27 +115,17 @@ const Prizes = () => {
                   alt="online prices"
                 />
               </div>
-              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 max-lg:w-96 mx-auto flex justify-center align-center items-center">
-                <div className="flex flex-col absolute text-center  ">
-                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
-                    {" "}
-                    WINNER{" "}
-                  </h1>
-                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
-                    {" "}
-                    5,000
-                  </h1>
-                </div>
-                <img
-                  src={online_prize_Bgcover2}
-                  className="w-full h-full"
-                  alt="online prices"
-                />
+              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
+                <div className="flex flex-col absolute text-center">
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
+                    <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
+                  </div>
+                <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
               </div>
             </div>
             <div className="bg-black text-amber-400 text-xl flex justify-center items-center max-lg:relative max-lg:-top-12  gap-4 mt-2  text-center">
               <FaAsterisk className="w-4 h-4" />
-              <span> TOTAL CONSOLATION PRIZE: 17,000</span>
+              <span> TOTAL CONSOLATION PRIZE: 6,000</span>
             </div>
           </div>
         </div>
