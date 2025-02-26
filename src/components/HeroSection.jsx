@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     
     <div className="hero-section">
-      <div className='absolute left-8 top-4 w-20 h-20'>
+      <div className='absolute left-6 top-4 w-20 h-20'>
         <img src={hacknovate}/>
       </div>
       <a href="https://www.abesit.in/" className='z-20'>
