@@ -52,7 +52,7 @@ const NewspaperHeader = () => {
             <img
               src={logobg}
               alt="Hacknovate Logo"
-              className="relative m-[-15px] left-[-15px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10"
+              className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 "
             />
 
             <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide">
