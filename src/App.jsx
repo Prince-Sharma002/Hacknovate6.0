@@ -9,6 +9,8 @@ import AboutSectionMain from "./components/AboutSectionMain.jsx";
 import Mentor from "./components/Mentor.jsx";
 import Team from "./components/Team.jsx";
 import NewspaperHeader from "./components/NewspaperHeader.jsx";
+import Spnosor from "./components/Spnosor.jsx";
+import Events from "./components/Events.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/" element={<AboutSectionMain />} />
           <Route path="/mentor" element={<Mentor />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/sponsor" element={<Spnosor />} />
         </Routes>
         <Chatbot />
         <BackgroundMusic />
