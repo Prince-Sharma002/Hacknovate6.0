@@ -7,6 +7,7 @@ import Owl from "./components/Owl.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx";
 import AboutSectionMain from "./components/AboutSectionMain.jsx";
 import Mentor from "./components/Mentor.jsx";
+import Team from "./components/Team.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AboutSectionMain />} />
           <Route path="/mentor" element={<Mentor />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
         <Chatbot />
         <BackgroundMusic />

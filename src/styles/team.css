@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    background-image: url("../assets/team/background.jpeg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .team-wrapper {
+    border: 5px solid black;
+    padding: 30px;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .left-container, .right-container {
+    flex: 1;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: 700;
+  }
+  
+  .title-highlight {
+    color: #FAC11F;
+    font-size: 128px;
+  }
+  
+  .title-text {
+    color: black;
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .image-section {
+    width: 666px;
+    text-align: center;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sub-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .sub-box {
+    width: 326px;
+    text-align: center;
+  }
+  
+  .sub-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .intro-text {
+    width: 474px;
+    margin-bottom: 20px;
+  }
+  
+  .final-section {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .final-box {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .final-box img {
+    width: 100%;
+    height: auto;
+  }
+  

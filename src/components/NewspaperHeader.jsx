@@ -1,11 +1,11 @@
 import logobg from "../assets/logobg.png";
 import redCircle from "../assets/redCircle.png";
-
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const NewspaperHeader = () => {
   return (
-    <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20  max-lg:m-0 ">
+    <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20 max-lg:m-0">
       <div className="w-full mx-auto border-b-4 border-slate-800">
         <div
           className="text-center space-y-3 animate-fadeIn"
@@ -18,14 +18,22 @@ const NewspaperHeader = () => {
           >
             <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
 
-            {["About", "Events", "Team", "Mentor"].map((item) => (
-              <span
-                key={item}
-                className="font-bold font-inter hover:text-amber-500 text-[18px]"
-              >
-                <a href="">{item}</a>
-              </span>
-            ))}
+            {/* Navigation Links */}
+            <Link to="/" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+              About
+            </Link>
+            
+            <Link to="/events" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+              Events
+            </Link>
+            
+            <Link to="/team" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+              Team
+            </Link>
+            
+            <Link to="/mentor" className="font-bold font-inter hover:text-amber-500 text-[18px]">
+              Mentor
+            </Link>
 
             <div className="relative font-bold font-inter hover:text-amber-500 text-[18px]">
               <div className="relative w-[127px] h-auto">
@@ -35,7 +43,7 @@ const NewspaperHeader = () => {
                   className="absolute -top-4 w-full h-auto pointer-events-none"
                 />
               </div>
-              <a href="">Sponsor Us</a>
+              <Link to="/sponsor">Sponsor Us</Link>
             </div>
 
             <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
@@ -49,11 +57,13 @@ const NewspaperHeader = () => {
           {/* Header Section */}
           <div className="flex justify-between max-md:justify-center items-center mb-0 px-10">
             {/* Logo - Adjusted Size for Mobile */}
-            <img
-              src={logobg}
-              alt="Hacknovate Logo"
-              className="relative m-[-15px] left-[10px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10"
-            />
+            <Link to="/">
+              <img
+                src={logobg}
+                alt="Hacknovate Logo"
+                className="relative m-[-15px] left-[10px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10"
+              />
+            </Link>
 
             <h1 className="text-2xl md:text-8xl font-serif font-black tracking-wide">
               <span className="text-prophet-black tracking-wide max-md:text-4xl">
