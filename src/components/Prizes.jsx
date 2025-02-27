@@ -1,22 +1,22 @@
 import offline_prize_Bg1 from "../assets/offline_prize_Bg1.png";
 import offline_prize_Bg2 from "../assets/offline_prize_Bg2.png";
 import offline_prize_Bgcover1 from "../assets/offline_prize_Bgcover1.png";
-import  offline_prize_Bgcover2 from "../assets/offline_prize_Bgcover2.png";
+import offline_prize_Bgcover2 from "../assets/offline_prize_Bgcover2.png";
 import online_prize_Bgcover2 from "../assets/online_prizes.jpg";
 import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
-    <div className="border-4 border-slate-800 w-full p-4 pt-0">
+    <div className="border-4 border-slate-800 w-full p-4 pt-0 max-lg:pb-0  ">
       {/* Title Section */}
-      <div className="w-full m-2 h-16 flex justify-center items-center max-lg:text-xl ">
+      <div className="w-full m-2 h-16 flex justify-center items-center max-lg:text-xl  max-lg:relative max-lg:top-6 ">
         <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center mt-4 border-black inline-block ">
           Goblet of Rewards: HACKNOVATE 6.0 PRIZES
         </h1>
       </div>
 
       {/* Prize Sections Grid */}
-      <div className="grid  md:grid-cols-2 gap-6">
+      <div className="grid  md:grid-cols-2 gap-6 max-lg:relative max-lg:top-10">
         {/* Offline Prizes */}
         <div className="max-lg:relative max-lg:-top-14">
           <div className="border-b-4 border-black mt-4">
@@ -27,19 +27,8 @@ const Prizes = () => {
           <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4">
             {/* Prize Box 1 with Background and Overlay */}
             <div
-              className="relative w-full h-60 bg-cover max-lg:w-96 bg-center rounded-lg shadow-lg flex justify-center items-center"
-              style={{ 
-                backgroundImage: `url(${offline_prize_Bg1})`,
-                transition: "transform 0.3s ease, box-shadow 0.3s ease"
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = "scale(1.05)";
-                
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.boxShadow = "";
-              }}
+              className="relative w-60 h-60 bg-cover max-lg:w-96 bg-center rounded-lg shadow-lg flex justify-center items-center"
+              style={{ backgroundImage: `url(${offline_prize_Bg1})` }}
             >
               <div className="z-10 text-center">
                 <h1 className="z-10 font-sans text-4xl font-extrabold text-yellow-500 drop-shadow-4xl max-lg:text-6xl ">
@@ -59,19 +48,8 @@ const Prizes = () => {
 
             {/* Prize Box 2 with Background and Overlay */}
             <div
-              className="relative w-full h-60 bg-cover bg-center rounded-lg shadow-lg max-lg:w-96 flex justify-center items-center"
-              style={{ 
-                backgroundImage: `url(${offline_prize_Bg2})`,
-                transition: "transform 0.3s ease, box-shadow 0.3s ease"
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = "scale(1.05)";
-                
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.boxShadow = "";
-              }}
+              className="relative w-60 h-60 bg-cover bg-center rounded-lg shadow-lg max-lg:w-96 flex justify-center items-center"
+              style={{ backgroundImage: `url(${offline_prize_Bg2})` }}
             >
               <div className="z-10 text-center">
                 <h1 className="z-10 font-sans text-4xl font-extrabold text-yellow-500 drop-shadow-4xl max-lg:text-6xl">
@@ -125,24 +103,17 @@ const Prizes = () => {
                 Consolation Prizes
               </h1>
             </div>
-            <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-4 max-lg:relative max-lg:-top-14 ">
-              <div 
-                className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96"
-                style={{ 
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease"
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = "scale(1.05)";
-                  
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.boxShadow = "";
-                }}
-              >
+            <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2 max-lg:relative max-lg:-top-14 ">
+              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96">
                 <div className="flex flex-col absolute text-center">
-                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
-                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
+                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl max-lg:text-5xl">
+                    {" "}
+                    WINNER{" "}
+                  </h1>
+                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl max-lg:text-5xl">
+                    {" "}
+                    3,000
+                  </h1>
                 </div>
                 <img
                   src={online_prize_Bgcover2}
@@ -150,25 +121,22 @@ const Prizes = () => {
                   alt="online prices"
                 />
               </div>
-              <div 
-                className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
-                style={{ 
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease"
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = "scale(1.05)";
-                  
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.boxShadow = "";
-                }}
-              >
+              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96">
                 <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
-                    <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
-                  </div>
-                <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
+                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl max-lg:text-5xl">
+                    {" "}
+                    WINNER{" "}
+                  </h1>
+                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl max-lg:text-5xl">
+                    {" "}
+                    5,000
+                  </h1>
+                </div>
+                <img
+                  src={online_prize_Bgcover2}
+                  className="w-full h-full"
+                  alt="online prices"
+                />
               </div>
             </div>
             <div className="bg-black text-amber-400 text-xl flex justify-center items-center max-lg:relative max-lg:-top-12  gap-4 mt-2  text-center">
@@ -178,7 +146,7 @@ const Prizes = () => {
           </div>
         </div>
 
-        <div className="  rounded-lg">
+        <div className="  rounded-lg max-lg:hidden di">
           {/* Three column newspaper layout */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800 text-lg font-serif">
             {/* First Column with Drop Cap */}
@@ -226,32 +194,19 @@ const Prizes = () => {
               </p>
             </div>
           </div>
-          <div className="border-b-8 border-black max-lg:relative ">
+          <div className="border-b-4 border-black max-lg:relative max-lg:-top-[220px]">
             <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
               Online Prizes
             </h1>
           </div>
-          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-4">
-            <div 
-              className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
-              style={{ 
-                transition: "transform 0.3s ease, box-shadow 0.3s ease"
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = "scale(1.05)";
-                
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.boxShadow = "";
-              }}
-            >
+          <div className="flex flex-col flex-center align-center max-lg:relative max-lg:-top-[210px] justify-center md:flex-row gap-2">
+            <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96">
               <div className="flex flex-col absolute text-center">
-                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
+                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl max-lg:text-5xl">
                   {" "}
                   WINNER{" "}
                 </h1>
-                <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
+                <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl max-lg:text-5xl ">
                   {" "}
                   10,000
                 </h1>
@@ -262,26 +217,13 @@ const Prizes = () => {
                 alt="online prices"
               />
             </div>
-            <div 
-              className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
-              style={{ 
-                transition: "transform 0.3s ease, box-shadow 0.3s ease"
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = "scale(1.05)";
-                
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.boxShadow = "";
-              }}
-            >
+            <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96">
               <div className="flex flex-col absolute text-center">
-                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
+                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl max-lg:text-5xl">
                   {" "}
                   WINNER{" "}
                 </h1>
-                <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
+                <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl max-lg:text-5xl">
                   {" "}
                   5,000
                 </h1>
@@ -293,7 +235,7 @@ const Prizes = () => {
               />
             </div>
           </div>
-          <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
+          <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center max-lg:relative max-lg:-top-[200px]">
             <FaAsterisk className="w-4 h-4" />
             <span> TOTAL ONLINE PRIZE: 15,000</span>
           </div>
@@ -308,7 +250,7 @@ const Prizes = () => {
             </div>
 
             {/* Wrapping Text */}
-            <p className="text-gray-800 text-justify font-serif hidden md:inline">
+            <p className="text-gray-800 text-justify  font-serif hidden  md:inline">
               elebrating talent, recognizing potential, and rewarding
               excellence. Valiant wizards-in-the-making shall not go unnoticed!
               Hacknovate 6.0 recognizes and celebrates emerging talent with two
