@@ -87,7 +87,11 @@
   }
   .sub-box2 {
     width: 100%;
+    color: #393939;
     text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
   
   .sub-box img {
@@ -132,9 +136,23 @@
     font-weight: 700;
     margin-bottom: 10px;
   }
+  .final-box3 {
+    width: 80%;
+    color: #393939;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
   
   .final-box img {
     width: 100%;
     height: auto;
+  }
+  
+  .final-box-container {
+    display: flex;
+    gap: 8px; /* Adjust for a very small gap */
   }
   
