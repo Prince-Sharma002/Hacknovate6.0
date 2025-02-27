@@ -86,7 +86,7 @@ const About = () => {
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 space-x-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 space-x-6 w-full">
           <div className="space-y-5">
             <img className=" hidden md:inline" src={A} alt="a letter" />
             <p className="text-lg text-gray-800 text-justify md:text-left">
@@ -96,7 +96,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <p className="text-lg text-gray-800 text-justify md:text-left max-lg:relative max-lg:-left-5">
+            <p className=" text-lg text-gray-800 text-justify md:text-left max-lg:relative max-lg:-left-5 w-full">
               Within these grand halls, students transform into digital wizards.
               Here, logic is the ultimate spell, creativity the strongest
               potion, and knowledge the true source of power. So grab your wand

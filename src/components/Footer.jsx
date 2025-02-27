@@ -77,21 +77,22 @@ const Footer = () => {
 
           <div className="grid grid-cols-3 gap-4 md:gap-6">
             {[
-              { src: whatsapplogo, alt: "WhatsApp", name: "Owl Post" },
-              { src: instalogo, alt: "Instagram", name: "Moving Pictures" },
-              { src: discordlogo, alt: "Discord", name: "Common Room" },
-              { src: linktreelogo, alt: "Linktree", name: "Floo Network" },
-              { src: linkedinlogo, alt: "LinkedIn", name: "Ministry Records" },
-              { src: xxxlogo, alt: "Other", name: "Secret Society" },
+              { src: instalogo, alt: "Instagram", name: "Moving Pictures" , href:"https://www.instagram.com/hacknovate.abesit" },
+              { src: discordlogo, alt: "Discord", name: "Common Room" , href:"https://discord.com/invite/kaGJwHqW8t" },
+              { src: linktreelogo, alt: "Linktree", name: "Floo Network" , href:"https://bio.link/hacknovate" },
+              { src: linkedinlogo, alt: "LinkedIn", name: "Ministry Records" , href:"https://www.linkedin.com/company/hacknovate/" },
+              { src: xxxlogo, alt: "Other", name: "Secret Society" , href:"https://x.com/hacknovate" },
             ].map((icon, index) => (
               <div key={index} className="flex flex-col items-center group">
                 <div className="bg-amber-900/30 rounded-lg p-2 hover:bg-amber-800/50 transition duration-300">
+                <a href={icon.href}> 
                   <img
                     src={icon.src}
                     alt={icon.alt}
                     className="w-10 h-10 md:w-12 md:h-12 transition duration-300 ease-in-out"
                     style={{ filter: "sepia(20%)" }}
                   />
+                  </a>
                 </div>
                 <span className="text-amber-200 text-xs mt-1 text-center">{icon.name}</span>
               </div>

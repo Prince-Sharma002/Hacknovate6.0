@@ -1,3 +1,4 @@
+import React from 'react'
 import Timer from "./Timer";
 import { FaDiscord } from "react-icons/fa";
 import andSymbol from "../assets/and.png";
@@ -6,6 +7,18 @@ import devfolioLogo from "../assets/devfolio.png";
 
 
 const Header = () => {
+
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
+
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 lg:px-4 py-8 lg:py-0 lg:mb-3 items-start ">
@@ -61,20 +74,27 @@ const Header = () => {
         </p>
 
         {/* APPLY NOW Button */}
-        <button
+        {/* <button
           className="bg-[#27333F] p-2 rounded-xl shadow-lg active:scale-95 transition-transform duration-150"
           onClick={() => window.open("https://hacknovate6.devfolio.co", "_blank")}
         >
-          <div className=" rounded-xl px-6 py-3 flex justify-center items-center gap-2">
-            {/* Devfolio Logo */}
+          <div className=" rounded-xl px-3 py-3 flex justify-center items-center gap-0">
+         
             <img src={devfolioLogo} alt="Devfolio" className="h-10 md:h-16" />
             
-            {/* Apply Now Text */}
-            <p className="text-3xl lg:text-[2.5rem]  md:text-5xl text-white font-bold tracking-wide uppercase lg:h-[4rem] lg:flex lg:items-center lg:justify-center font-roboto ">
-              APPLY NOW
+          
+            <p className="text-3xl lg:text-[2.5rem]  md:text-1xl text-white font-bold tracking-wide uppercase lg:h-[4rem] lg:flex lg:items-center lg:justify-center font-roboto ">
+              Apply with Devfolio
             </p>
           </div>
-        </button>
+        </button> */}
+
+          <div 
+            className="apply-button" 
+            data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+            data-button-theme="dark-inverted"
+          > dev</div>
+
 
 
         {/* Discord Button */}
