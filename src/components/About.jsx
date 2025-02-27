@@ -124,7 +124,6 @@ const About = () => {
               alt="hacknovate"
             />
 
-
           <div className="bg-black w-full text-amber-400  gap-4 lg:relative text-xl flex justify-center items-center  text-center max-lg:text-[15px]">
             <FaAsterisk className="w-4 h-4 max-lg:hidden" />
             <span> HACKNOVATE: THE FLAGSHIP EVENT OF ABESIT GHAZIABAD </span>

@@ -11,7 +11,7 @@ import "../styles/team.css"; // Ensure this path is correct
 
 const Team = () => {
   return (
-    <div className="main-container">
+    <div className="main-container ">
       <div className="team-wrapper">
         <div className="container">
           <div className="left-container">

@@ -57,6 +57,7 @@ export default {
 		  sans: ["ui-sans-serif", "system-ui"], 
 		  titan: ["Titan One", "cursive"],
 		  roboto: ["Roboto", "sans-serif"],
+		  hacknovate: ['HacknovateFont', 'sans-serif'],
 
 		},
 	  },

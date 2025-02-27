@@ -89,7 +89,7 @@ const Theme = () => {
   ];
 
   return (
-    <div className="border-4 border-slate-800 border-t-0 ">
+    <div className="border-4 border-slate-800 border-t-0 pb-8">
       <div className="min-h-screen text-white font-serif px-4 md:px-12 ">
         <div className="w-full px-4 py-12 max-lg:relative max-lg:-top-6">
           <div className="max-w-6xl mx-auto flex justify-center text-center">

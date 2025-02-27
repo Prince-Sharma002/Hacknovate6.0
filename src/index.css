@@ -8,6 +8,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'HacknovateFont';
+  src: url('../src/fonts/harry-p-font/HarryP-MVZ6w.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @layer base {
   * {
     @apply border-border;

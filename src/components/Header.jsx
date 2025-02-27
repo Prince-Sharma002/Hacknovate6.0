@@ -4,13 +4,14 @@ import andSymbol from "../assets/and.png";
 import devfolioLogo from "../assets/devfolio.png"; 
 
 
+
 const Header = () => {
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 lg:px-4 py-8 lg:py-0 lg:mb-3 items-start ">
       {/* Left Column - Grey Box */}
       <div className="flex max-lg:relative justify-center md:justify-start max-lg:-top-8">
-        <div className="w-[400px] md:w-[507px] h-[406px] rounded-[20px]  bg-[#C9C8C8] grid grid-rows-3 gap-4 p-4">
+        <div className="w-[400px] md:w-[507px] h-[406px] rounded-[20px] flex flex-row justify-center items-center p-4">
                {/* <div className="flex gap-12 ">
                   <div className="w-32 bg-gray-600"> </div>
                   <div> 
@@ -19,7 +20,21 @@ const Header = () => {
                    </div>
                </div> */}
 
-               <h1 className="text-center text-6xl font-extrabold"> <span className="border-b-4"> Hacknovate 6.0 </span> </h1>
+                <div>
+                  <h1 className="  md:text-[6rem] font-extrabold "> 
+                  <span className=" font-hacknovate tracking-widest"> HACK </span> 
+                </h1>
+                <h1 className=" md:text-[6rem] font-extrabold"> 
+                  <span className=" font-hacknovate tracking-widest"> NO </span> 
+                </h1>
+                <h1 className=" md:text-[6rem] font-extrabold"> 
+                  <span className=" font-hacknovate tracking-widest"> VATE </span> 
+                </h1>
+                </div>
+                
+                <div>
+                  <h1 className="text-[10rem]  font-hacknovate"> 6.0 </h1>
+                </div>
 
                {/* <div className="grid grid-cols-2">
                   <div> 
