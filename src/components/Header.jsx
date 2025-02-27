@@ -1,6 +1,8 @@
 import Timer from "./Timer";
 import { FaDiscord } from "react-icons/fa";
 import andSymbol from "../assets/and.png";
+import devfolioLogo from "../assets/devfolio.png"; 
+
 
 const Header = () => {
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
@@ -44,13 +46,21 @@ const Header = () => {
         </p>
 
         {/* APPLY NOW Button */}
-        <button className="bg-black p-2 rounded-xl shadow-lg">
-          <div className="border-2 border-amber-500 rounded-xl px-6 py-3">
-            <p className="text-3xl md:text-5xl text-amber-500 font-bold tracking-wide uppercase">
+        <button
+          className="bg-[#27333F] p-2 rounded-xl shadow-lg active:scale-95 transition-transform duration-150"
+          onClick={() => window.open("https://hacknovate6.devfolio.co", "_blank")}
+        >
+          <div className=" rounded-xl px-6 py-3 flex justify-center items-center gap-2">
+            {/* Devfolio Logo */}
+            <img src={devfolioLogo} alt="Devfolio" className="h-10 md:h-16" />
+            
+            {/* Apply Now Text */}
+            <p className="text-3xl lg:text-[2.5rem]  md:text-5xl text-white font-bold tracking-wide uppercase lg:h-[4rem] lg:flex lg:items-center lg:justify-center font-roboto ">
               APPLY NOW
             </p>
           </div>
         </button>
+
 
         {/* Discord Button */}
         <button className="w-full md:w-[22.5rem] h-[8rem] rounded-[10px] border border-[#C39208] bg-[rgba(0,0,0,0.70)] flex justify-center items-center shadow-lg">
