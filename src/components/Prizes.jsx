@@ -27,8 +27,19 @@ const Prizes = () => {
           <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4">
             {/* Prize Box 1 with Background and Overlay */}
             <div
-              className="relative w-60 h-60 bg-cover max-lg:w-96 bg-center rounded-lg shadow-lg flex justify-center items-center"
-              style={{ backgroundImage: `url(${offline_prize_Bg1})` }}
+              className="relative w-full h-60 bg-cover max-lg:w-96 bg-center rounded-lg shadow-lg flex justify-center items-center"
+              style={{ 
+                backgroundImage: `url(${offline_prize_Bg1})`,
+                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "scale(1.05)";
+                
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.boxShadow = "";
+              }}
             >
               <div className="z-10 text-center">
                 <h1 className="z-10 font-sans text-4xl font-extrabold text-yellow-500 drop-shadow-4xl max-lg:text-6xl ">
@@ -48,8 +59,19 @@ const Prizes = () => {
 
             {/* Prize Box 2 with Background and Overlay */}
             <div
-              className="relative w-60 h-60 bg-cover bg-center rounded-lg shadow-lg max-lg:w-96 flex justify-center items-center"
-              style={{ backgroundImage: `url(${offline_prize_Bg2})` }}
+              className="relative w-full h-60 bg-cover bg-center rounded-lg shadow-lg max-lg:w-96 flex justify-center items-center"
+              style={{ 
+                backgroundImage: `url(${offline_prize_Bg2})`,
+                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "scale(1.05)";
+                
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.boxShadow = "";
+              }}
             >
               <div className="z-10 text-center">
                 <h1 className="z-10 font-sans text-4xl font-extrabold text-yellow-500 drop-shadow-4xl max-lg:text-6xl">
@@ -103,8 +125,21 @@ const Prizes = () => {
                 Consolation Prizes
               </h1>
             </div>
-            <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2 max-lg:relative max-lg:-top-14 ">
-              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96">
+            <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-4 max-lg:relative max-lg:-top-14 ">
+              <div 
+                className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center max-lg:w-96"
+                style={{ 
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow = "";
+                }}
+              >
                 <div className="flex flex-col absolute text-center">
                   <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
                   <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
@@ -115,7 +150,20 @@ const Prizes = () => {
                   alt="online prices"
                 />
               </div>
-              <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
+              <div 
+                className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
+                style={{ 
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow = "";
+                }}
+              >
                 <div className="flex flex-col absolute text-center">
                     <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
                     <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
@@ -183,8 +231,21 @@ const Prizes = () => {
               Online Prizes
             </h1>
           </div>
-          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-2">
-            <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
+          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-4">
+            <div 
+              className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
+              style={{ 
+                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "scale(1.05)";
+                
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.boxShadow = "";
+              }}
+            >
               <div className="flex flex-col absolute text-center">
                 <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
                   {" "}
@@ -201,7 +262,20 @@ const Prizes = () => {
                 alt="online prices"
               />
             </div>
-            <div className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center">
+            <div 
+              className="bg-black md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
+              style={{ 
+                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "scale(1.05)";
+                
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.boxShadow = "";
+              }}
+            >
               <div className="flex flex-col absolute text-center">
                 <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
                   {" "}

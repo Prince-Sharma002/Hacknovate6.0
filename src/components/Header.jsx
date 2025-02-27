@@ -8,7 +8,31 @@ const Header = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 lg:px-4 py-8 lg:py-0 lg:mb-3 items-start ">
       {/* Left Column - Grey Box */}
       <div className="flex max-lg:relative justify-center md:justify-start max-lg:-top-8">
-        <div className="w-[400px] md:w-[507px] h-[406px] rounded-[20px]  bg-[#C9C8C8]"></div>
+        <div className="w-[400px] md:w-[507px] h-[406px] rounded-[20px]  bg-[#C9C8C8] grid grid-rows-3 gap-4 p-4">
+               <div className="flex gap-12 ">
+                  <div className="w-32 bg-gray-600"> </div>
+                  <div> 
+                    <h1 className="text-8xl text-left">ABC</h1>
+                    <h1>PRESENTS</h1>
+                   </div>
+               </div>
+
+               <h1 className="text-center text-6xl font-extrabold"> <span className="border-b-4"> Hacknovate 6.0 </span> </h1>
+
+               <div className="grid grid-cols-2">
+                  <div> 
+                      <h1>XYZ</h1>
+                      <h1>Powered By-</h1>
+                  </div>
+                  <div>
+                  <div> 
+                      <h1>ABESIT</h1>
+                      <h1>Organized by</h1>
+                  </div>
+                  </div>
+               </div>
+
+        </div>
       </div>
 
       {/* Center Column - Event Description, APPLY NOW, Discord Button */}
