@@ -56,6 +56,8 @@ export default {
 		  montserrat: ["Montserrat", "sans-serif"],
 		  sans: ["ui-sans-serif", "system-ui"], 
 		  titan: ["Titan One", "cursive"],
+		  roboto: ["Roboto", "sans-serif"],
+
 		},
 	  },
 	},
