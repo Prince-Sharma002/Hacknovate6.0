@@ -55,7 +55,7 @@ const NewspaperHeader = () => {
                   className="absolute -top-4 w-full h-auto pointer-events-none"
                 />
               </div>
-              <Link to="/sponsor">Sponsor Us</Link>
+               <a href="https://lu.ma/4phnzjrb"> Sponsor Us </a>
             </div>
 
             <div className="flex-1 h-[3px] w-[80px] bg-black"></div>

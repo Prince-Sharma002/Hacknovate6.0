@@ -1,5 +1,6 @@
 import image from "../assets/image.png";
 import abesitgif from "../assets/abesit hp.gif";
+import hackno from "../assets/hackno.gif";
 import A from "../assets/A.svg";
 import M from "../assets/M.svg";
 import "../styles/about.css";
@@ -115,9 +116,16 @@ const About = () => {
           </div>
         </div>
 
-        <div className="md:pl-4 col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full md:gap-2">
-          <img className="w-full h-80 max-lg:h-54" src={image} alt="abesit" />
-          <div className="bg-black w-full text-amber-400 lg:relative -top-4 text-xl flex justify-center items-center  gap-4 mt-4  text-center max-lg:text-[15px]">
+        <div className="md:pl-4 col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full">
+          
+           <img
+              className="flex md:w-full md:h-full m-4 border-0"
+              src={hackno}
+              alt="hacknovate"
+            />
+
+
+          <div className="bg-black w-full text-amber-400  gap-4 lg:relative text-xl flex justify-center items-center  text-center max-lg:text-[15px]">
             <FaAsterisk className="w-4 h-4 max-lg:hidden" />
             <span> HACKNOVATE: THE FLAGSHIP EVENT OF ABESIT GHAZIABAD </span>
           </div>
