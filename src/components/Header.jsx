@@ -92,7 +92,7 @@ const Header = () => {
       </div>
 
       {/* Right Column - Timer, DATE & TIME, and Structure of Competition */}
-      <div className="flex flex-col max-lg:relative items-center space-y-8 max-lg:space-y-2 max-lg:-top-14 ">
+      <div className="flex flex-col max-lg:relative items-center space-y-8 max-lg:space-y-2 max-lg:-top-14 pr-4">
         {/* Countdown Timer */}
         <Timer targetDate={targetDate} />
 
@@ -114,10 +114,10 @@ const Header = () => {
             />
           </div>
           <div className="flex flex-col items-center max-lg:relative max-lg:left-12 ">
-            <h1 className="text-[70px] md:text-[42.8px] font-titan text-black max-lg:text-[40px] ">
+            <h1 className="text-[70px] text-center md:text-[42.8px] font-titan text-black max-lg:text-[40px] ">
               TIME
             </h1>
-            <h2 className="text-[20px] max-lg:[36px] max-lg:text-center  md:text-[18px] font-extrabold text-[#3A3A3A] lg:text-[25px]">
+            <h2 className="text-[20px]  text-center max-lg:[36px] max-lg:text-center  md:text-[18px] font-extrabold text-[#3A3A3A] lg:text-[25px]">
               9:00 AM to <br /> 12:30 PM IST
             </h2>
           </div>

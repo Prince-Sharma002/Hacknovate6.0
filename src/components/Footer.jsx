@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Main Headline */}
           <h2 className="text-3xl  md:text-5xl xl:text-6xl text-amber-400 font-serif font-bold text-center mt-16 mb-2 leading-tight"
               style={{ 
-                textShadow: "2px 2px 4px rgba(0,0,0,0.6)",
+                textShadow: "4px 4px 8px rgba(0,0,0,1)",
                 fontVariant: "small-caps" 
               }}>
             HACKNOVATE 6.0
