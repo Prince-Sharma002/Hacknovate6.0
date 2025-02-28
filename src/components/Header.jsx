@@ -41,13 +41,11 @@ const Header = () => {
       </div>
 
       {/* Center Column - Event Description, APPLY NOW, Discord Button */}
-      <div className="flex flex-col max-lg:relative max-lg:-top-10 text-center md:text-left space-y-8 max-lg:space-y-4 ">
+      <div className="flex flex-col max-lg:relative max-lg:-top-10 text-center md:text-left space-y-8 max-lg:space-y-2 ">
         <p className="text-justify text-[#393939]  font-bold leading-relaxed text-[15.1px] font-inter">
-          Hacknovate, the flagship 24-hour hybrid hackathon of ABESIT, returns
-          in 2025 with its 6th edition, themed around Harry Potter. Get ready to
-          hack the world.
+        Hacknovate, the flagship 24-hour hybrid hackathon of ABESIT, is back with its highly anticipated 6th edition in 2025, bringing an enchanting twist with a Harry Potter-themed experience. Whether you're a wizard with code or a muggle with big ideas, this is your chance to showcase your skills, collaborate with brilliant minds, and create magical innovations.
         </p>
-
+        {/* <p className='text-[14px] font-extrabold'> Step into the world of spells, potions, and technology, where creativity meets problem-solving. </p> */}
         {/* APPLY NOW Button */}
         <div className="flex justify-center my-6">
       {/* Custom styled button that matches your first design */}

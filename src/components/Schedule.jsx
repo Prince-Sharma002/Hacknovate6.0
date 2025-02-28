@@ -5,7 +5,7 @@ import finalschedule from "../assets/finalschedule.png";
 const Schedule = () => {
   return (
     <div className="border-4 border-slate-800 w-full border-t-0 p-4 pb-4 mb-0 text-center border-b-0">
-      <h1 className="themetitle text-2xl md:text-5xl font-bold mb-6 text-center border-b-4 mx-auto border-black inline-block  mt-8 max-lg:hidden">
+      <h1 className="themetitle text-2xl md:text-5xl font-bold mb-6 text-center border-b-4 mx-auto border-black inline-block border-b-8 mt-8 max-lg:hidden">
         The Hackwarts TimeTable
       </h1>
       <img

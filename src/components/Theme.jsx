@@ -93,7 +93,7 @@ const Theme = () => {
       <div className="min-h-screen text-white font-serif px-4 md:px-12 ">
         <div className="w-full px-4 py-12 max-lg:relative max-lg:-top-6">
           <div className="max-w-6xl mx-auto flex justify-center text-center">
-            <h1 className="text-[#1F1F1F] font-serif text-xl  tracking-normal font-bold md:text-5xl leading-tight mb-6 text-center max-lg:text-2xl">
+            <h1 className="themetitle text-black text-xl md:text-5xl font-bold mb-6 text-center mt-4 border-b-8 border-black inline-block ">
               Hacknovate 6.0: Unveils Its Magical Theme!
             </h1>
           </div>
