@@ -21,7 +21,7 @@ const Schedule = () => {
       <img
         src={finalschedule}
         alt="schedule map"
-        className="mx-auto "
+        className="mx-auto hidden"
         style={{
           width: "90%",
           //   boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.4)', // Equal shadow effect in all directions
