@@ -6,6 +6,7 @@ import vidhi from "../assets/team/image2.png";
 import techteam from "../assets/team/image3.png";
 import pratyush from "../assets/team/pratyush.png";
 import princy from "../assets/team/princy.png";
+import prince from "../assets/team/prince.png";
 import prithvi from "../assets/team/prithvi.png";
 
 import "../styles/team.css"; // Make sure to update this CSS file with the styles below
@@ -33,7 +34,7 @@ const Team = () => {
             <div className="team-row">
               <div className="team-column">
                 <div className="team-card">
-                  <img src={princy} alt="Hermione" className="team-image" />
+                  <img src={prince} alt="Hermione" className="team-image" />
                   <div className="team-description">
                     <p>
                     Every great hackathon needs a sharp mind with an edge, and *Malfoy* brings his signature mastery to the technical team of Hacknovate 6.0. With the cunning of a true strategist and the precision of a perfectly brewed potion, he ensures the tech runs flawlessly—because in his world, excellence isn’t a choice, it’s a legacy.
