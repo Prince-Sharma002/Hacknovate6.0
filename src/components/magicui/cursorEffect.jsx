@@ -180,8 +180,8 @@ const CursorEffect = () => {
                     pointerEvents: "none",
                     transform: "rotate(25deg)",
                     zIndex: 10000,
-                    left: `${cursorPosition.x - 20}px`,
-                    top: `${cursorPosition.y - 20}px`,
+                    left: `${cursorPosition.x - 10}px`,
+                    top: `${cursorPosition.y - 40}px`,
                     filter: "drop-shadow(0px 0px 10px rgb(0, 0, 0))",
                 }}
             />

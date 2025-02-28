@@ -141,12 +141,25 @@ const Footer = () => {
             </div>
             
             <div className="flex items-start border-l-2 border-amber-800/50 pl-3">
-              <div>
-                <h3 className="font-serif font-bold text-amber-300">By Enchanted Telephone:</h3>
-                <p className="text-sm md:text-base">+91 91032 26627 - Sushant Sharma</p>
-                <p className="text-sm md:text-base">+91 73023 30762 - Abhinav Gupta</p>
-                <p className="text-sm md:text-base">+91 82737 38353 - Keshav Bajaj</p>
-              </div>
+            <div>
+  <h3 className="font-serif font-bold text-amber-300">By Enchanted Telephone:</h3>
+  <p className="text-sm md:text-base">
+    <a href="http://wa.me/919103226627" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
+      +91 91032 26627 - Sushant Sharma
+    </a>
+  </p>
+  <p className="text-sm md:text-base">
+    <a href="http://wa.me/917302330762" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
+      +91 73023 30762 - Abhinav Gupta
+    </a>
+  </p>
+  <p className="text-sm md:text-base">
+    <a href="http://wa.me/918273738353" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
+      +91 82737 38353 - Keshav Bajaj
+    </a>
+  </p>
+</div>
+
             </div>
             
             <div className="mt-4 p-4 bg-amber-900/20 rounded-lg border border-amber-800/30">

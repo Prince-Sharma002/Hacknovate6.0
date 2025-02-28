@@ -75,7 +75,7 @@ const Prizes = () => {
             >
               <div className="z-10 text-center">
                 <h1 className="z-10 font-sans text-4xl font-extrabold text-yellow-500 drop-shadow-4xl max-lg:text-6xl">
-                  Runner-up
+                  RUNNER-UP
                 </h1>
                 <h1 className="z-10 font-sans text-4xl font-extrabold text-white drop-shadow-4xl max-lg:text-6xl">
                   20,000
@@ -141,7 +141,7 @@ const Prizes = () => {
                 }}
               >
                 <div className="flex flex-col absolute text-center">
-                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
+                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl drop-shadow-4xl"> BEST BEGINNER TEAM </h1>
                   <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
                 </div>
                 <img
@@ -165,8 +165,8 @@ const Prizes = () => {
                 }}
               >
                 <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> WINNER </h1>
-                    <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 5,000</h1>
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> ALL GIRLS TEAM </h1>
+                    <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
                   </div>
                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
               </div>
@@ -183,12 +183,12 @@ const Prizes = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800 text-lg font-serif">
             {/* First Column with Drop Cap */}
             <div>
-              <div className="float-left mt-3 mr-2 mb-1 hidden md:inline">
-                <div className="text-[146px] text-center font-extrabold font-serif relative">
-                  <span className="relative top-8 left-16 z-10 text-black">
+              <div className="float-left  text-left mt-3 mr-0 mb-1 hidden md:inline">
+                <div className="text-[146px] text-left float-left font-extrabold font-serif relative">
+                  <span className="relative top-8 left-0 z-10 text-black">
                     G
                   </span>
-                  <span className="absolute top-7 left-[58px] text-yellow-500 z-0">
+                  <span className="absolute top-7 left-0 text-yellow-500 z-0">
                     G
                   </span>
                 </div>
@@ -279,7 +279,7 @@ const Prizes = () => {
               <div className="flex flex-col absolute text-center">
                 <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
                   {" "}
-                  WINNER{" "}
+                  RUNNER-UP{" "}
                 </h1>
                 <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
                   {" "}

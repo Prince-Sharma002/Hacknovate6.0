@@ -6,6 +6,8 @@ import abesitlogo from "../assets/abesitlogo.png";
 
 const NewspaperHeader = () => {
   return (
+    
+    
     <header className="w-full px-0 py-6 bg-prophet-gray bg-opacity-20 max-lg:m-0 max-lg:relative">
       <div className="w-full mx-auto border-b-4 border-slate-800 max-lg:">
         <div
@@ -56,7 +58,10 @@ const NewspaperHeader = () => {
                   className="absolute -top-4 w-full h-auto pointer-events-none"
                 />
               </div>
-              <Link to="/sponsor">Sponsor Us</Link>
+                <a href="https://lu.ma/4phnzjrb"> 
+                Sponsor US
+                
+                </a>
             </div>
 
             <div className="flex-1 h-[3px] w-[80px] bg-black"></div>
@@ -79,11 +84,13 @@ const NewspaperHeader = () => {
           {/* Header Section */}
           <div className="flex justify-between max-md:justify-center items-center mb-0 px-10 ">
             {/* Logo - Adjusted Size for Mobile */}
+            <a href="https://www.hacknovate6.tech/">
             <img
               src={logobg}
               alt="Hacknovate Logo"
               className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 max-lg:hidden  "
             />
+            </a>
 
             <h1 className="text-2xl md:text-8xl max-lg:relative font-serif font-black tracking-wide  -right-1 -top-2">
               <span className="text-prophet-black tracking-wide max-md:text-4xl ">

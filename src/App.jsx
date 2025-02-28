@@ -11,12 +11,14 @@ import Team from "./components/Team.jsx";
 import NewspaperHeader from "./components/NewspaperHeader.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Events from "./components/Events.jsx";
+// import CursorEffect from "./components/magicui/CursorEffect.jsx";
 
 function App() {
   return (
     <Router>
       <>
-        {/* <Owl /> */}
+      {/* <CursorEffect /> */}
+     
         <NewspaperHeader />
         <Routes>
           <Route path="/" element={<AboutSectionMain />} />
