@@ -119,7 +119,7 @@ const About = () => {
         <div className="md:pl-4 col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full">
           
            <img
-              className="flex md:w-full  m-4 border-0 h-[300px]"
+              className="flex md:w-full  m-4 border-0 h-[300px] max-lg:h-[230px]"
               src={hackno}
               alt="hacknovate"
             />
