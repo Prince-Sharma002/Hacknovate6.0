@@ -148,7 +148,7 @@ const Sponsor = () => {
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
 
   return (
-    <div className='text-center text-4xl'> Comming Soon.... </div>
+    <div className='text-center text-4xl'> Coming Soon.... </div>
   );
 };
 

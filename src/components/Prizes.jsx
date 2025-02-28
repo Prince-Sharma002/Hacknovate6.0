@@ -7,7 +7,7 @@ import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
-    <div className="border-4 border-slate-800 w-full p-4 pt-0 overflow-hidden">
+    <div className="border-t-4 pr-8 border-slate-800 w-full p-4 pt-0 overflow-hidden">
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center max-lg:text-xl ">
         <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center mt-4 border-black inline-block ">

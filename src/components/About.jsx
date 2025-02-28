@@ -8,7 +8,7 @@ import { FaAsterisk } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="border-4 border-slate-800  w-full border-b-0 p-4 pb-4 mb-0 max-lg:m-0   max-lg:w-full">
+    <div className=" border-t-4   w-full border-b-0 p-4 pb-4 mb-0 max-lg:m-0   max-lg:w-full pr-8" >
       <div className="w-full flex flex-col">
         <h1 className="text-xl md:text-6xl font-extrabold uppercase text-center mb-2 border-b-4 md:border-none font-serif max-lg:text-3xl  ">
           IS ABESIT THE HOGWARTS OF CODING?
