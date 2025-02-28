@@ -17,7 +17,10 @@ const Navbar = () => {
       {/* Hamburger Menu Button */}
       {!isOpen && (
         <div className="lg:hidden fixed top-4 right-4 z-[1100] transition-opacity duration-300">
-          <button className="text-black focus:outline-none" onClick={() => setIsOpen(true)}>
+          <button
+            className="text-black focus:outline-none"
+            onClick={() => setIsOpen(true)}
+          >
             <Menu size={28} className="transition-transform duration-300" />
           </button>
         </div>
@@ -26,7 +29,9 @@ const Navbar = () => {
       {/* Navigation Menu */}
       <div
         className={`fixed top-10 right-4 w-48 bg-[#918F8F] bg-opacity-80 shadow-lg p-4 rounded-2xl backdrop-blur-sm transform transition-all duration-500 ${
-          isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
+          isOpen
+            ? "translate-x-0 opacity-100"
+            : "translate-x-full opacity-0 pointer-events-none"
         }`}
         style={{ zIndex: 1000 }}
       >
@@ -43,7 +48,7 @@ const Navbar = () => {
             { name: "About", path: "/" },
             { name: "Events", path: "/events" },
             { name: "Team", path: "/team" },
-            { name: "Mentor", path: "/mentor" },
+            { name: "Code of Conduct", path: "/Code of Conduct" },
             { name: "Contact Us", path: "/contact" },
             { name: "Sponsor Us", path: "/sponsor" },
           ].map((item) => (
