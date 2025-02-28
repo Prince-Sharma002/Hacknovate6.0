@@ -1,66 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Timer from "./Timer";
 import { FaDiscord } from "react-icons/fa";
 import andSymbol from "../assets/and.png";
+import Train from "../assets/Train.gif";
 import devfolioLogo from "../assets/devfolio.png"; 
+
 
 
 
 const Header = () => {
 
-  React.useEffect(() => {
+  useEffect(() => {
+    // Load the Devfolio SDK script
     const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
+    
     return () => {
-      document.body.removeChild(script);
-    }
-}, []);
+      // Clean up script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
 
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 lg:px-4 py-8 lg:py-0 lg:mb-3 items-start ">
       {/* Left Column - Grey Box */}
       <div className="flex max-lg:relative justify-center md:justify-start max-lg:-top-8">
-        <div className="w-[400px] md:w-[507px] h-[406px] rounded-[20px] flex flex-row justify-center items-center p-4">
-               {/* <div className="flex gap-12 ">
-                  <div className="w-32 bg-gray-600"> </div>
-                  <div> 
-                    <h1 className="text-8xl text-left">ABC</h1>
-                    <h1>PRESENTS</h1>
-                   </div>
-               </div> */}
+        <div className="w-[400px] md:w-[507px] h-[406px] rounded-[20px] flex flex-row justify-center items-center ">
+               
+          <img className='h-[98%]' src={Train} alt='train' />
 
-                <div>
-                  <h1 className="  md:text-[6rem] font-extrabold "> 
-                  <span className=" font-hacknovate tracking-widest"> HACK </span> 
-                </h1>
-                <h1 className=" md:text-[6rem] font-extrabold"> 
-                  <span className=" font-hacknovate tracking-widest"> NO </span> 
-                </h1>
-                <h1 className=" md:text-[6rem] font-extrabold"> 
-                  <span className=" font-hacknovate tracking-widest"> VATE </span> 
-                </h1>
-                </div>
-                
-                <div>
-                  <h1 className="text-[10rem]  font-hacknovate"> 6.0 </h1>
-                </div>
-
-               {/* <div className="grid grid-cols-2">
-                  <div> 
-                      <h1>XYZ</h1>
-                      <h1>Powered By-</h1>
-                  </div>
-                  <div>
-                  <div> 
-                      <h1>ABESIT</h1>
-                      <h1>Organized by</h1>
-                  </div>
-                  </div>
-               </div> */}
+               
 
         </div>
       </div>
@@ -74,31 +49,24 @@ const Header = () => {
         </p>
 
         {/* APPLY NOW Button */}
-        {/* <button
-          className="bg-[#27333F] p-2 rounded-xl shadow-lg active:scale-95 transition-transform duration-150"
-          onClick={() => window.open("https://hacknovate6.devfolio.co", "_blank")}
-        >
-          <div className=" rounded-xl px-3 py-3 flex justify-center items-center gap-0">
-         
-            <img src={devfolioLogo} alt="Devfolio" className="h-10 md:h-16" />
-            
-          
-            <p className="text-3xl lg:text-[2.5rem]  md:text-1xl text-white font-bold tracking-wide uppercase lg:h-[4rem] lg:flex lg:items-center lg:justify-center font-roboto ">
-              Apply with Devfolio
-            </p>
-          </div>
-        </button> */}
-
-          <div 
-            className="apply-button" 
-            data-hackathon-slug="YOUR-HACKATHON-SLUG" 
-            data-button-theme="dark-inverted"
-          > dev</div>
-
-
+        <div className="flex justify-center my-6">
+      {/* Custom styled button that matches your first design */}
+      <div 
+        className="apply-button bg-[#27333F] p-2 rounded-xl shadow-lg active:scale-95 transition-transform duration-150" 
+        data-hackathon-slug="hacknovate6"
+      >
+        <div className="rounded-xl px-3 py-3 flex justify-center items-center gap-0">
+          {/* This is where Devfolio will inject its content */}
+          <p className="text-4xl lg:text-[1.5rem] md:text-1xl text-white font-bold tracking-wide lg:h-[4rem] lg:flex lg:items-center lg:justify-center font-roboto">
+            Apply with Devfolio
+          </p>
+        </div>
+      </div>
+    </div>
 
         {/* Discord Button */}
-        <button className="w-full md:w-[22.5rem] h-[8rem] rounded-[10px] border border-[#C39208] bg-[rgba(0,0,0,0.70)] flex justify-center items-center shadow-lg">
+          <a href="https://discord.com/invite/kaGJwHqW8t">
+          <button className="w-full  md:w-[22.5rem] h-[8rem] rounded-[10px] border border-[#C39208] bg-[rgba(0,0,0,0.70)] flex justify-center items-center shadow-lg">
           <span
             className="flex justify-center items-center text-[#E9C872] font-inter text-[40px] font-extrabold uppercase "
             style={{
@@ -106,9 +74,10 @@ const Header = () => {
               WebkitTextStrokeColor: "#000",
             }}
           >
-            <FaDiscord className=" mr-2 text-5xl " /> DISCORD
+            <FaDiscord className=" mr-2 text-5xl" /> DISCORD
           </span>
         </button>
+          </a>
       </div>
 
       {/* Right Column - Timer, DATE & TIME, and Structure of Competition */}
