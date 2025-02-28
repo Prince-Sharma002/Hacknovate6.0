@@ -36,12 +36,13 @@ const Team = () => {
             </div>
             <div className="flex flex-col md:flex-row gap-4">
               <div className="w-full md:w-1/2 text-center text-gray-700 font-bold">
-                <img src={blank2} alt="Nikita tech lead" className="w-full h-auto" />
-                <h4>Meet our Hermione—the Tech & Design Sorceress of Hacknovate 6.0! As Tech Lead, Social Media Lead, and Design Contributor, she crafts an experience as flawless as Wingardium Leviosa, ensuring every detail is pure magic!.</h4>
+                <img src={blank2} alt="Raunak" className="w-full h-auto" />
+                <h4>Meet Skeeter—our Social Media Lead and the (way more ethical) Rita Skeeter of Hacknovate! With a Quick-Quotes Quill and a sharp strategy, he spreads the magic far and wide!</h4>
               </div>
               <div className="w-full md:w-1/2 text-center text-gray-700 font-bold">
-                <img src={Prithvi} alt="design leads " className="w-full h-[300px] object-cover" />
-                <h4>The "Remus Lupin and Ginny Weasley" duoRemus brings thoughtful, strategic designs as sharp as a werewolf’s instincts, while Ginny adds flair and precision, making everything as vibrant as a Quidditch match.</h4>
+                <img src={blank2} alt="Ragni" className="w-full h-[300px] object-cover" />
+                <h4>The "Luna Lovegood and Rubeus Hagrid" duoLuna brings the whimsical creativity, dreaming up ideas as unique as a Crumple-Horned Snorkack, while Hagrid adds heart and passion, crafting content as warm and magical as a Care of Magical Creatures lesson...
+                </h4>
               </div>
             </div>
             <div className="w-full text-center text-gray-700 font-bold">
@@ -84,11 +85,12 @@ const Team = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-4 mt-6">
           <div className="w-full md:w-1/2 text-center text-gray-700 font-bold">
-            <img src={vidhi} alt="voluteer Team" className="w-full h-auto" />
+            <img src={blank2} alt="voluteer Team" className="w-full h-auto" />
             <h4>LLike Ravenclaw’s brightest minds, this creative team blends wisdom and imagination to craft spellbinding content and enchanting designs. With the precision of McGonagall, the vision of Newt Scamander, and the flair of Tonks, they bring Hacknovate 6.0 to life with every stroke and story!.</h4>
           </div>
           <div className="w-full md:w-1/2 text-center text-gray-700 font-bold">
-            <img src={gringots} alt="volunteer Team" className="w-full h-auto" />
+            <img src={blank2} alt="volunteer Team" className="w-full h-auto" />
+<a href="#" className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity text-white font-bold">View LinkedIn</a>
             <h4>Like the unsung heroes of Hogwarts, this team ensures discipline and seamless coordination at Hacknovate 6.0. With the authority of Mad-Eye Moody, the leadership of Kingsley Shacklebolt, and the dedication of Bill Weasley, they keep the magic flowing without a hitch!.</h4>
           </div>
         </div>
