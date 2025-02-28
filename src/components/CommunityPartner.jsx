@@ -14,13 +14,13 @@ const CommunityPartner = () => {
         {/* Left Section - Title */}
         <div className="w-full lg:w-1/2 flex items-center justify-center p-4 ">
           <div className="text-center lg:text-left">
-            <h1 className="text-[clamp(3rem,8vw,5rem)] lg:text-[128px] font-bold flex items-center justify-center lg:justify-start">
+            <h1 className="text-[clamp(3rem,8vw,5rem)] lg:text-[80px] font-bold flex items-center justify-center lg:justify-start">
               <span className="relative inline-block text-black">
                 C<span className="absolute left-1 text-yellow-500 z-0">C</span>
               </span>
               <span>ommunity</span>
             </h1>
-            <h2 className="text-[clamp(2.5rem,7vw,4rem)] lg:relative lg:text-[120px] font-semibold lg:-top-16   ">
+            <h2 className="text-[clamp(2.5rem,7vw,4rem)] lg:relative lg:text-[80px] font-semibold lg:-top-16   ">
               Partners
             </h2>
           </div>

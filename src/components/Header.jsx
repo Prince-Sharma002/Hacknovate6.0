@@ -85,7 +85,7 @@ const Header = () => {
               DATE
             </h1>
             <h2 className="text-[20px] md:text-[18px] max-lg:text-center font-extrabold text-[#3A3A3A] lg:text-[25px]">
-              4th and 5th <br /> April, 2024
+               4th and 5th <br /> April, 2024
             </h2>
           </div>
           <div className="w-[40px] max-lg:w-20  md:w-[79.382px] max-lg:absolute">
@@ -100,7 +100,7 @@ const Header = () => {
               TIME
             </h1>
             <h2 className="text-[20px]  text-center max-lg:[36px] max-lg:text-center  md:text-[18px] font-extrabold text-[#3A3A3A] lg:text-[25px]">
-              9:00 AM to <br /> 12:30 PM IST
+            - 9:00 AM to <br />  - 12:30 PM IST
             </h2>
           </div>
         </div>
