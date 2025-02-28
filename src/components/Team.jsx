@@ -5,7 +5,6 @@ import abhinav from "../assets/team/image.png";
 import vidhi from "../assets/team/image2.png";
 import techteam from "../assets/team/image3.png";
 import pratyush from "../assets/team/pratyush.png";
-import princy from "../assets/team/princy.png";
 import prince from "../assets/team/prince.png";
 import prithvi from "../assets/team/prithvi.png";
 
