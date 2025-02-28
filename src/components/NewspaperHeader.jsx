@@ -65,9 +65,6 @@ const NewspaperHeader = () => {
           {/* Mobile Navbar */}
           <div className="m-0 max-md:flex max-md:justify-end hidden relative">
             <div>
-              <h1 className="font-bold text-[27px] font-serif relative -left-[90px] -top-5  ">
-                HACKNOVATE 6.0
-              </h1>
               <Navbar />
             </div>
             <div className="flex items-center ">
@@ -88,11 +85,11 @@ const NewspaperHeader = () => {
               className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 max-lg:hidden  "
             />
 
-            <h1 className="text-2xl md:text-8xl max-lg:relative font-serif font-black tracking-wide    ">
+            <h1 className="text-2xl md:text-8xl max-lg:relative font-serif font-black tracking-wide  -right-1 -top-2">
               <span className="text-prophet-black tracking-wide max-md:text-4xl ">
                 ABESIT{" "}
               </span>
-              <span className="text-prophet-gold text-amber-400 tracking-wide max-md:text-4xl font-black max-lg:text-8xl">
+              <span className="text-prophet-gold text-amber-500 tracking-wide max-md:text-4xl font-black max-lg:text-8xl">
                 T
               </span>
               <span className="text-prophet-black tracking-wide max-md:text-4xl">
@@ -129,7 +126,7 @@ const NewspaperHeader = () => {
           </div>
 
           {/* FLAGSHIP EVENT - Adjusted for Mobile */}
-          <div className="flex items-center max-lg:relative justify-center gap-x-4  ">
+          <div className="flex items-center max-lg:relative justify-center gap-x-4  -top-2 ">
             <span className="font-inter text-2xl max-md:text-xs ">★</span>
             <p className="font-inter text-xl font-bold uppercase tracking-widest md:text-base text-center max-md:text-xs text-[#3A3A3A]">
               Presents their FLAGSHIP EVENT
