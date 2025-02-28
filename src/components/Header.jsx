@@ -100,7 +100,7 @@ const Header = () => {
               TIME
             </h1>
             <h2 className="text-[20px]  text-center max-lg:[36px] max-lg:text-center  md:text-[18px] font-extrabold text-[#3A3A3A] lg:text-[25px]">
-            - 9:00 AM to <br />  - 12:30 PM IST
+             9:00 AM to <br />   12:30 PM IST
             </h2>
           </div>
         </div>
