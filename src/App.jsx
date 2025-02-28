@@ -18,7 +18,7 @@ function App() {
     <Router>
       <>
       <CursorEffect />
-        {/* <Owl /> */}
+     
         <NewspaperHeader />
         <Routes>
           <Route path="/" element={<AboutSectionMain />} />
