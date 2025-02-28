@@ -7,6 +7,7 @@ import techteam from "../assets/team/image3.png";
 import pratyush from "../assets/team/pratyush.png";
 import prince from "../assets/team/prince.png";
 import prithvi from "../assets/team/prithvi.png";
+import raunak from "../assets/team/raunak.jpg";
 
 import "../styles/team.css"; // Make sure to update this CSS file with the styles below
 
@@ -42,7 +43,7 @@ const Team = () => {
                 </div>
                 
                 <div className="team-card">
-                  <img src="" alt="Social Media Lead" className="team-image" />
+                  <img src={raunak} alt="Social Media Lead" className="team-image" />
                   <div className="team-description">
                     <p>Meet Skeeter—our Social Media Lead and the (way more ethical) Rita Skeeter of
                     Hacknovate! With a Quick-Quotes Quill and a sharp strategy, he spreads the magic far and wide!</p>
