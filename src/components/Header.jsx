@@ -94,7 +94,7 @@ const Header = () => {
         </div>
       </div>
       {/* Mobile View */}
-      <div className="p-2 ">
+      <div className="p-2 hidden max-lg:block ">
         <h1 className="font-bold text-center">
           Hacknovate, the 24-hour hybrid hackathon of ABESIT, returns in 2025
           with its 6th edition, themed around Harry Potter.
