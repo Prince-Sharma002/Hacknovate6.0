@@ -55,7 +55,7 @@ const Header = () => {
           class="apply-button" 
           data-hackathon-slug="hacknovate6" 
           data-button-theme="dark"
-          style={{height:"44px" , width:"312px"}}
+          style={{height:"100px" , width:"312px"}}
         ></div>
     </div>
 
