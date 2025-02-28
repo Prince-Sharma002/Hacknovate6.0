@@ -7,7 +7,7 @@ import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
-    <div className="border-4 border-slate-800 w-full p-4 pt-0">
+    <div className="border-4 border-slate-800 w-full p-4 pt-0 overflow-hidden">
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center max-lg:text-xl ">
         <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center mt-4 border-black inline-block ">
@@ -226,12 +226,12 @@ const Prizes = () => {
               </p>
             </div>
           </div>
-          <div className="border-b-8 border-black max-lg:relative ">
+          <div className="border-b-4 border-black max-lg:relative -top-7 ">
             <h1 className="font-extrabold  md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
               Online Prizes
             </h1>
           </div>
-          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-4">
+          <div className="flex flex-col flex-center align-center justify-center md:flex-row gap-4 max-lg:relative max-lg:-top-6">
             <div 
               className="bg-black w-full md:w-[50%] md:h-[128px] mt-2 mx-auto flex justify-center align-center items-center"
               style={{ 
@@ -293,7 +293,7 @@ const Prizes = () => {
               />
             </div>
           </div>
-          <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center">
+          <div className="bg-black text-amber-400 text-xl flex justify-center items-center  gap-4 mt-2  text-center max-lg:relative max-lg:-top-3">
             <FaAsterisk className="w-4 h-4" />
             <span> TOTAL ONLINE PRIZE: 15,000</span>
           </div>
