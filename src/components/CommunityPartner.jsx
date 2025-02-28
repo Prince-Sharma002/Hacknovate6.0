@@ -9,7 +9,7 @@ const CommunityPartner = () => {
   ];
 
   return (
-    <div className="border-4 border-slate-800 w-full border-t-0 border-b-0 p-4 pb-4 mb-0">
+    <div className="border-slate-800 w-full border-t-0 border-b-0 p-4 pb-4 mb-0">
       <div className="flex flex-col lg:flex-row items-center w-full lg:ml-6">
         {/* Left Section - Title */}
         <div className="w-full lg:w-1/2 flex items-center justify-center p-4 ">
