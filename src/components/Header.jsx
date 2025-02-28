@@ -51,17 +51,12 @@ const Header = () => {
         {/* APPLY NOW Button */}
         <div className="flex justify-center my-6">
       {/* Custom styled button that matches your first design */}
-      <div 
-        className="apply-button bg-[#27333F] p-2 rounded-xl shadow-lg active:scale-95 transition-transform duration-150" 
-        data-hackathon-slug="hacknovate6"
-      >
-        <div className="rounded-xl px-3 py-3 flex justify-center items-center gap-0">
-          {/* This is where Devfolio will inject its content */}
-          <p className="text-4xl lg:text-[1.5rem] md:text-1xl text-white font-bold tracking-wide lg:h-[4rem] lg:flex lg:items-center lg:justify-center font-roboto">
-            Apply with Devfolio
-          </p>
-        </div>
-      </div>
+              <div 
+          class="apply-button" 
+          data-hackathon-slug="hacknovate6" 
+          data-button-theme="dark"
+          style={{height:"44px" , width:"312px"}}
+        ></div>
     </div>
 
         {/* Discord Button */}
