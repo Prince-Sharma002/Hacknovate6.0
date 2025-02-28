@@ -25,36 +25,36 @@ const Timer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[24.438rem] h-[5.5rem] mr-[-5px] lg:w-[30.438rem] lg:h-[6.5rem]">
+    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[570px] h-[5.5rem] max-lg:w-[410px] lg:h-[6.5rem]">
       <div className="text-white max-lg:relative max-lg:-left-3 text-sm font-bold px-1 lg:px-3 text-[25px] tracking-wide -rotate-90 writing-vertical-rl font-inter text-center lg:text-[17px] ">
         Starts in
       </div>
-      <div className="pr-1 lg:pr-2 max-lg:relative max-lg:-left-5">
+      <div className="pr-1 lg:pr-2 max-lg:pr-4">
         <TimeBox
           value={timeLeft.days}
           label="DAYS"
-          width="w-[85px]"
-          height="h-[69px] lg:w-[90px] lg:h-[80px] "
+          width="w-[95px]"
+          height="h-[69px] lg:w-[137px] lg:h-[80px] max-lg:w-[90px] "
         />
       </div>
-      <div className="flex bg-black text-black font-bold divide-x-4 divide-black max-lg:relative max-lg:-left-5">
+      <div className="flex bg-black text-black font-bold divide-x-[10px] divide-black  lg:pr-2 ">
         <TimeBox
           value={timeLeft.hours}
           label="hrs"
           width="w-[75px]"
-          height="h-[69px] lg:w-[90px] lg:h-[80px]"
+          height="h-[69px] lg:w-[100px] lg:h-[80px] "
         />
         <TimeBox
           value={timeLeft.minutes}
           label="mins"
           width="w-[75px]"
-          height="h-[69px] lg:w-[90px] lg:h-[80px]"
+          height="h-[69px] lg:w-[100px] lg:h-[80px]"
         />
         <TimeBox
           value={timeLeft.seconds}
           label="sec"
           width="w-[75px]"
-          height="h-[69px] lg:w-[90px] lg:h-[80px] "
+          height="h-[69px] lg:w-[100px] lg:h-[80px] "
         />
       </div>
     </div>
