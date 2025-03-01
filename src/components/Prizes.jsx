@@ -141,8 +141,8 @@ const Prizes = () => {
                 }}
               >
                 <div className="flex flex-col absolute text-center">
-                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl drop-shadow-4xl"> BEST BEGINNER TEAM </h1>
-                  <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
+                  <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-2xl drop-shadow-4xl"> BEST BEGINNER TEAM </h1>
+                  <h1 className="z-10 font-sans  font-extrabold text-2xl text-white drop-shadow-4xl"> 3,000</h1>
                 </div>
                 <img
                   src={online_prize_Bgcover2}
@@ -165,8 +165,8 @@ const Prizes = () => {
                 }}
               >
                 <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl"> ALL GIRLS TEAM </h1>
-                    <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl"> 3,000</h1>
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-2xl  drop-shadow-4xl"> ALL GIRLS TEAM </h1>
+                    <h1 className="z-10 font-sans  font-extrabold text-2xl text-white drop-shadow-4xl"> 3,000</h1>
                   </div>
                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />
               </div>
@@ -247,11 +247,11 @@ const Prizes = () => {
               }}
             >
               <div className="flex flex-col absolute text-center">
-                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
+                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-2xl  drop-shadow-4xl">
                   {" "}
                   WINNER{" "}
                 </h1>
-                <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
+                <h1 className="z-10 font-sans  font-extrabold text-2xl text-white drop-shadow-4xl">
                   {" "}
                   10,000
                 </h1>
@@ -277,11 +277,11 @@ const Prizes = () => {
               }}
             >
               <div className="flex flex-col absolute text-center">
-                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-4xl  drop-shadow-4xl">
+                <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-2xl  drop-shadow-4xl">
                   {" "}
                   RUNNER-UP{" "}
                 </h1>
-                <h1 className="z-10 font-sans  font-extrabold text-4xl text-white drop-shadow-4xl">
+                <h1 className="z-10 font-sans  font-extrabold text-2xl text-white drop-shadow-4xl">
                   {" "}
                   5,000
                 </h1>
