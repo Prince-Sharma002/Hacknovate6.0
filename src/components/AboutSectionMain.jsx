@@ -6,6 +6,7 @@ import Prizes from './Prizes';
 import Theme from './Theme';
 import Schedule from './Schedule';
 import CommunityPartner from './CommunityPartner';
+import Faq12 from './Faq12';
 
 
 const AboutSectionMain = () => {
@@ -18,6 +19,7 @@ const AboutSectionMain = () => {
       <Theme />
       <Schedule />
       <CommunityPartner />
+      <Faq12 />
     </div>
   )
 }
