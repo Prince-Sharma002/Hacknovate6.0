@@ -7,7 +7,7 @@ import { FaAsterisk } from "react-icons/fa";
 
 const Prizes = () => {
   return (
-    <div className="border-t-4 pr-8 border-slate-800 w-full p-4 pt-0 overflow-hidden">
+    <div className="border-t-4 pr-8 md:pl-4 border-slate-800 w-full  pt-0 overflow-hidden">
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center max-lg:text-xl ">
         <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center mt-4 border-black inline-block ">
@@ -16,21 +16,21 @@ const Prizes = () => {
       </div>
 
       {/* Prize Sections Grid */}
-      <div className="grid  md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {/* Offline Prizes */}
         <div className="max-lg:relative max-lg:-top-14">
           <div className="border-b-4 border-black mt-4">
-            <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2 ">
+            <h1 className="font-extrabold mt-16 md:mt-0  font-serif text-3xl  md:text-4xl border-b-2 text-center pb-2">
               Offline Prizes
             </h1>
           </div>
-          <div className="flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4">
+          <div className=" flex flex-col md:flex-row justify-evenly items-center pt-4 gap-4 ">
             {/* Prize Box 1 with Background and Overlay */}
             <div
-              className="relative w-full h-60 bg-cover max-lg:w-96 bg-center rounded-lg shadow-lg flex justify-center items-center"
+              className=" relative md:w-full h-60 bg-cover max-lg:w-96 bg-center rounded-lg shadow-lg flex justify-center items-center"
               style={{ 
                 backgroundImage: `url(${offline_prize_Bg1})`,
-                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                transition: "transform 0.3s ease, box-shadow 0.3s ease",
               }}
               onMouseOver={(e) => {
                 e.currentTarget.style.transform = "scale(1.05)";
@@ -193,8 +193,8 @@ const Prizes = () => {
                   </span>
                 </div>
               </div>
-              <p className="text-justify tracking-[-0.07em ] mt-6 break-all hidden md:inline">
-                <br /> <br /> <br /> <br /> loble and most brilliant
+              <p className="text-justify tracking-[-0.07em ] mt-8 break-all hidden md:inline">
+                <br /> <br /> <br /> <br /> <br/> loble and most brilliant
                 tech-wizards who dare to compete in the enchanted halls of
                 Hacknovate 6.0 shall lay their hands on the ultimate treasures!
               </p>

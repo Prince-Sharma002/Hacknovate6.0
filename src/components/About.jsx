@@ -93,24 +93,25 @@ const About = () => {
               <span className="md:hidden">A</span>estled amidst the world of
               innovation and learning, ABESIT stands as the Hogwarts of
               Coding—where magic isn't cast with wands but crafted with code.
+              Within these grand halls,
             </p>
           </div>
-          <div>
-            <p className=" text-lg text-gray-800 text-justify md:text-left max-lg:relative max-lg:-left-5 w-full">
-              Within these grand halls, students transform into digital wizards.
+          <div className="w-full">
+            <p className=" text-lg text-gray-800 text-justify md:text-left md:pr-4 pb-4 max-lg:relative max-lg:-left-5 ">
+            students transform into digital wizards.
               Here, logic is the ultimate spell, creativity the strongest
               potion, and knowledge the true source of power. So grab your wand
               (keyboard) Step into this realm of endless possibilities, where
               the magic of technology thrives, and let the journey to begin!
             </p>
           </div>
-          <div>
+          <div className="w-full">
             <p className="text-lg text-gray-800 text-justify md:text-left border-b-4 pb-4 max-lg:relative max-lg:-left-5  ">
               Through sheer determination, teamwork, and an unbreakable spirit,
               these coding wizards will turn impossible problems into
               extraordinary solutions
             </p>
-            <h1 className=" font-extrabold text-5xl pt-4 leading-tighter max-lg:leading-[55px] max-lg:relative max-lg:-left-5">
+            <h1 className=" font-extrabold text-4xl pt-4 leading-tighter max-lg:leading-[55px] max-lg:relative max-lg:-left-5">
               Magic, Code and Achieve!!!!
             </h1>
           </div>
