@@ -44,7 +44,7 @@ const NewspaperHeader = () => {
             </Link>
 
             <Link
-              to="/Code of Conduct"
+              to="/codeofconduct"
               className="font-bold font-inter hover:text-amber-500 text-[18px]"
             >
               Code of Conduct
