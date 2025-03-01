@@ -73,22 +73,24 @@ const NewspaperHeader = () => {
               <Navbar />
             </div>
             <div className="flex items-center ">
+            <a href="https://www.hacknovate6.tech/">
               <img
                 src={logobg}
                 alt="Hacknovate Logo"
-                className="absolute w-[50px] right-[360px] -bottom-[60px]"
+                className="absolute w-[50px] right-[330px] -bottom-[0px]"
               />
+            </a>
             </div>
           </div>
 
           {/* Header Section */}
-          <div className="flex justify-between max-md:justify-center items-center mb-0 px-10 ">
+          <div className="flex justify-between max-md:justify-center items-center mb-0 md:px-10 ">
             {/* Logo - Adjusted Size for Mobile */}
             <a href="https://www.hacknovate6.tech/">
             <img
               src={logobg}
               alt="Hacknovate Logo"
-              className="relative m-[-15px] left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 max-lg:hidden  "
+              className="relative m-[-15px]  md:left-[30px] max-md:w-24 max-md:h-auto max-md:ml-0 w-[200px] h-auto -ml-12 z-10 max-lg:hidden  "
             />
             </a>
 

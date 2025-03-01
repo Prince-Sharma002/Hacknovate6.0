@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="m-0 p-0 pr-8">
+    <div className="m-0 p-0 pr-2 md:pr-8">
       <div className="flex w-full h-[450px] pb-6 space-x-4 max-lg:hidden">
         <div className=" w-1/2 p-2 rounded-xl">
           <img src={Tt} alt="" />

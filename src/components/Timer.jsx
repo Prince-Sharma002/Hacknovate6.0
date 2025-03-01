@@ -32,27 +32,27 @@ const Timer = ({ targetDate }) => {
       <div className="pr-1 lg:pr-2 max-lg:pr-4">
         <TimeBox
           value={timeLeft.days}
-          label="DAYS"
-          width="w-[95px]"
-          height="h-[69px] lg:w-[137px] lg:h-[80px] max-lg:w-[70px] "
+          label="Days"
+          width="w-[75px] "
+          height="h-[69px] lg:w-[100px] lg:h-[80px] "
         />
       </div>
       <div className="flex bg-black text-black font-bold divide-x-[10px] divide-black  lg:pr-2 ">
         <TimeBox
           value={timeLeft.hours}
-          label="hrs"
+          label="Hrs"
           width="w-[75px] "
           height="h-[69px] lg:w-[100px] lg:h-[80px]  "
         />
         <TimeBox
           value={timeLeft.minutes}
-          label="mins"
+          label="Mins"
           width="w-[75px]"
           height="h-[69px] lg:w-[100px] lg:h-[80px]"
         />
         <TimeBox
           value={timeLeft.seconds}
-          label="sec"
+          label="Sec"
           width="w-[75px]"
           height="h-[69px] lg:w-[100px] lg:h-[80px] "
         />
