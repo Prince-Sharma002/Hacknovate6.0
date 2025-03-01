@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="m-0 p-0">
+    <div className="m-0 p-0 pr-8">
       <div className="flex w-full h-[450px] pb-6 space-x-4 max-lg:hidden">
         <div className=" w-1/2 p-2 rounded-xl">
           <img src={Tt} alt="" />
@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
                 <div className="w-full h-full">
                   <button
-                    className="w-full h-[120px] text-4xl font-serif font-bold bg-black text-amber-400 rounded-xl"
+                    className="w-full h-[90px] text-4xl font-serif font-bold bg-black text-amber-400 rounded-xl"
                     onClick={() =>
                       window.open(
                         "https://discord.com/invite/kaGJwHqW8t",
@@ -68,7 +68,7 @@ const Header = () => {
               </div>
 
               {/* Column 2 */}
-              <div className="w-[30%]  text-lg p-4 text-justify flex items-center font-serif break-all justify-center">
+              <div className="w-[30%]  text-lg p-2 text-justify flex items-center font-serif break-all justify-center">
                 <h1>
                   Hacknovate, the flagship 24-hour hybrid hackathon of ABESIT,
                   returns in 2025 with its 6th edition, themed around Harry
@@ -78,7 +78,7 @@ const Header = () => {
             </div>
 
             {/* Second row - Full width */}
-            <div className="h-[29%] flex items-center  justify-center">
+            <div className="h-[29%] flex items-center text-sm  justify-center">
               <p>
                 Structure of the competition. First, all participants must
                 register individually. Once registered, they can either create a
