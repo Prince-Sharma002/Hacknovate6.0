@@ -25,7 +25,7 @@ const Timer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[570px] h-[5.5rem] max-lg:w-[410px] lg:h-[6.5rem]">
+    <div className="flex items-center bg-black p-1 rounded-md shadow-lg w-[570px] h-[5.5rem] max-lg:w-[350px]  lg:h-[6.5rem]">
       <div className="text-white max-lg:relative max-lg:-left-3 text-sm font-bold px-1 lg:px-3 text-[25px] tracking-wide -rotate-90 writing-vertical-rl font-inter text-center lg:text-[17px] ">
         Starts in
       </div>
@@ -34,15 +34,15 @@ const Timer = ({ targetDate }) => {
           value={timeLeft.days}
           label="DAYS"
           width="w-[95px]"
-          height="h-[69px] lg:w-[137px] lg:h-[80px] max-lg:w-[90px] "
+          height="h-[69px] lg:w-[137px] lg:h-[80px] max-lg:w-[70px] "
         />
       </div>
       <div className="flex bg-black text-black font-bold divide-x-[10px] divide-black  lg:pr-2 ">
         <TimeBox
           value={timeLeft.hours}
           label="hrs"
-          width="w-[75px]"
-          height="h-[69px] lg:w-[100px] lg:h-[80px] "
+          width="w-[75px] "
+          height="h-[69px] lg:w-[100px] lg:h-[80px]  "
         />
         <TimeBox
           value={timeLeft.minutes}
@@ -63,7 +63,9 @@ const Timer = ({ targetDate }) => {
 
 const TimeBox = ({ value, label, width, height }) => {
   return (
-    <div className={`pl-1 flex flex-col justify-center  bg-gray-300 border border-black rounded-lg ${width} ${height}`}>
+    <div
+      className={`pl-1 flex flex-col justify-center  bg-gray-300 border border-black rounded-lg  lg:${width} ${height}`}
+    >
       <motion.div
         key={value}
         initial={{ rotateX: 90, opacity: 0 }}
