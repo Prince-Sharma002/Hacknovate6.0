@@ -19,7 +19,7 @@ const AboutSectionMain = () => {
       <Theme />
       <Schedule />
       <CommunityPartner />
-      <Faq12 />
+      {/* <Faq12 /> */}
     </div>
   )
 }
