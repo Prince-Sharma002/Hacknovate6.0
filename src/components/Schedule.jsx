@@ -1,4 +1,4 @@
-import map3 from "../assets/schedule/map2.svg";
+import map3 from "../assets/schedule/bg2.svg";
 import finalschedule from "../assets/finalschedule.png";
 
 const Schedule = () => {

@@ -99,13 +99,15 @@ const Header = () => {
           Hacknovate, the 24-hour hybrid hackathon of ABESIT, returns in 2025
           with its 6th edition, themed around Harry Potter.
         </h1>
-        <button className="w-full h-[100px] mt-2 mb-2   text-white  rounded-xl ">
+        <button className="w-full mx-auto h-[100px] mt-2 mb-2   text-white  rounded-xl ">
+          
           <div
             class="apply-button"
             data-hackathon-slug="hacknovate6"
             data-button-theme="dark"
             style={{ height: "100px", width: "312px" }}
           ></div>
+
         </button>
         <h1 className="text-center  font-serif">
           Structure of the competition. First, all participants must register
