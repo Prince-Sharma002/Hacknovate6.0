@@ -3,7 +3,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Chatbot from "./components/Chatbot.jsx";
 import Footer from "./components/Footer.jsx";
-import Owl from "./components/Owl.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx";
 import AboutSectionMain from "./components/AboutSectionMain.jsx";
 import Mentor from "./components/Mentor.jsx";

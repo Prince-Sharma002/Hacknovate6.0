@@ -42,7 +42,7 @@ const Header = () => {
               {/* Column 1 */}
               <div className="w-[70%]   flex flex-col space-y-4 items-center justify-center h-full">
                 <div className="w-full h-full">
-                  <button className="w-full h-full  text-white  rounded-lg ">
+                  <button className="w-full h-full mx-auto text-white  rounded-lg ">
                     <div
                       class="apply-button"
                       data-hackathon-slug="hacknovate6"

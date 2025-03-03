@@ -107,12 +107,12 @@ const NewspaperHeader = () => {
             </h1>
 
             {/* Group of Institutions (Hidden on Mobile) */}
-            <div className="relative flex-col items-center text-center hidden md:inline mr-[-20px] max-md:hidden">
+            <div className="relative right-4 flex-col items-center text-center hidden md:inline mr-[-20px] max-md:hidden [text-shadow:3px_3px_6px_rgba(0,0,0,0.9)] hover:text-white transition-colors duration-300">
               <a
                 href="https://www.abesit.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-montserrat text-[#D1D5DB] font-extrabold text-[60px] [text-shadow:3px_3px_6px_rgba(0,0,0,0.9)] hover:text-white transition-colors duration-300"
+                className="font-montserrat text-[#D1D5DB] font-extrabold text-[60px] "
               >
                 ABESIT
               </a>
@@ -124,7 +124,7 @@ const NewspaperHeader = () => {
                   href="https://www.abesit.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-2 font-montserrat text-[#D1D5DB] font-bold text-[13px] uppercase hover:text-white transition-colors duration-300"
+                  className="mx-2 font-montserrat text-[#D1D5DB] font-bold text-[13px] uppercase"
                 >
                   Group of Institutions
                 </a>

@@ -154,10 +154,10 @@ const Team = () => {
                 <img src={gringots} alt="Gringots team" className="team-image" />
                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                   <div className="flex flex-col items-center">
-                    <span className="text-xl font-bold">Fred, George & Percy Weasley</span>
-                    <span className="text-sm mt-2">Sponsorship Team</span>
+                    <span className="text-xl font-bold">Sponsorship Team</span>
+                 
                     <div className="flex space-x-4 mt-3">
-                      <a href="https://www.linkedin.com/in/sponsor-team1-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      {/* <a href="https://www.linkedin.com/in/sponsor-team1-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
                       <a href="https://www.linkedin.com/in/sponsor-team2-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
@@ -165,7 +165,7 @@ const Team = () => {
                       </a>
                       <a href="https://www.linkedin.com/in/sponsor-team3-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
