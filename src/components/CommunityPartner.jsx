@@ -1,11 +1,25 @@
 import ImageTicker from "./Ticker";
 
+import bff from "../assets/community/bff.png";
+import bpit from "../assets/community/bpit.png";
+import devsphere from "../assets/community/devsphere.png";
+import gdgc from "../assets/community/gdgc.png";
+import lme from "../assets/community/lme.png";
+import newbie from "../assets/community/newbie.png";
+import techholics from "../assets/community/techholics.png";
+import technovators from "../assets/community/technovators.png";
+
+
 const CommunityPartner = () => {
   const images = [
-    "https://assets1.ignimgs.com/2015/10/02/dobbyjpg-996614.jpg?fit=bounds&width=1280&height=720&dpr=2",
-    "https://assets-prd.ignimgs.com/2022/03/23/gellert-grindelwald-1648059763467.jpg?fit=bounds&width=1280&height=720&dpr=2",
-    "https://assets-prd.ignimgs.com/2022/03/23/ginny-weasley-1648059867656.jpg?fit=bounds&width=1280&height=720&dpr=2",
-    "https://assets-prd.ignimgs.com/2022/03/23/mad-eye-moody-1648061180432.jpg?fit=bounds&width=1280&height=720&dpr=2",
+    bff,
+    bpit,
+    devsphere,
+    gdgc,
+    lme,
+    newbie,
+    techholics,
+    technovators,
   ];
 
   return (
