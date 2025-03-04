@@ -146,7 +146,7 @@ const Team = () => {
                     </div>
                   </div>
                   <div className="team-description md:h-[100%]">
-                    <p>Like Remus Lupin guiding young wizards, he built the Hacknovate 6.0 Discord Realm, the backbone of our online hackathon. As the Master of the Floo Network, he ensures smooth communication, seamless collaboration, and an enchanting experience for all. His wizardry keeps our digital Hogwarts alive!</p>
+                    <p>Like James Potter guiding young wizards, he built the Hacknovate 6.0 Discord Realm, the backbone of our online hackathon. As the Master of the Floo Network, he ensures smooth communication, seamless collaboration, and an enchanting experience for all. His wizardry keeps our digital Hogwarts alive!</p>
                   </div>
                 </div>
               </div>
