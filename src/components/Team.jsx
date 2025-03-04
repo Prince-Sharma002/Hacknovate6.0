@@ -15,6 +15,7 @@ import reven from "../assets/team/raven.jpeg";
 import design from "../assets/team/design.jpeg";
 import me from "../assets/team/me2.jpeg";
 import mathur from "../assets/team/mathur.jpeg";
+import nikita from "../assets/team/nikita.jpg";
 
 
 import { FaLinkedin } from "react-icons/fa";
@@ -105,6 +106,32 @@ const Team = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="team-column">
+
+                
+
+              <div className="team-card md:h-[40rem] md:mt-32">
+                  <div className="relative group">
+                    <img src={mathur} alt="Malfoy" className="team-image" />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
+                      <div className="flex flex-col items-center">
+                        <span className="text-xl font-bold">Discord Admin</span>
+                        <span className="text-sm mt-2">Pratyush</span>
+                        <a href="https://www.linkedin.com/in/pratyush-mathur-35a1a2251/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
+                          <FaLinkedin className="w-6 h-6" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="team-description md:h-[100%]">
+                    <p>Like James Potter guiding young wizards, he built the Hacknovate 6.0 Discord Realm, the backbone of our online hackathon. As the Master of the Floo Network, he ensures smooth communication, seamless collaboration, and an enchanting experience for all. His wizardry keeps our digital Hogwarts alive!</p>
+                  </div>
+                </div>
+               
+                
+          
+              </div>
               
               <div className="team-column">
                 <div className="team-card">
@@ -132,23 +159,26 @@ const Team = () => {
                   </div>
                 </div>
                 
-                <div className="team-card md:h-[40rem]">
+                <div className="team-card ">
                   <div className="relative group">
-                    <img src={mathur} alt="Malfoy" className="team-image" />
+                    <img src={nikita} alt="Hermione" className="team-image" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                       <div className="flex flex-col items-center">
-                        <span className="text-xl font-bold">Discord</span>
-                        <span className="text-sm mt-2">Pratyush</span>
-                        <a href="https://www.linkedin.com/in/pratyush-mathur-35a1a2251/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
+                        <span className="text-xl font-bold">Tech Lead</span>
+                        <span className="text-sm mt-2">Nikita </span>
+                        <a href="https://www.linkedin.com/in/nikita-kumari2004/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
                           <FaLinkedin className="w-6 h-6" />
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div className="team-description md:h-[100%]">
-                    <p>Like James Potter guiding young wizards, he built the Hacknovate 6.0 Discord Realm, the backbone of our online hackathon. As the Master of the Floo Network, he ensures smooth communication, seamless collaboration, and an enchanting experience for all. His wizardry keeps our digital Hogwarts alive!</p>
+                  <div className="team-description">
+                    <p>
+                      Meet our Hermione—the Tech & Design Sorceress of Hacknovate 6.0! As Tech Lead, Social Media Lead, and Design Contributor, she crafts an experience as flawless as Wingardium Leviosa, ensuring every detail is pure magic!  
+                  </p>
                   </div>
                 </div>
+
               </div>
             </div>
             

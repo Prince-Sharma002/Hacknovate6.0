@@ -8,8 +8,17 @@ import discordlogo from "../assets/discordlogo.png";
 import xxxlogo from "../assets/xxxlogo.png";
 import linktreelogo from "../assets/linktreelogo.png";
 import Map from "./Map";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/faq");
+    window.scrollTo(0, 0); // Scroll to the top
+  };
+
   return (
     <div
       className="w-full bg-cover bg-center relative px-4 sm:px-8 py-10 text-white  flex flex-col items-center"
@@ -98,7 +107,19 @@ const Footer = () => {
               </div>
             ))}
           </div>
+
+          
+          <div className="mt-8 pl-4">
+            <div className="flex justify-center items-center">
+              
+              <span className="text-2xl cursor-pointer" onClick={handleNavigation}>
+                  <span className="text-xl">Hacknovate 6.0 FAQs</span> 📜
+              </span>
+            </div>
+          </div>
+
         </div>
+
 
         {/* Center Column - Map styled as magical artifact */}
         <div className="w-full md:w-1/3 flex flex-col border-t-2 border-b-2 md:border-t-0 md:border-b-0 md:border-l-2 md:border-r-2 border-amber-800/30 py-6 md:py-0 md:px-6">
