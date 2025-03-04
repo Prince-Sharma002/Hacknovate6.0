@@ -56,12 +56,12 @@ const FaqItem = ({ faq }) => {
                     initial={false}
                     animate={{ 
                         rotate: isOpen ? 180 : 0,
-                        scale: isOpen ? 1.2 : 1
+                        scale: isOpen ? 1.1 : 1
                     }}
                     transition={{ 
                         type: "spring", 
-                        stiffness: 300, 
-                        damping: 20 
+                        stiffness: 350, 
+                        damping: 15 
                     }}
                     className="flex items-center justify-center"
                 >
@@ -69,10 +69,15 @@ const FaqItem = ({ faq }) => {
                         {isOpen ? (
                             <motion.span 
                                 key="wizard"
-                                initial={{ opacity: 0, rotate: -180 }}
-                                animate={{ opacity: 1, rotate: 0 }}
-                                exit={{ opacity: 0, rotate: 180 }}
-                                transition={{ duration: 0.3 }}
+                                initial={{ opacity: 0, rotate: -90, scale: 0.3 }}
+                                animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                                exit={{ opacity: 0, rotate: 90, scale: 0.3 }}
+                                transition={{ 
+                                    duration: 0.4,
+                                    type: "spring",
+                                    stiffness: 400,
+                                    damping: 20
+                                }}
                                 className="text-2xl"
                             >
                                 🧙‍♂️
@@ -80,10 +85,15 @@ const FaqItem = ({ faq }) => {
                         ) : (
                             <motion.span 
                                 key="scroll"
-                                initial={{ opacity: 0, rotate: 180 }}
-                                animate={{ opacity: 1, rotate: 0 }}
-                                exit={{ opacity: 0, rotate: -180 }}
-                                transition={{ duration: 0.3 }}
+                                initial={{ opacity: 0, rotate: 90, scale: 0.3 }}
+                                animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                                exit={{ opacity: 0, rotate: -90, scale: 0.3 }}
+                                transition={{ 
+                                    duration: 0.4,
+                                    type: "spring",
+                                    stiffness: 400,
+                                    damping: 20
+                                }}
                                 className="text-2xl"
                             >
                                 📜
@@ -99,27 +109,28 @@ const FaqItem = ({ faq }) => {
                         initial={{ 
                             opacity: 0, 
                             height: 0,
-                            scale: 0.9
+                            scale: 0.7,
+                            transformOrigin: 'top center'
                         }}
                         animate={{ 
                             opacity: 1, 
                             height: 'auto',
                             scale: 1,
                             transition: { 
-                                duration: 0.4,
+                                duration: 0.6,
                                 type: "spring",
-                                stiffness: 200,
+                                stiffness: 300,
                                 damping: 20
                             }
                         }}
                         exit={{ 
                             opacity: 0, 
                             height: 0,
-                            scale: 0.9,
+                            scale: 0.7,
                             transition: { 
-                                duration: 0.4,
+                                duration: 0.6,
                                 type: "spring",
-                                stiffness: 200,
+                                stiffness: 300,
                                 damping: 20
                             }
                         }}
@@ -128,16 +139,19 @@ const FaqItem = ({ faq }) => {
                         <motion.p 
                             initial={{ 
                                 opacity: 0,
-                                y: -20
+                                y: -50,
+                                scale: 0.8
                             }}
                             animate={{ 
                                 opacity: 1,
                                 y: 0,
+                                scale: 1,
                                 transition: { 
                                     delay: 0.2,
-                                    duration: 0.4,
+                                    duration: 0.6,
                                     type: "spring",
-                                    stiffness: 100
+                                    stiffness: 200,
+                                    damping: 15
                                 }
                             }}
                             className="text-black font-['Papyrus'] italic"
