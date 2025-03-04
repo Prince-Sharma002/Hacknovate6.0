@@ -140,9 +140,7 @@
 // export default Sponsor;
 
 import React from "react";
-import Timer from "./Timer";
-import { FaDiscord } from "react-icons/fa";
-import { SiLinktree } from "react-icons/si";
+
 
 const Sponsor = () => {
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0)); // April 4, 2025, 9:00 AM UTC

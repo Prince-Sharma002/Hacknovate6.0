@@ -13,6 +13,10 @@ import ragini from "../assets/team/ragini.jpeg";
 import social from "../assets/team/social.jpeg";
 import reven from "../assets/team/raven.jpeg";
 import design from "../assets/team/design.jpeg";
+import me from "../assets/team/me2.jpeg";
+import mathur from "../assets/team/mathur.jpeg";
+
+
 import { FaLinkedin } from "react-icons/fa";
 
 import "../styles/team.css";
@@ -64,7 +68,7 @@ const Team = () => {
               <div className="team-column">
                 <div className="team-card">
                   <div className="relative group">
-                    <img src={prince} alt="Hermione" className="team-image" />
+                    <img src={me} alt="Hermione" className="team-image" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                       <div className="flex flex-col items-center">
                         <span className="text-xl font-bold">Tech Lead</span>
@@ -130,7 +134,7 @@ const Team = () => {
                 
                 <div className="team-card md:h-[40rem]">
                   <div className="relative group">
-                    <img src={pratyush} alt="Malfoy" className="team-image" />
+                    <img src={mathur} alt="Malfoy" className="team-image" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                       <div className="flex flex-col items-center">
                         <span className="text-xl font-bold">Discord</span>
