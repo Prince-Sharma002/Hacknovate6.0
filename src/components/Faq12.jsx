@@ -49,9 +49,9 @@ const FaqItem = ({ faq }) => {
         <div className="relative mb-4 border-2 border-amber-700 rounded-xl overflow-hidden shadow-lg">
             <button 
                 onClick={toggleFaq}
-                className="w-full text-left p-4 bg-amber-100 hover:bg-amber-200 transition-colors flex justify-between items-center"
+                className="w-full text-left p-4 bg-amber-50 hover:bg-amber-200 transition-colors flex justify-between items-center"
             >
-                <span className="font-['Luminari'] text-lg text-black">{faq.question}</span>
+                <span className="font-serif text-sm md:text-lg  text-black">{faq.question}</span>
                 <motion.div
                     initial={false}
                     animate={{ 
@@ -134,7 +134,7 @@ const FaqItem = ({ faq }) => {
                                 damping: 20
                             }
                         }}
-                        className="bg-transparent p-4 origin-top"
+                        className="bg-transparent p-4 origin-top text-sm md:text-lg"
                     >
                         <motion.p 
                             initial={{ 
@@ -154,7 +154,7 @@ const FaqItem = ({ faq }) => {
                                     damping: 15
                                 }
                             }}
-                            className="text-black font-['Papyrus'] italic"
+                            className="text-black  font-bold tracking-widest font-['Papyrus'] italic"
                         >
                             {faq.answer}
                         </motion.p>
@@ -180,7 +180,7 @@ const Faq12 = () => {
         <div 
             className="min-h-screen bg-cover bg-center flex justify-center items-center"
         >
-            <section className="w-[80%] max-w-4xl p-8 bg-transparent backdrop-blur-sm rounded-xl shadow-2xl">
+            <section className="w-[90%] max-w-4xl p-8 bg-transparent backdrop-blur-sm rounded-xl shadow-2xl">
                 <div className="text-center mb-8">
                     <motion.h1 
                         initial={{ opacity: 0, y: -50 }}
