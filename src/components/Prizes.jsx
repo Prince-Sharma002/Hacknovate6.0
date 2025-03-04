@@ -165,7 +165,7 @@ const Prizes = () => {
                 }}
               >
                 <div className="flex flex-col absolute text-center">
-                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-2xl  drop-shadow-4xl"> ALL GIRLS TEAM </h1>
+                    <h1 className="z-10 font-sans text-yellow-500 font-extrabold text-2xl  drop-shadow-4xl"> BEST GIRLS TEAM </h1>
                     <h1 className="z-10 font-sans  font-extrabold text-2xl text-white drop-shadow-4xl"> 3,000</h1>
                   </div>
                 <img src={online_prize_Bgcover2} className="w-full h-full" alt="online prices" />

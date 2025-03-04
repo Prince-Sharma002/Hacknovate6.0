@@ -215,7 +215,7 @@ const questionsAndAnswers = [
       "Prize money will be distributed as per the terms and conditions outlined during registration.",
   },
   {
-    question: " How can I contact the support team?",
+    question: " How can I contact the support team?", 
     answer:
       "You can reach out via our official email, website, or Discord channel for any queries.",
   },
