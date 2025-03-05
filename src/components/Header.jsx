@@ -2,26 +2,13 @@ import React, { useEffect } from "react";
 import Timer from "./Timer";
 import { FaDiscord } from "react-icons/fa";
 import owl from "../assets/owl-wizard.png";
+import devfolio from "../assets/devfolio.png";
 
 import Tt from "../assets/Tt.gif";
 
 const Header = () => {
   const targetDate = new Date(Date.UTC(2025, 3, 4, 9, 0, 0));
-  useEffect(() => {
-    // Load the Devfolio SDK script
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
 
-    return () => {
-      // Clean up script when component unmounts
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
 
   return (
     <div className="m-0 p-0 pr-2 md:pr-8">
@@ -41,15 +28,13 @@ const Header = () => {
             <div className="flex space-x-4 h-[70%] mb-1">
               {/* Column 1 */}
               <div className="w-[70%]   flex flex-col space-y-4 items-center justify-center h-full">
-                <div className="w-full h-full">
-                  <button className="w-full h-full mx-auto text-white  rounded-lg ">
-                    <div
-                      class="apply-button"
-                      data-hackathon-slug="hacknovate6"
-                      data-button-theme="dark"
-                      style={{ height: "100px", width: "312px" }}
-                    ></div>
+                <div className="w-full h-full pt-4">
+                <a href="https://hacknovate6.devfolio.co/"> 
+                  <button className="w-full h-[90px] flex justify-center items-center font-semibold text-2xl font-sans bg-slate-800 text-white rounded-xl">
+                      
+                        <span> <img className="w-16 h-16" src={devfolio} alt="devfolio" /> </span> Apply with Devfolio  
                   </button>
+                      </a>
                 </div>
                 <div className="w-full h-full">
                   <button
@@ -93,6 +78,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+
       {/* Mobile View */}
       <div className="p-2 hidden max-lg:block ">
         <h1 className="font-bold text-center">
@@ -101,12 +88,13 @@ const Header = () => {
         </h1>
         <button className="w-full mx-auto h-[100px] mt-2 mb-2   text-white  rounded-xl ">
           
-          <div
-            class="apply-button"
-            data-hackathon-slug="hacknovate6"
-            data-button-theme="dark"
-            style={{ height: "100px", width: "312px" }}
-          ></div>
+            <div className="w-full h-full pt-2">
+                <a href="https://hacknovate6.devfolio.co/"> 
+                  <button className="w-full h-[60px] flex justify-center items-center font-semibold text-xl font-sans bg-slate-800 text-white rounded-xl">
+                        <span> <img className="w-12 h-12" src={devfolio} alt="devfolio" /> </span> Apply with Devfolio  
+                  </button>
+                      </a>
+            </div>
 
         </button>
         <h1 className="text-center  font-serif">
@@ -117,6 +105,8 @@ const Header = () => {
         <div className="p-2 rounded-xl">
           <img src={Tt} alt="" className="rounded-xl" />
         </div>
+
+        
         <button
           className="w-full h-[120px] text-4xl font-serif font-bold bg-black text-amber-400 rounded-xl"
           onClick={() =>
