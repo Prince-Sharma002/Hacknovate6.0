@@ -184,18 +184,24 @@ const Team = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                   <div className="flex flex-col items-center">
                     <span className="text-xl font-bold">Sponsorship Team</span>
-                    <span className="text-sm mt-2"> </span>
+                    <span className="text-sm mt-2"> Suel, Himanshu, Shreesh, Manas, Abdul</span>
                  
                     <div className="flex space-x-4 mt-3">
-                      {/* <a href="https://www.linkedin.com/in/sponsor-team1-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      <a href="https://www.linkedin.com/in/mohd-suhel-khan-42a335202" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
-                      <a href="https://www.linkedin.com/in/sponsor-team2-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      <a href="https://www.linkedin.com/in/hs04/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
-                      <a href="https://www.linkedin.com/in/sponsor-team3-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      <a href="https://www.linkedin.com/in/shreesh-pandey-556109249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
-                      </a> */}
+                      </a> 
+                      <a href="https://www.linkedin.com/in/manas-srivastava-520149263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                        <FaLinkedin className="w-6 h-6" />
+                      </a> 
+                      <a href="https://www.linkedin.com/in/itsabdul0908?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                        <FaLinkedin className="w-6 h-6" />
+                      </a> 
                     </div>
                   </div>
                 </div>
