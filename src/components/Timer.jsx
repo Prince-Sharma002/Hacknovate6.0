@@ -29,7 +29,7 @@ const Timer = ({ targetDate }) => {
       <div className="text-white max-lg:relative max-lg:-left-3 text-sm font-bold px-1 lg:px-3 text-[25px] tracking-wide -rotate-90 writing-vertical-rl font-inter text-center lg:text-[17px] ">
         Starts in
       </div>
-      <div className="pr-1 lg:pr-2 max-lg:pr-4">
+      <div className="pr-1 lg:pr-2 max-lg:pr-4 ">
         <TimeBox
           value={timeLeft.days}
           label="Days"

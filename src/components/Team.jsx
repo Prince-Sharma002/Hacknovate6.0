@@ -13,9 +13,10 @@ import ragini from "../assets/team/ragini.jpeg";
 import social from "../assets/team/social.jpeg";
 import reven from "../assets/team/raven.jpeg";
 import design from "../assets/team/design.jpeg";
-import Ragini_Gunabh from "../assets/team/Ragini_Gunabh.jpg";
+import me from "../assets/team/me2.jpeg";
+import mathur from "../assets/team/mathur.jpeg";
+import nikita from "../assets/team/nikita.jpg";
 import { FaLinkedin } from "react-icons/fa";
-
 import "../styles/team.css";
 
 const Team = () => {
@@ -65,7 +66,7 @@ const Team = () => {
               <div className="team-column">
                 <div className="team-card">
                   <div className="relative group">
-                    <img src={prince} alt="Hermione" className="team-image" />
+                    <img src={me} alt="Hermione" className="team-image" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                       <div className="flex flex-col items-center">
                         <span className="text-xl font-bold">Tech Lead</span>
@@ -102,6 +103,30 @@ const Team = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="team-column">
+
+                
+
+              <div className="team-card md:h-[40rem] mt-64">
+                  <div className="relative group">
+                    <img src={mathur} alt="Malfoy" className="team-image" />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
+                      <div className="flex flex-col items-center">
+                        <span className="text-xl font-bold">Discord Admin</span>
+                        <span className="text-sm mt-2">Pratyush</span>
+                        <a href="https://www.linkedin.com/in/pratyush-mathur-35a1a2251/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
+                          <FaLinkedin className="w-6 h-6" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="team-description md:h-[100%]">
+                 <p>Like James Potter guiding young wizards,  he crafted the Hacknovate 6.0 Discord Realm, the hackathon’s backbone. As Master of the Floo Network, he ensures seamless communication and collaboration. His expertise creates a digital Hogwarts where innovation thrives, ideas soar, making Hacknovate 6.0 a truly spellbinding adventure!
+                 </p>
+                  </div>
+                </div>
+              </div>
               
               <div className="team-column">
                 <div className="team-card">
@@ -129,23 +154,26 @@ const Team = () => {
                   </div>
                 </div>
                 
-                <div className="team-card md:h-[40rem]">
+                <div className="team-card ">
                   <div className="relative group">
-                    <img src={pratyush} alt="Malfoy" className="team-image" />
+                    <img src={nikita} alt="Hermione" className="team-image" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                       <div className="flex flex-col items-center">
-                        <span className="text-xl font-bold">Discord</span>
-                        <span className="text-sm mt-2">Pratyush</span>
-                        <a href="https://www.linkedin.com/in/pratyush-mathur-35a1a2251/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
+                        <span className="text-xl font-bold">Tech Lead</span>
+                        <span className="text-sm mt-2">Nikita </span>
+                        <a href="https://www.linkedin.com/in/nikita-kumari2004/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
                           <FaLinkedin className="w-6 h-6" />
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div className="team-description md:h-[100%]">
-                    <p>Like Remus Lupin guiding young wizards, he built the Hacknovate 6.0 Discord Realm, the backbone of our online hackathon. As the Master of the Floo Network, he ensures smooth communication, seamless collaboration, and an enchanting experience for all. His wizardry keeps our digital Hogwarts alive!</p>
+                  <div className="team-description">
+                    <p>
+                    Meet our Hermione—the Tech & Design Sorceress of Hacknovate 6.0! With her exceptional skills and boundless creativity, she works her magic as the Tech Lead, Social Media Lead, and UI of the official website of Hacknovate 6.0, weaving together an experience as seamless as casting Wingardium Leviosa. From coding spells to enchanting visuals and engaging content, she ensures every aspect of the event is nothing short of extraordinary. 
+                  </p>
                   </div>
                 </div>
+
               </div>
             </div>
             
@@ -155,10 +183,11 @@ const Team = () => {
                 <img src={gringots} alt="Gringots team" className="team-image" />
                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                   <div className="flex flex-col items-center">
-                    <span className="text-xl font-bold">Fred, George & Percy Weasley</span>
-                    <span className="text-sm mt-2">Sponsorship Team</span>
+                    <span className="text-xl font-bold">Sponsorship Team</span>
+                    <span className="text-sm mt-2"> </span>
+                 
                     <div className="flex space-x-4 mt-3">
-                      <a href="https://www.linkedin.com/in/sponsor-team1-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      {/* <a href="https://www.linkedin.com/in/sponsor-team1-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
                       <a href="https://www.linkedin.com/in/sponsor-team2-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
@@ -166,7 +195,7 @@ const Team = () => {
                       </a>
                       <a href="https://www.linkedin.com/in/sponsor-team3-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -175,8 +204,8 @@ const Team = () => {
                 <p>Like the Gringotts wizards guarding the vaults, this powerhouse team ensures Hacknovate 6.0
                 is backed by the strongest alliances. With the negotiation skills of Fred & George Weasley,
                 the strategy of Percy Weasley, and the charm of a well-cast Confundus Charm, they bring in
-                the best sponsors and partnerships. Their magic keeps the event grand, ensuring every
-                galleon counts!</p>
+                the best sponsors and partnerships. Their magic keeps the event grand, ensuring every galleon counts!</p>
+                
               </div>
             </div>
           </div>
