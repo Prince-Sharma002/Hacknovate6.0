@@ -16,10 +16,7 @@ import design from "../assets/team/design.jpeg";
 import me from "../assets/team/me2.jpeg";
 import mathur from "../assets/team/mathur.jpeg";
 import nikita from "../assets/team/nikita.jpg";
-
-
 import { FaLinkedin } from "react-icons/fa";
-
 import "../styles/team.css";
 
 const Team = () => {
@@ -129,27 +126,6 @@ const Team = () => {
                  </p>
                   </div>
                 </div>
-                {/* <div className="team-card">
-                  <div className="relative group">
-                    <img src={raunak} alt="Social Media Lead" className="team-image" />
-                    <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
-                      <div className="flex flex-col items-center">
-                        <span className="text-xl font-bold">Social Lead</span>
-                        <span className="text-sm mt-2">Raunak</span>
-                        <a href="https://www.linkedin.com/in/raunak-singh-2b747518a/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
-                          <FaLinkedin className="w-6 h-6" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="team-description">
-                    <p>Meet Skeeter—our Social Media Lead and the (way more ethical) Rita Skeeter of
-                    Hacknovate! With a Quick-Quotes Quill and a sharp strategy, he spreads the magic far and wide!</p>
-                  </div>
-                </div> */}
-               
-                
-          
               </div>
               
               <div className="team-column">
@@ -193,7 +169,7 @@ const Team = () => {
                   </div>
                   <div className="team-description">
                     <p>
-                    Meet our Hermione—the Tech & Design Sorceress of Hacknovate 6.0! With her exceptional skills and boundless creativity, she works her magic as the Tech Lead, Social Media Lead, and Design Contributor, weaving together an experience as seamless as casting Wingardium Leviosa. From coding spells to enchanting visuals and engaging content, she ensures every aspect of the event is nothing short of extraordinary. 
+                    Meet our Hermione—the Tech & Design Sorceress of Hacknovate 6.0! With her exceptional skills and boundless creativity, she works her magic as the Tech Lead, Social Media Lead, and UI of the official website of Hacknovate 6.0, weaving together an experience as seamless as casting Wingardium Leviosa. From coding spells to enchanting visuals and engaging content, she ensures every aspect of the event is nothing short of extraordinary. 
                   </p>
                   </div>
                 </div>
@@ -208,17 +184,24 @@ const Team = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
                   <div className="flex flex-col items-center">
                     <span className="text-xl font-bold">Sponsorship Team</span>
+                    <span className="text-sm mt-2"> Suel, Himanshu, Shreesh, Manas, Abdul</span>
                  
                     <div className="flex space-x-4 mt-3">
-                      {/* <a href="https://www.linkedin.com/in/sponsor-team1-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      <a href="https://www.linkedin.com/in/mohd-suhel-khan-42a335202" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
-                      <a href="https://www.linkedin.com/in/sponsor-team2-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      <a href="https://www.linkedin.com/in/hs04/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
-                      <a href="https://www.linkedin.com/in/sponsor-team3-demo" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                      <a href="https://www.linkedin.com/in/shreesh-pandey-556109249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
                         <FaLinkedin className="w-6 h-6" />
-                      </a> */}
+                      </a> 
+                      <a href="https://www.linkedin.com/in/manas-srivastava-520149263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                        <FaLinkedin className="w-6 h-6" />
+                      </a> 
+                      <a href="https://www.linkedin.com/in/itsabdul0908?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                        <FaLinkedin className="w-6 h-6" />
+                      </a> 
                     </div>
                   </div>
                 </div>
@@ -324,37 +307,29 @@ const Team = () => {
               </div>
             </div>
 
-            <div className="team-card">
-              <div className="image-duo relative">
-                
-                <div className="relative group inline-block w-full flex">
-                  <img src={ragini} alt="Luna" className="team-image-half" /> 
-                  <img src={gunabh} alt="Hagrid" className="team-image-half" />
-                  <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
-                    <div className="flex  md:flex-col items-center">
-                      <span className="text-xl font-bold">Creative Leads</span>
-                      <span className="text-sm mt-2">Ragini & Gunabh</span>
-                      <div className='flex gap-4'>
+
+  <div className="team-card">
+              <div className="relative group">
+                <img src={ragini} alt="Social Media Team" className="team-image" />
+                <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white">
+                  <div className="flex flex-col items-center">
+                    <span className="text-xl font-bold">Creative Leads</span>
+                    <span className="text-sm mt-2">Ragini </span>
+                    <div className="flex space-x-4 mt-3">
                       <a href="https://www.linkedin.com/in/ragini-pathak/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
                         <FaLinkedin className="w-6 h-6" />
                       </a>
-                      <a href="https://www.linkedin.com/in/gunabh-sharan-a65380257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors mt-3">
-                        <FaLinkedin className="w-6 h-6" />
-                      </a>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="team-description">
-                <p>The "Luna Lovegood and Rubeus Hagrid" duo Luna brings the whimsical creativity, dreaming up
-                ideas as unique as a Crumple-Horned Snorkack, while Hagrid adds heart and passion, crafting content as
-                warm and magical as a Care of Magical Creatures lesson.</p>
+                <p>The "Luna Lovegood"  brings the whimsical creativity, dreaming up
+                ideas as unique as a Crumple-Horned Snorkack, magical as a Care of Magical Creatures lesson.</p>
               </div>
             </div>
-          </div>
-        </div>
-        
+          
+
         <div className="bottom-row">
           <div className="team-card">
             <div className="relative group">
@@ -421,6 +396,9 @@ const Team = () => {
           </div>
         </div>
       </div>
+      </div>
+  
+    </div>
     </div>
   );
 };
