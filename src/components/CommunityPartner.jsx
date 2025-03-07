@@ -16,8 +16,6 @@ import ecell from "../assets/community/ecell.png";
 import gdgcabesit from "../assets/community/gdgcabesit.png";
 
 
-
-
 const CommunityPartner = () => {
   const images = [
   gdgcabesit,
@@ -25,7 +23,6 @@ const CommunityPartner = () => {
   itclub,
   ecell,
   msc,   
-  
   ];
 
   return (
