@@ -368,7 +368,7 @@ const Team = () => {
     </div>
     <div>
         <p className="text-justify text-sm leading-relaxed">
-          The <strong>"Remus Lupin and Ginny Weasley"</strong> duo. <strong>Remus</strong> brings thoughtful, strategic designs as sharp as a werewolf's instincts, while <strong>Ginny</strong> adds flair and precision, making everything as vibrant as a Quidditch match.
+        The <strong>Remus Lupin</strong> and <strong>Ginny Weasley</strong> duo is a perfect balance of intellect and energy. <strong>Remus</strong> brings thoughtful, strategic designs as sharp as a werewolf’s instincts—his meticulous planning and deep insight ensure that every detail is refined to perfection. Meanwhile, <strong>Ginny</strong> infuses creativity and bold execution, adding flair and precision that make everything as vibrant and dynamic as a Quidditch match. Together, they craft ideas that are both powerful and elegant, seamlessly blending wisdom with innovation to create something truly magical.
         </p>
 
     </div>
