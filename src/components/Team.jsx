@@ -18,7 +18,7 @@ import vani from "../assets/team/vani.png";
 
 const TeamSection = ({ title, image, members, description }) => {
   return (
-    <div className="newspaper-section border-b border-gray-300 pb-6 mb-6">
+    <div className="newspaper-section border-b-2 border-black pb-6 mb-6">
       <h2 className="text-3xl font-bold mb-3">{title}</h2>
       <div className="flex flex-col md:flex-row gap-4 ">
         <div className="md:w-1/2 relative group">
@@ -184,11 +184,11 @@ const Team = () => {
   return (
     <div className="bg-transparent py-8">
       <div className="max-w-6xl mx-auto px-6 bg-transparent shadow-lg rounded-lg">
-        <h1 className="text-5xl font-bold text-center border-b-2 border-black mb-8 pb-4 pt-6">OUR TEAM</h1>
+        <h1 className="text-5xl font-bold text-center border-b-4 border-black mb-8 pb-4 pt-6">OUR TEAM</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left column - key team members */}
-          <div className="md:col-span-2 md:border-r   md:border-gray-300 pr-0 md:pr-6">
+          <div className="md:col-span-2 md:border-r-2   md:border-black pr-0 md:pr-6">
             <div className="mb-8">
               <p className="italic text-lg">Just as Dumbledore's Army stood united against the Dark Arts, our team of skilled wizards and witches—masters of logic, creativity, and innovation—have come together to weave magic with code. Together, we stand as the guardians of Hacknovate 6.0</p>
             </div>
@@ -203,7 +203,7 @@ const Team = () => {
               />
             ))}
             
-              <div className="newspaper-section border-b border-gray-300 pb-6 mb-6">
+              <div className="newspaper-section border-b-2 border-black pb-6 mb-6">
               <h2 className="text-3xl font-bold mb-3">OPERATIONS</h2>
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="md:w-1/2 relative group">
@@ -268,13 +268,14 @@ const Team = () => {
 <div className="newspaper-section pb-6 mb-6">
   <div className="flex flex-col md:flex-row gap-4">
   <div className="md:w-1/2">
-      <h2 className="text-3xl font-bold mb-3 text-right">Social Media Team</h2>
-    <p className="text-sm text-justify leading-relaxed">
+    <p className="text-sm text-justify leading-relaxed md:pt-12">
       Every legendary event needs master storytellers, and our Social Media Team ensures <strong>Hacknovate 6.0</strong> isn't just an event—it’s an experience that echoes across the wizarding and Muggle worlds! As the <strong>Rita Skeeters</strong> (but way more ethical!), they wield their Quick-Quotes Quills to capture every spellbinding moment, ensuring no magic goes unnoticed. Like <strong>Lee Jordan</strong>, they bring electrifying commentary, making every update feel like the finals of the <strong>Triwizard Tournament</strong>. With the vision of <strong>Xenophilius Lovegood</strong>, they weave narratives that aren’t just informative but immersive, drawing everyone into the enchantment. From captivating posts to dynamic storytelling.
     </p>
 
     </div>
     <div className="md:w-1/2 relative group">
+      <h2 className="text-3xl font-bold mb-3 text-right">Social Media Team</h2>
+      <div className=' relative group'>
       <img src={social} alt="Social Media Leads" className="w-full h-full object-cover max-h-80" />
       <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-2">
         <div className="flex space-x-4 mb-2">
@@ -290,12 +291,13 @@ const Team = () => {
           </a>
         </div>
       </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div className="newspaper-section pb-6 mb-6">
-  <h2 className="text-3xl font-bold mb-3">Ravenclaw Creative Team</h2>
+  <h2 className="text-3xl font-bold mb-3">Creative Team</h2>
   <div className="flex flex-col md:flex-row gap-4">
     <div className="md:w-1/2 relative group">
       <img src={reven} alt="Ravenclaw Creative Team" className="w-full h-full object-cover max-h-80" />
@@ -324,7 +326,7 @@ const Team = () => {
     </div>
     <div className="md:w-1/2">
         <p className="text-sm text-justify leading-relaxed">
-          Like Ravenclaw's brightest minds, this creative team blends wisdom, imagination, and innovation to craft spellbinding content and enchanting designs. With the precision of <strong>McGonagall</strong>, they ensure every detail is flawless, the vision of <strong>Newt Scamander</strong> fuels their curiosity and creativity, and the bold flair of <strong>Tonks</strong> allows them to push boundaries fearlessly. From captivating visuals to compelling narratives, they bring <strong>Hacknovate 6.0</strong> to life, weaving magic into every stroke, story, and idea they create!  
+        Like <strong>Ravenclaw's </strong> brightest minds, this creative team blends wisdom, imagination, and innovation to craft spellbinding content and enchanting designs. With the precision of <strong>McGonagall</strong>, they ensure every detail is flawless, the vision of <strong>Newt Scamander</strong> fuels their curiosity and creativity, and the bold flair of <strong>Tonks</strong> allows them to push boundaries fearlessly. From captivating visuals to compelling narratives, they bring Hacknovate 6.0 to life, weaving magic into every stroke, story, and idea they create—turning imagination into reality with a touch of wizarding brilliance!
         </p>
 
     </div>
@@ -380,7 +382,7 @@ const Team = () => {
         </div>
         
         {/* Bottom full-width section */}
-        <div className="mt-8 border-t border-gray-300 pt-6 pb-8">
+        <div className="mt-8 border-t-2 border-black pt-6 pb-8">
         <div className="newspaper-section pb-6 mb-6">
   <h2 className="text-3xl font-bold mb-3">Sponsorship Team</h2>
   <div className="flex flex-col md:flex-row gap-6 relative group">
