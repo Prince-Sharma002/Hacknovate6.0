@@ -67,7 +67,15 @@ const Team = () => {
       members: [
         { name: "Nikita", role: "Tech Lead", linkedin: "https://www.linkedin.com/in/nikita-kumari2004/" }
       ],
-      description: "Meet our Hermione—the Tech & Design Sorceress of Hacknovate 6.0! With her exceptional skills and boundless creativity, she works her magic as the Tech Lead, Social Media Lead, and UI of the official website of Hacknovate 6.0, weaving together an experience as seamless as casting Wingardium Leviosa."
+      description: (
+        <>
+          Meet our <span className="font-bold">Hermione</span>—the Tech & Design Sorceress of{" "}
+          <span className="font-bold">Hacknovate 6.0</span>! With her exceptional skills and boundless creativity,
+          she works her magic as the Tech Lead, Social Media Lead, and UI of the official website of{" "}
+          <span className="font-bold">Hacknovate 6.0</span>, weaving together an experience as seamless as casting{" "}
+          <span className="font-bold">Wingardium Leviosa</span>.
+        </>
+      )
     },
     {
       title: "Tech Lead",
@@ -75,7 +83,14 @@ const Team = () => {
       members: [
         { name: "Prince", role: "Tech Lead", linkedin: "https://www.linkedin.com/in/prince-sharma-047973253/" }
       ],
-      description: "Every great hackathon needs a sharp mind with an edge, and *Malfoy* brings his signature mastery to the technical team of Hacknovate 6.0. With the cunning of a true strategist and the precision of a perfectly brewed potion, he ensures the tech runs flawlessly—because in his world, excellence isn’t a choice, it’s a legacy."
+      description: (
+        <>
+          Every great hackathon needs a sharp mind with an edge, and <span className="font-bold">Malfoy</span> brings
+          his signature mastery to the technical team of <span className="font-bold">Hacknovate 6.0</span>. With the cunning
+          of a true strategist and the precision of a perfectly brewed potion, he ensures the tech runs flawlessly—because in his world,
+          excellence isn’t a choice, it’s a legacy.
+        </>
+      )  
     },
     {
       title: "Creative Lead",
@@ -83,16 +98,28 @@ const Team = () => {
       members: [
         { name: "Ragini", role: "Creative Lead", linkedin: "https://www.linkedin.com/in/ragini-pathak/" }
       ],
-      description: "The \"Luna Lovegood\" brings the whimsical creativity, dreaming up ideas as unique as a Crumple-Horned Snorkack, magical as a Care of Magical Creatures lesson."
+      description: (
+        <>
+          The <span className="font-bold">Luna Lovegood</span> brings the whimsical creativity, dreaming up ideas as unique as a{" "}
+          <span className="font-bold">Crumple-Horned Snorkack</span>, magical as a{" "}
+          <span className="font-bold">Care of Magical Creatures</span> lesson.
+        </>
+      )  
     },
     {
       title: "Discord Admin",
       image: mathur,
       members: [
-        { name: "Mathur", role: "Discord Admin", linkedin: "https://www.linkedin.com/in/pratyush-mathur-35a1a2251/" },
+        { name: "Pratyush", role: "Discord Admin", linkedin: "https://www.linkedin.com/in/pratyush-mathur-35a1a2251/" },
       
       ],
-      description: "Like James Potter guiding young wizards, he built the Hacknovate 6.0 Discord Realm, the backbone of our online hackathon. As the Master of the Floo Network, he ensures smooth communication, seamless collaboration."
+      description: (
+        <>
+          Like <span className="font-bold">James Potter</span> guiding young wizards, he built the{" "}
+          <span className="font-bold">Hacknovate 6.0 Discord Realm</span>, the backbone of our online hackathon. As the Master of the{" "}
+          <span className="font-bold">Floo Network</span>, he ensures smooth communication, seamless collaboration.
+        </>
+      )  
     },
     {
       title: "Social Lead",
@@ -101,7 +128,13 @@ const Team = () => {
         { name: "Raunak", role: "Social lead", linkedin: "https://www.linkedin.com/in/raunak-singh-2b747518a/" },
       
       ],
-      description: "Meet Skeeter—our Social Media Lead and the (way more ethical) Rita Skeeter of Hacknovate! With a Quick-Quotes Quill and a sharp strategy, he spreads the magic far and wide!"
+      description: (
+        <>
+          Meet <span className="font-bold">Skeeter</span>—our Social Media Lead and the (way more ethical){" "}
+          <span className="font-bold">Rita Skeeter</span> of <span className="font-bold">Hacknovate 6.0</span>! With a{" "}
+          <span className="font-bold">Quick-Quotes Quill</span> and a sharp strategy, he spreads the magic far and wide!
+        </>
+      )  
     }
   ];
 
@@ -114,7 +147,15 @@ const Team = () => {
         { name: "Keshav", linkedin: "https://www.linkedin.com/in/keshav-bajaj-15b4181a8/" },
         { name: "Sushant", linkedin: "https://www.linkedin.com/in/sushant2021cs101/" }
       ],
-      description: `The **"Harry Potter, Neville Longbottom, and Ron Weasley"** trio—each bringing their unique strengths to the table. **Harry**, the fearless leader, charges ahead with determination and courage, inspiring the team to face challenges head-on. **Neville**, the unexpected hero, rises to the occasion when it matters most, proving that resilience and growth lead to greatness. **Ron**, the loyal strategist, keeps the team grounded with his sharp thinking, quick wit, and unwavering support. Together, they navigate every challenge like a **Triwizard Tournament**, ensuring no stone (or golden egg) is left unturned.`
+      description: (
+        <>
+          The <span className="font-bold">"Harry Potter, Neville Longbottom, and Ron Weasley"</span> trio—each bringing their unique strengths to the table.{" "}
+          <span className="font-bold">Harry</span>, the fearless leader, charges ahead with determination and courage, inspiring the team to face challenges head-on.{" "}
+          <span className="font-bold">Neville</span>, the unexpected hero, rises to the occasion when it matters most, proving that resilience and growth lead to greatness.{" "}
+          <span className="font-bold">Ron</span>, the loyal strategist, keeps the team grounded with his sharp thinking, quick wit, and unwavering support.{" "}
+          Together, they navigate every challenge like a <span className="font-bold">Triwizard Tournament</span>, ensuring no stone (or golden egg) is left unturned.
+        </>
+      )
     },
     {
       title: "TECH TEAM",
@@ -126,7 +167,17 @@ const Team = () => {
         { name: "Amit", linkedin: "https://www.linkedin.com/in/amit-verma-883150109/" },
         { name: "Aayush", linkedin: "https://www.linkedin.com/in/aayush-shukla-592467297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
       ],
-      description: "Our Technical Team—a squad of five brilliant wizards—ensures every spell (or script) runs flawlessly! Led by the Dumbledore of Development, they craft magic behind the scenes. While Prince & Nikita weave spells of innovation, the rest of our tech sorcerers work as Marauders of Debugging, vanquishing bugs, Floo Network Engineers, keeping systems seamlessly connected, and Keepers of the Forbidden Code, guarding Hacknovate with security stronger than Gringotts! With enchanted code and spellbinding precision, they make Hacknovate truly magical!"
+      description: (
+        <>
+          Our <span className="font-bold">Technical Team</span>—a squad of five brilliant wizards—ensures every spell (or script) runs flawlessly! 
+          Led by the <span className="font-bold">Dumbledore of Development</span>, they craft magic behind the scenes. 
+          While <span className="font-bold">Prince & Nikita</span> weave spells of innovation, the rest of our tech sorcerers work as 
+          <span className="font-bold"> Marauders of Debugging</span>, vanquishing bugs, 
+          <span className="font-bold"> Floo Network Engineers</span>, keeping systems seamlessly connected, and 
+          <span className="font-bold"> Keepers of the Forbidden Code</span>, guarding Hacknovate with security stronger than Gringotts! 
+          With enchanted code and spellbinding precision, they make <span className="font-bold">Hacknovate</span> truly magical!
+        </>
+      )  
     }
   ];
 
@@ -137,7 +188,7 @@ const Team = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left column - key team members */}
-          <div className="md:col-span-2 border-r border-gray-300 pr-6">
+          <div className="md:col-span-2 md:border-r   md:border-gray-300 pr-0 md:pr-6">
             <div className="mb-8">
               <p className="italic text-lg">Just as Dumbledore's Army stood united against the Dark Arts, our team of skilled wizards and witches—masters of logic, creativity, and innovation—have come together to weave magic with code. Together, we stand as the guardians of Hacknovate 6.0</p>
             </div>
@@ -337,11 +388,11 @@ const Team = () => {
       <img src={gringots} alt="Sponsorship Team" className="w-full h-auto object-cover max-h-96" />
       <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-2">
         <div className="flex space-x-4 mb-2">
-          <span className="text-lg">Suhel</span>
-          <span className="text-lg">Himanshu</span>
-          <span className="text-lg">Shreesh </span>
-          <span className="text-lg">Manas</span>
-          <span className="text-lg">Abdul</span>
+          <span className="text-xs md:text-lg">Suhel</span>
+          <span className="text-xs md:text-lg">Himanshu</span>
+          <span className="text-xs md:text-lg">Shreesh </span>
+          <span className="text-xs md:text-lg">Manas</span>
+          <span className="text-xs md:text-lg">Abdul</span>
         </div>
         <div className="flex space-x-4">
           <a href="https://www.linkedin.com/in/mohd-suhel-khan-42a335202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
