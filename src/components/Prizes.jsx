@@ -207,9 +207,8 @@ const Prizes = () => {
                 claim their legendary grand prize of{" "}
                 <span className="font-bold">30,000</span> Galleons. The valiant
                 runners-up shall be rewarded with{" "}
-                <span className="font-bold">20,000</span> Galleons and{" "}
-                <span className="font-bold">10,000</span> Galleons,
-                respectively. The Goblet of Hacknovate has been lit - do you
+                <span className="font-bold">20,000</span> Galleons 
+                The Goblet of Hacknovate has been lit - do you
                 have what it takes to seize the magic?
               </p>
             </div>
