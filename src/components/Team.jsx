@@ -93,20 +93,6 @@ const Team = () => {
       )  
     },
     {
-      title: "Creative Lead",
-      image: ragini,
-      members: [
-        { name: "Ragini", role: "Creative Lead", linkedin: "https://www.linkedin.com/in/ragini-pathak/" }
-      ],
-      description: (
-        <>
-          The <span className="font-bold">Luna Lovegood</span> brings the whimsical creativity, dreaming up ideas as unique as a{" "}
-          <span className="font-bold">Crumple-Horned Snorkack</span>, magical as a{" "}
-          <span className="font-bold">Care of Magical Creatures</span> lesson.
-        </>
-      )  
-    },
-    {
       title: "Discord Admin",
       image: mathur,
       members: [
@@ -118,6 +104,20 @@ const Team = () => {
           Like <span className="font-bold">James Potter</span> guiding young wizards, he built the{" "}
           <span className="font-bold">Hacknovate 6.0 Discord Realm</span>, the backbone of our online hackathon. As the Master of the{" "}
           <span className="font-bold">Floo Network</span>, he ensures smooth communication, seamless collaboration.
+        </>
+      )  
+    },
+    {
+      title: "Creative Lead",
+      image: ragini,
+      members: [
+        { name: "Ragini", role: "Creative Lead", linkedin: "https://www.linkedin.com/in/ragini-pathak/" }
+      ],
+      description: (
+        <>
+          The <span className="font-bold">Luna Lovegood</span> brings the whimsical creativity, dreaming up ideas as unique as a{" "}
+          <span className="font-bold">Crumple-Horned Snorkack</span>, magical as a{" "}
+          <span className="font-bold">Care of Magical Creatures</span> lesson.
         </>
       )  
     },
