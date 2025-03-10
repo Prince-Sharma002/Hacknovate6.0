@@ -110,8 +110,7 @@ const Footer = () => {
 
           
           <div className="mt-8 pl-4">
-            <div className="flex justify-center items-center">
-              
+            <div className="flex justify-center items-center"> 
               <span className="text-2xl cursor-pointer" onClick={handleNavigation}>
                   <span className="text-xl">Hacknovate 6.0 FAQs</span> 📜
               </span>

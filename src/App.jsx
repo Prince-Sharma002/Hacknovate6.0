@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Chatbot from "./components/Chatbot.jsx";
 import Footer from "./components/Footer.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx";
