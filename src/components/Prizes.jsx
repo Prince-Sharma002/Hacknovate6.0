@@ -1,13 +1,52 @@
+import React,{useEffect , useState} from "react";
 import offline_prize_Bg1 from "../assets/offline_prize_Bg1.png";
 import offline_prize_Bg2 from "../assets/offline_prize_Bg2.png";
 import offline_prize_Bgcover1 from "../assets/offline_prize_Bgcover1.png";
 import  offline_prize_Bgcover2 from "../assets/offline_prize_Bgcover2.png";
 import online_prize_Bgcover2 from "../assets/online_prizes.jpg";
 import { FaAsterisk } from "react-icons/fa";
+import "../styles/prizes.css";
+
+
+import goldenSnitch from "../assets/goldenSnitch.png"
 
 const Prizes = () => {
+
+  const [snitches, setSnitches] = useState([]);
+  
+  useEffect(() => {
+    // Create 3 snitches with random positions and movement patterns
+    const newSnitches = [];
+    for (let i = 0; i < 1; i++) {
+      newSnitches.push({
+        id: i,
+        style: {
+          left: `${Math.random() * 0}%`,
+          top: `${Math.random() * 0}%`,
+          animationDuration: `${10 + Math.random() * 10}s`,
+          animationDirection: i % 2 === 0 ? 'alternate' : 'alternate-reverse',
+          transform: `scale(${0.7 + Math.random() * 0.6})`,
+          opacity: 1 ,
+        }
+      });
+    }
+    setSnitches(newSnitches);
+  }, []);
+
   return (
-    <div className="border-t-4 pr-8 md:pl-4 border-slate-800 w-full  pt-0 overflow-hidden">
+    <div className="border-t-4 pr-8 md:pl-4 border-slate-800 w-full pt-0 overflow-hidden relative">
+      
+      {snitches.map((snitch) => (
+        <img 
+          key={snitch.id}
+          src={goldenSnitch} 
+          alt="Golden Snitch" 
+          className="golden-snitch" 
+          style={snitch.style}
+        />
+      ))}
+
+      
       {/* Title Section */}
       <div className="w-full m-2 h-16 flex justify-center items-center max-lg:text-xl ">
         <h1 className="themetitle text-xl md:text-5xl font-bold mb-6 text-center mt-4 border-black inline-block ">

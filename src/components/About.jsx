@@ -5,35 +5,100 @@ import A from "../assets/A.svg";
 import M from "../assets/M.svg";
 import "../styles/about.css";
 import { FaAsterisk } from "react-icons/fa";
+import { useEffect, useRef } from "react";
+import dampisach from "../assets/dampisach.png";
+import dampisach2 from "../assets/dampisach2.png";
 
 const About = () => {
+  const sectionRef = useRef(null);
+  const dampisachRef = useRef(null);
+  const dampisach2Ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (dampisachRef.current) {
+              dampisachRef.current.classList.add('slide-in-animation');
+            }
+            if (dampisach2Ref.current) {
+              dampisach2Ref.current.classList.add('slide-in-animation2');
+            }
+          } else {
+            if (dampisachRef.current) {
+              dampisachRef.current.classList.remove('slide-in-animation');
+            }
+            if (dampisach2Ref.current) {
+              dampisach2Ref.current.classList.remove('slide-in-animation2');
+            }
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className=" border-t-4  w-full border-b-0 p-4 pb-4 mb-0 max-lg:m-0   max-lg:w-full md:pr-8" >
+    <div 
+      ref={sectionRef}
+      className="border-t-4 w-full border-b-0 p-4 pb-4 mb-0 max-lg:m-0 max-lg:w-full md:pr-8 relative"
+    >
+      {/* First image: right to left animation */}
+      <div className="dampisach-container">
+        <img
+          ref={dampisachRef}
+          className="dampisach-image"
+          src={dampisach2}
+          alt="Dampisach"
+        />
+      </div>
+
+      {/* Second image: left to right animation */}
+      <div className="dampisach-container2">
+        <img
+          ref={dampisach2Ref}
+          className="dampisach-image2"
+          src={dampisach}
+          alt="Dampisach 2"
+        />
+      </div>
+      
       <div className="w-full flex flex-col">
-        <h1 className="text-xl md:text-6xl font-extrabold uppercase text-center mb-2 border-b-4 md:border-none font-serif max-lg:text-3xl  ">
+        <h1 className="text-xl md:text-6xl font-extrabold uppercase text-center mb-2 border-b-4 md:border-none font-serif max-lg:text-3xl">
           IS ABESIT THE HOGWARTS OF CODING?
         </h1>
 
         <div className="grid md:grid-cols-2">
-          <div className=" relative  col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full">
+          <div className="relative col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full">
             <img
               className="flex md:w-full md:h-full m-4"
               src={abesitgif}
               alt="abesit"
             />
-            <div className="bg-black w-full text-amber-400 max-lg:relative max-lg:-top-5 text-xl flex justify-center items-center  gap-4 mt-4 lg:relative lg:-top-7 text-center">
-              <FaAsterisk className="w-4 h-4 max-lg:hidden   " />
-              <span className="text-lg max-lg:text-[15px] ">
+            <div className="bg-black w-full text-amber-400 max-lg:relative max-lg:-top-5 text-xl flex justify-center items-center gap-4 mt-4 lg:relative lg:-top-7 text-center">
+              <FaAsterisk className="w-4 h-4 max-lg:hidden" />
+              <span className="text-lg max-lg:text-[15px]">
                 {" "}
                 ABESIT Campus Road, NE 3, near Crossing Republik, Ghaziabad,
                 Uttar Pradesh 201009
               </span>
             </div>
           </div>
-          <div className="col-span-2 md:col-span-1 w-full h-full m-0 text-justify justify-last md:pl-12  ">
-            <div className="grid  md:grid-row-2 h-full">
-              <div className="flex  md:w-full flex-col md:flex-row gap-8">
-                <img className=" hidden md:inline" src={M} alt="m letter" />
+          <div className="col-span-2 md:col-span-1 w-full h-full m-0 text-justify justify-last md:pl-12">
+            <div className="grid md:grid-row-2 h-full">
+              <div className="flex md:w-full flex-col md:flex-row gap-8">
+                <img className="hidden md:inline" src={M} alt="m letter" />
                 <div>
                   <p className="text-lg text-gray-800">
                     <span className="md:hidden">M</span>agic! At ABESIT, wands
@@ -57,8 +122,8 @@ const About = () => {
               </div>
 
               <div>
-                <h1 className="text-center text-4xl md:text-7xl tracking-wide font-bold mb-2  pt-2">
-                  Potter’s Sequel
+                <h1 className="text-center text-4xl md:text-7xl tracking-wide font-bold mb-2 pt-2">
+                  Potter's Sequel
                 </h1>
                 <div className="grid md:grid-cols-2 md:gap-8">
                   <div>
@@ -72,7 +137,7 @@ const About = () => {
 
                   <div>
                     <p className="text-lg text-gray-800">
-                      Hacknovate 6.0 is more than just a hackathon; it’s a test
+                      Hacknovate 6.0 is more than just a hackathon; it's a test
                       of bravery, skill, and teamwork. The coding cauldron is
                       bubbling, and challengers will embark on a 24-hour journey
                       where creativity, logic, and technology intertwine.
@@ -88,7 +153,7 @@ const About = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div className="grid grid-cols-1 md:grid-cols-3 space-x-6 w-full">
           <div className="space-y-5">
-            <img className=" hidden md:inline" src={A} alt="a letter" />
+            <img className="hidden md:inline" src={A} alt="a letter" />
             <p className="text-lg text-gray-800 text-justify md:text-left">
               <span className="md:hidden">A</span>estled amidst the world of
               innovation and learning, ABESIT stands as the Hogwarts of
@@ -97,8 +162,8 @@ const About = () => {
             </p>
           </div>
           <div className="w-full">
-            <p className=" text-lg text-gray-800 text-justify md:text-left md:pr-4 pb-4 max-lg:relative max-lg:-left-5 ">
-            students transform into digital wizards.
+            <p className="text-lg text-gray-800 text-justify md:text-left md:pr-4 pb-4 max-lg:relative max-lg:-left-5">
+              students transform into digital wizards.
               Here, logic is the ultimate spell, creativity the strongest
               potion, and knowledge the true source of power. So grab your wand
               (keyboard) Step into this realm of endless possibilities, where
@@ -106,26 +171,25 @@ const About = () => {
             </p>
           </div>
           <div className="w-full">
-            <p className="text-lg text-gray-800 text-justify md:text-left border-b-4 pb-4 max-lg:relative max-lg:-left-5  ">
+            <p className="text-lg text-gray-800 text-justify md:text-left border-b-4 pb-4 max-lg:relative max-lg:-left-5">
               Through sheer determination, teamwork, and an unbreakable spirit,
               these coding wizards will turn impossible problems into
               extraordinary solutions
             </p>
-            <h1 className=" font-extrabold text-4xl pt-4 leading-tighter max-lg:leading-[55px] max-lg:relative max-lg:-left-5">
+            <h1 className="font-extrabold text-4xl pt-4 leading-tighter max-lg:leading-[55px] max-lg:relative max-lg:-left-5">
               Magic, Code and Achieve!!!!
             </h1>
           </div>
         </div>
 
         <div className="md:pl-4 col-span-2 md:col-span-1 flex flex-col text-center align-center items-center text-golden-500 w-full">
-          
-           <img
-              className="flex md:w-full  m-4 border-0 h-[300px] max-lg:h-[230px]"
-              src={hackno}
-              alt="hacknovate"
-            />
+          <img
+            className="flex md:w-full m-4 border-0 h-[300px] max-lg:h-[230px]"
+            src={hackno}
+            alt="hacknovate"
+          />
 
-          <div className="bg-black w-full text-amber-400  gap-4 lg:relative text-xl flex justify-center items-center  text-center max-lg:text-[15px]">
+          <div className="bg-black w-full text-amber-400 gap-4 lg:relative text-xl flex justify-center items-center text-center max-lg:text-[15px]">
             <FaAsterisk className="w-4 h-4 max-lg:hidden" />
             <span> HACKNOVATE: THE FLAGSHIP EVENT OF ABESIT GHAZIABAD </span>
           </div>
