@@ -11,6 +11,7 @@ import NewspaperHeader from "./components/NewspaperHeader.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Events from "./components/Events.jsx";
 import CodeOfConduct from "./components/CodeOfConduct.jsx";
+import Swags from "./components/Swags.jsx";
 import Faq from "./components/Faq12.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx"; // Import LoadingScreen
 
@@ -33,6 +34,7 @@ function App() {
     <Router>
       <>
         <NewspaperHeader />
+<<<<<<< HEAD
         <LoadingWrapper>
           <Routes>
             <Route path="/" element={<AboutSectionMain />} />
@@ -44,6 +46,18 @@ function App() {
             <Route path="/faq" element={<Faq />} />
           </Routes>
         </LoadingWrapper>
+=======
+        <Routes>
+          <Route path="/" element={<AboutSectionMain />} />
+          <Route path="/mentor" element={<Mentor />} />
+          <Route path="/codeofconduct" element={<CodeOfConduct />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/Swags" element={<Swags />} />
+          <Route path="/sponsor" element={<Spnosor />} />
+          <Route path="/faq" element={<Faq />} />
+        </Routes>
+>>>>>>> 2efc8b5a21f7dd26d9e15482d8834c3c9f32a90c
         <Chatbot />
         <BackgroundMusic />
         <Footer />
