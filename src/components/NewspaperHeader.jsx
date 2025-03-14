@@ -42,12 +42,17 @@ const NewspaperHeader = () => {
             >
               Team
             </Link>
-
+            <Link
+              to="/swags"
+              className="font-bold font-inter hover:text-amber-500 text-[18px]"
+            >
+              Swags
+            </Link>
             <Link
               to="/codeofconduct"
               className="font-bold font-inter hover:text-amber-500 text-[18px]"
             >
-              Code of Conduct
+              COC
             </Link>
 
             <div className="relative font-bold font-inter hover:text-amber-500 text-[18px]">

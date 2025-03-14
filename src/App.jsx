@@ -11,6 +11,7 @@ import NewspaperHeader from "./components/NewspaperHeader.jsx";
 import Spnosor from "./components/Spnosor.jsx";
 import Events from "./components/Events.jsx";
 import CodeOfConduct from "./components/CodeOfConduct.jsx";
+import Swags from "./components/Swags.jsx";
 import Faq from "./components/Faq12.jsx";
 // import CursorEffect from "./components/magicui/CursorEffect.jsx";
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/codeofconduct" element={<CodeOfConduct />} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/Swags" element={<Swags />} />
           <Route path="/sponsor" element={<Spnosor />} />
           <Route path="/faq" element={<Faq />} />
         </Routes>

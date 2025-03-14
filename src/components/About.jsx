@@ -92,7 +92,7 @@ const About = () => {
             <p className="text-lg text-gray-800 text-justify md:text-left">
               <span className="md:hidden">A</span>estled amidst the world of
               innovation and learning, ABESIT stands as the Hogwarts of
-              Coding—where magic isn't cast with wands but crafted with code.
+              Coding—where magic is not cast with wands but crafted with code.
               Within these grand halls,
             </p>
           </div>
