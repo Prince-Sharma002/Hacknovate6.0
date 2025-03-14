@@ -22,7 +22,7 @@ const TeamSection = ({ title, image, members, description }) => {
       <h2 className="text-3xl font-bold mb-3">{title}</h2>
       <div className="flex flex-col md:flex-row gap-4 ">
         <div className="md:w-1/2 relative group">
-          <img src={image} alt={title} className="w-full h-full object-cover max-h-80" />
+          <img src={image} alt={title} className="w-full h-full object-cover max-h-100" />
           <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
   {/* Names in one line */}
   <div className="flex flex-wrap justify-center space-x-4 mb-2">
